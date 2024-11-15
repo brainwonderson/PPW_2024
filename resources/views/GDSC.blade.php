@@ -10,9 +10,9 @@
 <div class="container mx-auto py-10">
     <!-- Header Section -->
     <div class="text-center mb-12 animate__animated animate__fadeIn">
-        <h1 class="text-4xl font-bold mb-4">DIPTEK ILMU PENGETAHUAN DAN TEKNOLOGI</h1>
+        <h1 class="text-4xl font-bold mb-4">Del Dance Drama Club</h1>
         <p class="text-gray-600 max-w-3xl mx-auto">
-            Departemen Ilmu Pengetahuan dan Teknologi (DIPTEK) merupakan departemen yang bergerak dalam ilmu pengetahuan dan teknologi. Departemen ini juga mengelola dan memberikan informasi mengenai ilmu pengetahuan dan teknologi kepada mahasiswa, serta membantu meningkatkan minat dan bakat mahasiswa di bidang akademik.
+        3DC merupakan singkatan dari Del Dance Drama Club. Secara baku, 3DC juga sering disebut PTM, yaitu Paduan Tari Mahasiswa 3DC adalah salah satu UKM  di bidang seni yang ada di Institut Teknologi Del. 3DC memiliki 3 divisi yaitu Modern Dance, Tradisional Dance, Drama. PTM atau 3DC sering berpartisipasi dalam berbagai kegiatan didalam kampus seperti IDG , IT Del fest bahkan kegiatan BEM maupun luar kampus seperti perlombaan.
         </p>
     </div>
 
@@ -46,15 +46,20 @@
     <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-3s">
         <h2 class="text-3xl font-bold mb-8">PROGRAM KERJA</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Penyusunan Kalender KM</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pembentukan Panitia PCA</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pembubaran Panitia PCA</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Rapat Koordinasi bersama MPM</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pemilihan Ketua Natal Ephipania</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Inaugurasi, Dies Natalis dan Gradiation (IDG)</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pembukaan & Penutupan KM Cup</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Festival Budaya</a>
             <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">UKM Day</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Latihan Rutin Anggota 3dc</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Penerimaan Anggota 3dc</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Evaluasi Anggota 3dc</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">IT Del Fest</a>
         </div>
     </div>
 </div>
 
 
 @endsection
+
+
+
