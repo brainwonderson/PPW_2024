@@ -80,8 +80,13 @@
     </div>
 
     <!-- 3DC -->
+<<<<<<< Updated upstream
     <a href="{{ route('3DC') }}" target="3DC">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
+=======
+    <div class=" href relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up ">
+    <a href="/3dc" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"></a>
+>>>>>>> Stashed changes
       <img src="{{ asset('image/padus.png') }}" alt="3dc" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">3dc</h3>

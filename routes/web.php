@@ -87,6 +87,7 @@ Route::get('/test', function () {
     return view('test');
 })->name('test');
 
+<<<<<<< Updated upstream
 Route::get('/basket', function () {
     return view('basket');
 })->name('basket');
@@ -110,6 +111,11 @@ Route::get('/English', function () {
 Route::get('/3DC', function () {
     return view('3DC');
 })->name('3DC');
+=======
+Route::get('/3dc', function () {
+    return view('3dc');
+})->name('3dc');
+>>>>>>> Stashed changes
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
