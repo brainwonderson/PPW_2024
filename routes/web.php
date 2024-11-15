@@ -71,6 +71,10 @@ Route::get('/dpdk', function () {
     return view('dpdk');
 })->name('depol');
 
+Route::get('/dhpm', function () {
+    return view('dhpm');
+})->name('dhpm');
+
 Route::get('/sarpras', function () {
     return view('sarpras');
 })->name('sarpras');

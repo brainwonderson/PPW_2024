@@ -115,25 +115,27 @@
             <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
                 <img src="{{ asset('image/Depkominfo.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2">Departemen Komunikasi dan Informasi</h3>
-                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
+                <p class="text-gray-600">Departemen Komunikasi dan Informasi 
+                    merupakan departemen yang menanggungjawabi kepentingan komunikasi dan informasi, jembatan antar departemen, dan memanfaatkan media komunikatif sebagai pusat informasi keorganisasian.</p>
             </div>
 
             <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer">
                 <img src="{{ asset('image/DPDK.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2">Departemen Pusat Dalam Kampus</h3>
-                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
+                <p class="text-gray-600">Departemen Sarana dan Prasarana
+                    merupakan departemen yang membantu segala kegiatan yang dilakukan oleh departemen lain BEM IT Del.  Departemen ini memiliki tanggung jawab untuk menyediakan alat dan keperluan yang mungkin dibutuhkan dalam kegiatan departemen lain.</p>
             </div>
 
             <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer">
                 <img src="{{ asset('image/DEPOL.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2">Departemen Olahraga</h3>
-                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
+                <p class="text-gray-600">Departemen Olahraga IT Del berdedikasi untuk membina dan mengembangkan minat serta bakat olahraga mahasiswa, serta meningkatkan kualitas olahraga di lingkungan kampus.</p>
             </div>
 
-            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
+            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer">
                 <img src="{{ asset('image/DHPM.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2">Departemen Hubungan dan Pengabdian Masyarakat</h3>
-                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
+                <p class="text-gray-600">Departemen Hubungan dan Pengabdian Masyarakat (DHPM) bertanggung jawab atas kegiatan kemahasiswaan, pengabdian masyarakat, hubungan eksternal, dan reputasi BEM IT Del.</p>
             </div>
 
             <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">

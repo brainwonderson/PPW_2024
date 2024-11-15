@@ -12,25 +12,24 @@
         <!-- Images and Description -->
         <div class="flex justify-center mb-12">
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/DHPM.png') }}" alt="Department Logo" class="rounded-md mx-auto">
+                <img src="{{ asset('image/DHPM.png') }}" alt="Department Logo" class="rounded-md mx-auto w-auto h-96">
             </div>
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/keg dhpm.jpg') }}" alt="Department Event" class="rounded-md mx-auto">
+                <img src="{{ asset('image/keg dhpm.jpg') }}" alt="Department Event" class="rounded-md mx-auto w-auto h-96">
             </div>
         </div>
 
         <!-- Leaders Section -->
-        <div class="text-center mb-12">
-            <div class="flex justify-center space-x-8">
-                <div>
-                <img src="{{ asset('image/joseph.png') }}" alt="Leader 1" class="w-30 h-30 rounded-full float-left mb-4 mr-5 ml-15">
-                    <p class="text-lg font-bold">SITOGAB ANTONIO GIRSANG</p>
+        <div class="flex justify-center space-x-10 text-center mb-12 animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="flex space-x-20 items-center">
+                <div class="text-center ml-3 mb-1">
+                    <img src="{{ asset('image/togab.png') }}" alt="Leader 1" class="w-72 rounded-full mt-20">
+                    <p class="text-lg font-bold">ALBERT PANGGABEAN</p>
                     <p>Kepala Divisi</p>
-
                 </div>
-                <div>
-                    <img src="{{ asset('image/dhpm wakil.jpg') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mb-4 mr-5">
-                    <p class="text-lg font-bold">GABRIEL SIGALINGGING</p>
+                <div class="text-center my-2">
+                    <img src="{{ asset('image/dhpmwakil.png') }}" alt="Leader 2" class="w-72 rounded-full -mt-10">
+                    <p class="text-lg font-bold">SALWA HARAHAP</p>
                     <p>Wakil Kepala Divisi</p>
                 </div>
             </div>

@@ -89,35 +89,6 @@
     </div>
   </div>
 
-  <!-- Navigation Buttons -->
-  <button onclick="slideLeft()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2">
-    &#9664; <!-- Previous icon -->
-  </button>
-  <button onclick="slideRight()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white rounded-full p-2">
-    &#9654; <!-- Next icon -->
-  </button>
-</div>
-
-<!-- JavaScript for navigation functionality -->
-<script>
-  const slider = document.getElementById('slider');
-
-  function slideLeft() {
-    slider.scrollBy({
-      left: -300, // Adjust scroll distance as needed
-      behavior: 'smooth'
-    });
-  }
-
-  function slideRight() {
-    slider.scrollBy({
-      left: 300, // Adjust scroll distance as needed
-      behavior: 'smooth'
-    });
-  }
-</script>
-
-
 <!-- Custom CSS for animations and to hide default scrollbar -->
 <style>
   .scrollbar-hide::-webkit-scrollbar {

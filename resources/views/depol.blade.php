@@ -10,9 +10,9 @@
 <div class="container mx-auto py-10">
     <!-- Header Section -->
     <div class="text-center mb-12 animate__animated animate__fadeIn">
-        <h1 class="text-4xl font-bold mb-4">DIPTEK ILMU PENGETAHUAN DAN TEKNOLOGI</h1>
+        <h1 class="text-4xl font-bold mb-4">DEPARTEMEN OLAHRAGA</h1>
         <p class="text-gray-600 max-w-3xl mx-auto">
-            Departemen Ilmu Pengetahuan dan Teknologi (DIPTEK) merupakan departemen yang bergerak dalam ilmu pengetahuan dan teknologi. Departemen ini juga mengelola dan memberikan informasi mengenai ilmu pengetahuan dan teknologi kepada mahasiswa, serta membantu meningkatkan minat dan bakat mahasiswa di bidang akademik.
+            Departemen Olahraga IT Del berdedikasi untuk membina dan mengembangkan minat serta bakat olahraga mahasiswa, serta meningkatkan kualitas olahraga di lingkungan kampus.
         </p>
     </div>
 
@@ -31,7 +31,7 @@
         <div class="flex space-x-20 items-center">
             <div class="text-center ml-3 mb-5">
                 <img src="{{ asset('image/ketua depol.jpg') }}" alt="Leader 1" class="w-72 rounded-full mb-5 mx-auto">
-                <p class="text-lg font-bold">Markus Hutagalung</p>
+                <p class="text-lg font-bold">ALBERT PANGGABEAN</p>
                 <p>Kepala Divisi</p>
             </div>
             <div class="text-center mb-10">
