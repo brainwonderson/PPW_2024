@@ -7,30 +7,69 @@
     <title>BEM Institut Teknologi Del</title>
     @vite('resources/css/app.css')
     <style>
-        /* Custom CSS for the blur effect */
+        /* Custom CSS for hamburger and blur effect */
         .blur-effect {
-          filter: blur(100px);
-          pointer-events: none;
-          position: absolute;
-          width: 300px;
-          height: 300px;
-          background-color: rgba(255, 255, 255, 0.3);
-          border-radius: 50%;
-          z-index: 10;
+            filter: blur(100px);
+            pointer-events: none;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            z-index: 10;
         }
-      </style>
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .hamburger span {
+            height: 3px;
+            width: 25px;
+            background: #333;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: white;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 50;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
     <nav class="bg-white shadow p-4 sticky top-0 z-50">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="flex items-center space-x-4 mb-4 md:mb-0">
-              <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
-              <div class="flex flex-col text-center md:text-left">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
+                <div class="flex flex-col text-center md:text-left">
                     <span class="text-2xl font-bold text-gray-800">BEM IT Del</span>
-                    <span class="text-0 font-bold text-gray-800">Kabinet Sahala Saunduran</span>
+                    <span class="text-sm font-bold text-gray-800">Kabinet Sahala Saunduran</span>
                 </div>
             </div>
-            <ul class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6 ml-9">
+            
+            <!-- Hamburger Menu -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navbar Links -->
+            <ul class="nav-links flex md:flex-row space-y-3 md:space-y-0 md:space-x-6">
                 <li><a href="/" class="text-gray-700 hover:text-blue-500">Home</a></li>
                 <li><a href="/about" class="text-gray-700 hover:text-blue-500">About us</a></li>
                 
@@ -38,12 +77,11 @@
                 <li class="relative group">
                     <button class="text-gray-700 hover:text-blue-500 flex items-center" onclick="toggleDropdown(event)">
                         Department
-                       <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
-                    </a>
-                    <div id="dropdownMenu" style="position: absolute; top: 100%; left: 0; margin-top: 4px; width: 192px; background-color: white; border-radius: 0.25rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" class="hidden z-50">
-                        <!-- Konten Dropdown -->
+                    </button>
+                    <div id="dropdownMenu" class="hidden z-50 absolute bg-white shadow-lg rounded mt-2">
                         <a href="/diptek" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DIPTEK</a>
                         <a href="/depagsos" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPAGSOS</a>
                         <a href="/dpdk" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DPDK</a>
@@ -55,49 +93,35 @@
                         <a href="/depsenbud" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPSENBUD</a>
                     </div>
                 </li>
-
-                <script>
-                    function toggleDropdown(event) {
-                    event.preventDefault();
-                    const dropdownMenu = document.getElementById('dropdownMenu');
-                    dropdownMenu.classList.toggle('hidden');
-                }
-                    document.addEventListener('click', function (e) {
-                        const dropdown = document.getElementById('dropdownMenu');
-                        if (!e.target.closest('.relative') && !dropdown.classList.contains('hidden')) {
-                            dropdown.classList.add('hidden');
-                        }
-                    });
-
-                </script>
-                
-
                 <li><a href="/vote" class="text-gray-700 hover:text-blue-500">Voting</a></li>
             </ul>
-            <div class="mt-4 md:mt-0">
-                <a href="{{ url('/login') }}" class="bg-blue-900 text-white px-4 py-2 ml-0 rounded-md">Login</a>
-                <!-- <a href="{{ url('/register') }}" class="bg-blue-900 text-white px-4 py-2 rounded-md">Register</a> -->
+            <div>
+                <a href="{{ url('/login') }}" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
             </div>
         </div>
     </nav>
     <div id="blur" class="blur-effect"></div>
-    <script>
-        // JavaScript to move the blur effect based on mouse movement
-        document.addEventListener('mousemove', function (e) {
-          const blurEffect = document.getElementById('blur');
-          blurEffect.style.top = `${e.clientY - 150}px`;  // Adjusting Y position
-          blurEffect.style.left = `${e.clientX - 150}px`; // Adjusting X position
-        });
-      </script>
-    
-
     <main>
         @yield('content')
     </main>
-    <script src="{{ asset('js/script.js') }}"></script>
-    
-   <!-- Footer -->
-<footer class="bg-gray-900 text-white py-6 mt-10">
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+        }
+        function toggleDropdown(event) {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.classList.toggle('hidden');
+            event.stopPropagation();
+        }
+        document.addEventListener('click', () => {
+            document.getElementById('dropdownMenu').classList.add('hidden');
+        });
+    </script>
+</body>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 mt-10">
     <div class="container mx-auto text-center md:text-left md:flex justify-between items-center">
         <div class="flex items-center mb-4 md:mb-0">
             <img src="{{ asset('image/logodel.png') }}" alt="Logo IT Del" class="w-20 h-20 mx-4">
@@ -133,3 +157,4 @@
         </div>
     </div>
 </footer>
+</html>
