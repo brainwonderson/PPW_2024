@@ -20,7 +20,7 @@ Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post');
 Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 
 Route::get('/about', function () {
-    return view('aboutus');
+    return view('menu/aboutus');
 })->name('home');
 
 Route::get('/admin', function () {
@@ -36,47 +36,43 @@ Route::get('/creator', function () {
 })->name('creatorcontent');
 
 Route::get('/vote', function () {
-    return view('vote');
+    return view('menu/vote');
 })->name('vote');
 
 Route::get('/diptek', function () {
-    return view('diptek');
+    return view('div-BEM/diptek');
 })->name('diptek');
 
 Route::get('/depagsos', function () {
-    return view('depagsos');
+    return view('div-BEM/depagsos');
 })->name('depagsos');
 
 Route::get('/depkominfo', function () {
-    return view('depkominfo');
+    return view('div-BEM/depkominfo');
 })->name('depkominfo');
 
 Route::get('/depsenbud', function () {
-    return view('depsenbud');
+    return view('div-BEM/depsenbud');
 })->name('depsenbud');
 
 Route::get('/depkebdis', function () {
-    return view('depkebdis');
+    return view('div-BEM/depkebdis');
 })->name('depkebdis');
 
 Route::get('/depol', function () {
-    return view('depol');
+    return view('div-BEM/depol');
 })->name('depol');
 
 Route::get('/dpdk', function () {
-    return view('dpdk');
-})->name('depol');
-
-Route::get('/dpdk', function () {
-    return view('dpdk');
-})->name('depol');
+    return view('div-BEM/dpdk');
+})->name('dpdk');
 
 Route::get('/dhpm', function () {
-    return view('dhpm');
+    return view('div-BEM/dhpm');
 })->name('dhpm');
 
 Route::get('/sarpras', function () {
-    return view('sarpras');
+    return view('div-BEM/sarpras');
 })->name('sarpras');
 
 Route::get('/try', function () {
@@ -87,51 +83,29 @@ Route::get('/test', function () {
     return view('test');
 })->name('test');
 
-<<<<<<< Updated upstream
 Route::get('/basket', function () {
-    return view('basket');
+    return view('ukm/basket');
 })->name('basket');
 
 Route::get('/GDSC', function () {
-    return view('GDSC');
+    return view('ukm/GDSC');
 })->name('GDSC');
 
 Route::get('/Gitar', function () {
-    return view('Gitar');
+    return view('ukm/Gitar');
 })->name('Gitar');
 
 Route::get('/Psm', function () {
-    return view('Psm');
+    return view('ukm/Psm');
 })->name('Psm');
 
 Route::get('/English', function () {
-    return view('English');
+    return view('ukm/English');
 })->name('English');
 
 Route::get('/3DC', function () {
-    return view('3DC');
+    return view('ukm/3DC');
 })->name('3DC');
-=======
-Route::get('/3dc', function () {
-    return view('3dc');
-})->name('3dc');
->>>>>>> Stashed changes
-
-Route::get('/', [HomeController::class, 'index'])->name('home');
-
-Route::get('/index', [HomeController::class, 'indexes'])->name('indexes');
-
-Route::get('/register', [AuthManager::class, 'register'])->name('register'); 
-
-Route::post('/register', [AuthManager::class, 'registerPost'])->name('register.post'); 
-
-Route::get('/login', [AuthManager::class, 'login'])->name('login');
-
-Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post'); 
-
-Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
-
-route::get('/home', [AdminController::class, 'index'])->name('home');
 
 route::get('/strukturbem', [BEMController::class, 'index'])->name('strukturbem');
 

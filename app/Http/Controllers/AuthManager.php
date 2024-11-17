@@ -9,11 +9,11 @@ use Illuminate\Support\Facades\Auth;
 class AuthManager extends Controller
 {
     function login(){
-        return view('login');
+        return view('menu/login');
     }
     
     function register(){
-        return view('register');
+        return view('menu/register');
     }
 
     function loginPost(Request $request){
@@ -32,7 +32,7 @@ class AuthManager extends Controller
             // }
             return view('home');
         }
-        return view('login');
+        return view('menu/login');
         // return redirect(route('home'))->with("error","Login details are not valid");
         
         return back()->withErrors([
@@ -52,14 +52,14 @@ class AuthManager extends Controller
         $data['password'] = Hash::make($request->password);
         $user = User::create($data);
         if(!$user){
-            return redirect(route('register'))->with("error","Registeration failed, Try Again!");
+            return redirect(route('menu/register'))->with("error","Registeration failed, Try Again!");
         }
-        return redirect(route('login'))->with("succes","Registeration succesfull");
+        return redirect(route('menu/login'))->with("succes","Registeration succesfull");
 
         function logout(){
             Session::flush();
             Auth::logout();
-            return redirect(route('login'));
+            return redirect(route('menu/login'));
         }
 
     }
