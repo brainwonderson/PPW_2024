@@ -26,6 +26,7 @@
         </div>
     </div>
 
+    
     <!-- Leaders Section -->
     <div class="flex justify-center space-x-10 text-center mb-12 animate__animated animate__fadeInUp animate__delay-2s">
         <div class="flex space-x-20 items-center">
