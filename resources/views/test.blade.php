@@ -1,148 +1,124 @@
-@extends('layouts.app')
-
-@section('content')
-<div class="parallax bg-cover bg-center h-screen relative" style="background-image: url('{{ asset('image/del.jpg') }}')">
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-    <div class="container mx-auto h-full flex flex-col justify-end items-start relative z-10 text-white text-left p-10">
-        <h1 class="text-4xl font-bold mb-10">BEM INSTITUT TEKNOLOGI DEL</h1>
-        <h2 class="text-2xl mb-10">KABINET SAHALA SAUDURAN 2023/2024</h2>
-        <a href="#" class="mb-9 px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">What we do</a>
-    </div>
-</div>
-
-
-    <section class="container mx-auto py-20">
-    <div class="flex items-start mb-10 mx-10">
-        <!-- Bagian Teks -->
-        <div class="w-1/2 pr-10">
-            <h2 class="text-4xl font-bold py-2">Know about us</h2>
-            <h2 class="text-3xl font-bold">We empower your voice on campus</h2>
-            <p class="text-gray-600 mt-4">Kami hadir sebagai wadah bagi mahasiswa ITDel untuk berkolaborasi, berinovasi, dan menyuarakan aspirasi. Kami berperan dalam menyelenggarakan berbagai program serta kegiatan yang mendukung pengembangan akademik dan karakter mahasiswa, sekaligus menjadi jembatan antara mahasiswa dan pihak kampus.</p>
-            <div class="mt-6">
-                <a href="about" class="inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
-            </div>
-        </div>
-
-        <!-- Bagian Gambar -->
-        <div class="w-1/2 pl-10">
-            <img src="{{ asset('image/inagurasi.jpg') }}" alt="Campus Collaboration" class="rounded-lg shadow-md">
-        </div>
-    </div>
-</section>
-
-
-    <!-- Bagian Visi dan Misi -->
-<section class="bg-yellow-100 py-20">
-    <div class="container mx-auto text-left px-4 md:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left">VISI & MISI</h2>
-
-        <div class="flex flex-wrap md:flex-nowrap justify-between items-start">
-            <!-- Visi -->
-            <div class="w-full md:w-2/3 p-5">
-                <h3 class="text-2xl md:text-4xl roboto mb-4">VISI</h3>
-                <p class="text-gray-800 font-semibold">
-                    Mewujudkan Badan Eksekutif Mahasiswa IT Del yang lebih baik melalui partisipasi aktif mahasiswa dalam berbagai aspek kehidupan kampus dan masyarakat serta mendengar segala bentuk aspirasi Mahasiswa.
-                </p>
-            </div>
-            <!-- Foto Ketua di sebelah kanan -->
-            <div class="w-full md:w-1/3 flex justify-center md:justify-end items-center mt-6 md:mt-0">
-                <div class="text-center">
-                    <img src="{{ asset('image/newsamuel.png') }}" alt="Samuel Simbolon" class="w-48 h-48 md:w-64 md:h-64  mx-auto">
-                    <p class="mt-2 text-lg">Rony, Ketua BEM 2023/2024</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/try.css') }}">
+    <title>BEM Institut Teknologi Del</title>
+    @vite('resources/css/app.css')
+    <style>
+        /* Custom CSS for the blur effect */
+        .blur-effect {
+          filter: blur(100px);
+          pointer-events: none;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 50%;
+          z-index: 10;
+        }
+      </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
+                <div class="flex flex-col text-center md:text-left">
+                    <span class="text-2xl font-bold text-gray-800">BEM IT Del</span>
+                    <span class="text-sm font-bold text-gray-800">Kabinet Sahala Saunduran</span>
                 </div>
             </div>
+         <!-- Hamburger menu -->
+         <div class="relative">
+            <button id="hamburgerMenu" class="text-gray-700 hover:text-blue-500 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <div id="hamburgerDropdown" class="hidden absolute right-0 top-full mt-2 w-48 bg-white rounded-md shadow-lg z-50">
+                <a href="/" class="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white">Home</a>
+                <a href="/about" class="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white">About Us</a>
+                <a href="/vote" class="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white">Voting</a>
+                <a href="/department" class="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white">Department</a>
+                <a href="/contact" class="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white">Contact</a>
+            </div>
         </div>
 
-        <div class="flex flex-wrap md:flex-nowrap justify-between items-start mt-10">
-            <!-- Foto Wakil Ketua di sebelah kiri -->
-            <div class="w-full md:w-1/3 flex justify-center md:justify-start items-center mb-6 mr-20 md:mb-0 mr-5">
-                <div class="text-center">
-                    <img src="{{ asset('image/newrony.png') }}" alt="Bayu Peter Bukit" class="w-48 h-48  md:w-64 md:h-64  mb-25 ml-10">
-                    <p class="mt-2 text-lg">Samuel, Wakil Ketua BEM 2023/2024</p>
-                </div>
+            <ul class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6 ml-9">
+                <li><a href="/" class="text-gray-700 hover:text-blue-500">Home</a></li>
+                <li><a href="/about" class="text-gray-700 hover:text-blue-500">About us</a></li>
+                
+                <!-- Dropdown Menu -->
+                <li class="relative group">
+                    <button class="text-gray-700 hover:text-blue-500 flex items-center" onclick="toggleDropdown(event)">
+                        Department
+                       <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div id="dropdownMenu" style="position: absolute; top: 100%; left: 0; margin-top: 4px; width: 192px; background-color: white; border-radius: 0.25rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" class="hidden z-50">
+                        <!-- Konten Dropdown -->
+                        <a href="/diptek" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DIPTEK</a>
+                        <a href="/depagsos" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPAGSOS</a>
+                        <a href="/dpdk" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DPDK</a>
+                        <a href="/dhpm" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DHPM</a>
+                        <a href="/depkominfo" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPKOMINFO</a>
+                        <a href="/sarpras" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">SARPRAS</a>
+                        <a href="/depol" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPOL</a>
+                        <a href="/depkebdis" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPKEBDIS</a>
+                        <a href="/depsenbud" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPSENBUD</a>
+                    </div>
+                </li>
+                <li><a href="/vote" class="text-gray-700 hover:text-blue-500">Voting</a></li>
+            </ul>
+            <div class="mt-4 md:mt-0">
+                <a href="{{ url('/login') }}" class="bg-blue-900 text-white px-4 py-2 ml-0 rounded-md">Login</a>
+                <!-- <a href="{{ url('/register') }}" class="bg-blue-900 text-white px-4 py-2 rounded-md">Register</a> -->
             </div>
-            <!-- Misi -->
-            <div class="w-full md:w-2/3 pr-0 md:pr-10">
-                <h3 class="text-2xl md:text-4xl font-semibold mb-4">MISI</h3>
-                <ul class="text-gray-700 list-disc list-inside space-y-2">
-                    <li>Mewakili suara mahasiswa dan memperjuangkan kepentingan mahasiswa di tingkat kampus dan nasional.</li>
-                    <li>Menyelenggarakan berbagai kegiatan yang bermanfaat dan menarik untuk kemajuan akademik, sosial, dan keagamaan mahasiswa.</li>
-                    <li>Membangun jaringan kerjasama dengan lembaga di dalam dan luar kampus untuk meningkatkan kualitas dan kuantitas kegiatan BEM.</li>
-                    <li>Meningkatkan partisipasi mahasiswa dalam kegiatan organisasi, baik sebagai peserta maupun pengurus.</li>
-                </ul>
+        </div>
+    </nav>
+    <div id="blur" class="blur-effect"></div>
+    <main>
+        @yield('content')
+    </main>
+    <script src="{{ asset('js/script.js') }}"></script>
+</body>
+   <!-- Footer -->
+<footer class="bg-gray-900 text-white py-6 mt-10">
+    <div class="container mx-auto text-center md:text-left md:flex justify-between items-center">
+        <div class="flex items-center mb-4 md:mb-0">
+            <img src="{{ asset('image/logodel.png') }}" alt="Logo IT Del" class="w-20 h-20 mx-4">
+            <div class="ml-2">
+                <h3 class="text-lg font-bold">Kontak Kami</h3>
+                <p>Institut Teknologi Del</p>
+                <p>Jl. Sisingamangaraja, Sitoluama, Laguboti, Toba, Sumatera Utara, Indonesia</p>
+                <p>Kode Pos: 22381</p>
+                <p>+62 632 331234</p>
+                <p>info@del.ac.id</p>
             </div>
+        </div>
+        <div class="flex space-x-4 justify-center md:justify-start mx-4">
+            <!-- Email Icon -->
+            <a href="mailto:hims@del.ac.id" target="_blank" class="text-white hover:text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 12.713L.015 6V20h23.97V6L12 12.713z" />
+                    <path d="M12 11.287L.015 4.573h23.97L12 11.287z" />
+                </svg>
+            </a>
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/bem.itdel/" target="_blank" class="text-white hover:text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.057 1.98.24 2.43.402.53.182.91.398 1.311.799.402.401.618.782.799 1.311.162.45.345 1.26.402 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.057 1.17-.24 1.98-.402 2.43-.182.53-.398.91-.799 1.311-.401.402-.782.618-1.311.799-.45.162-1.26.345-2.43.402-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.057-1.98-.24-2.43-.402-.53-.182-.91-.398-1.311-.799-.402-.401-.618-.782-.799-1.311-.162-.45-.345-1.26-.402-2.43-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.057-1.17.24-1.98.402-2.43.182-.53.398-.91.799-1.311.401-.402.782-.618 1.311-.799.45-.162 1.26-.345 2.43-.402 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.275.058-2.145.256-2.907.548a5.92 5.92 0 0 0-2.162 1.462 5.92 5.92 0 0 0-1.462 2.162c-.292.762-.49 1.632-.548 2.907-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.058 1.275.256 2.145.548 2.907a5.92 5.92 0 0 0 1.462 2.162 5.92 5.92 0 0 0 2.162 1.462c.762.292 1.632.49 2.907.548 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.275-.058 2.145-.256 2.907-.548a5.92 5.92 0 0 0 2.162-1.462 5.92 5.92 0 0 0 1.462-2.162c.292-.762.49-1.632.548-2.907.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.058-1.275-.256-2.145-.548-2.907a5.92 5.92 0 0 0-1.462-2.162 5.92 5.92 0 0 0-2.162-1.462c-.762-.292-1.632-.49-2.907-.548-1.28-.058-1.688-.072-4.947-.072zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/>
+                </svg>
+            </a>
+            <!-- YouTube Icon -->
+            <a href="https://www.youtube.com/@bemitdel" target="_blank" class="text-white hover:text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19.615 3.184c1.202.176 2.168 1.142 2.344 2.344.338 2.297.338 7.092.338 7.092s0 4.795-.338 7.092c-.176 1.202-1.142 2.168-2.344 2.344-2.297.338-7.092.338-7.092.338s-4.795 0-7.092-.338c-1.202-.176-2.168-1.142-2.344-2.344C2.176 17.415 2.176 12.62 2.176 12.62s0-4.795.338-7.092c.176-1.202 1.142-2.168 2.344-2.344C7.155 2.846 12 2.846 12 2.846s4.795 0 7.092.338c1.202.176 2.168 1.142 2.344 2.344zM9.746 15.465l5.51-3.465-5.51-3.465v6.93z"/>
+                </svg>
+            </a>
         </div>
     </div>
-</section>
-<style>
-    .parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-</style>
-
-    <!-- Bagian Departemen -->
-    <section class="container mx-auto py-20">
-        <h2 class="text-3xl font-bold text-center mb-10">DEPARTEMEN</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- departemen -->
-            <a class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer" href="/diptek">
-                <img src="{{ asset('image/diptek.jpg') }}" alt="Departemen 1" class="w-16 h-16 mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">Departemen Ilmu Pengetahuan dan Teknologi</h3>
-                <p class="text-gray-600">Mengelola bidang ilmu pengetahuan dan teknologi, membantu meningkatkan minat akademik mahasiswa ITDel.</p>
-            </a>
-
-            <a class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer" href="/depagsos">
-                <img src="{{ asset('image/depagsos.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">Departemen Agama dan Sosial</h3>
-                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
-            </a>
-
-            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
-                <img src="{{ asset('image/Depsenbud.png') }}" alt="Departemen 3" class="w-16 h-16 mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">Departemen Seni dan Budaya</h3>
-                <p class="text-gray-600">Menumbuhkan dan memelihara kebudayaan dan seni di kalangan mahasiswa ITDel.</p>
-            </div>
-
-            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
-                <img src="{{ asset('image/DEPKEBDIS.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">Departemen Ketertiban dan Kedisplinan</h3>
-                <p class="text-gray-600"> Departemen ini mengawasi proses jalannya ketertiban dan kedisiplinan mahasiswa/mahasiswi sesuai dengan peraturan dan regulasi yang berlaku di IT Del.</p>
-            </div>
-
-            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
-                <img src="{{ asset('image/Depkominfo.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">Departemen Komunikasi dan Informasi</h3>
-                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
-            </div>
-
-            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer">
-                <img src="{{ asset('image/DPDK.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">Departemen Pusat Dalam Kampus</h3>
-                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
-            </div>
-
-            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer">
-                <img src="{{ asset('image/DEPOL.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">Departemen Olahraga</h3>
-                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
-            </div>
-
-            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
-                <img src="{{ asset('image/DHPM.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">Departemen Hubungan dan Pengabdian Masyarakat</h3>
-                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
-            </div>
-
-            <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer"">
-                <img src="{{ asset('image/Sarpras.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
-                <h3 class="text-xl font-semibold mb-2">Departemen Sarana dan Prasarana</h3>
-                <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
-            </div>
-        </div>
-    </section>
-
-    
-@endsection
+</footer>

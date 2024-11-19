@@ -120,8 +120,8 @@
     </script>
 </body>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-6 mt-10">
+ <!-- Footer -->
+ <footer class="bg-gray-900 text-white py-6 mt-10">
     <div class="container mx-auto text-center md:text-left md:flex justify-between items-center">
         <div class="flex items-center mb-4 md:mb-0">
             <img src="{{ asset('image/logodel.png') }}" alt="Logo IT Del" class="w-20 h-20 mx-4">

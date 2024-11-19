@@ -107,6 +107,22 @@ Route::get('/3DC', function () {
     return view('ukm/3DC');
 })->name('3DC');
 
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/index', [HomeController::class, 'indexes'])->name('indexes');
+
+Route::get('/register', [AuthManager::class, 'register'])->name('register'); 
+
+Route::post('/register', [AuthManager::class, 'registerPost'])->name('register.post'); 
+
+Route::get('/login', [AuthManager::class, 'login'])->name('login');
+
+Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post'); 
+
+Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
+
+route::get('/home', [AdminController::class, 'index'])->name('home');
+
 route::get('/strukturbem', [BEMController::class, 'index'])->name('strukturbem');
 
 route::get('/tambahdata', [BEMController::class, 'tambahdata'])->name('tambahdata');

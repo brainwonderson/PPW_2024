@@ -28,15 +28,15 @@
 
     <!-- Leaders Section -->
     <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-2s">
-        <div class="flex justify-center space-x-16">
+        <div class="flex justify-center space-x-20">
             <div class="text-center">
-                <img src="{{ asset('image/markus.png') }}" alt="Leader 1" class="h-30 w-30 rounded-full mb-4 mx-auto">
+                <img src="{{ asset('image/markus.png') }}" alt="Leader 1" class="h-30 w-30 rounded-full mb-4 mt-3">
                 <p class="text-lg font-bold">Markus Hutagalung</p>
                 <p>Kepala Divisi</p>
             </div>
-            <div class="text-center">
+            <div class="text-center mt-0">
                 <img src="{{ asset('image/Richard.png') }}" alt="Leader 2" class="h-30 w-30 rounded-full mb-4 mx-auto">
-                <p class="text-lg font-bold">Richard Aritonang</p>
+                <p class="text-lg font-bold mt-1">Richard Aritonang</p>
                 <p>Wakil Kepala Divisi</p>
             </div>
         </div>

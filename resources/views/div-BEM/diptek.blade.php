@@ -28,7 +28,7 @@
     <!-- Images and Description -->
     <div class="flex justify-center mb-12 space-x-4 animate__animated animate__fadeInUp animate__delay-1s">
         <div class="w-1/2 p-4">
-            <img src="{{ asset('image/logo-diptek.jpg') }}" alt="Department Logo" class="rounded-md mx-auto">
+            <img src="{{ asset('image/logo-diptek.png') }}" alt="Department Logo" class="rounded-md mx-auto">
         </div>
         <div class="w-1/2 p-4">
             <img src="{{ asset('image/proker.png') }}" alt="Department Event" class="rounded-md mx-auto">

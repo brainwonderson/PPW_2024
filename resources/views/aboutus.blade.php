@@ -31,7 +31,7 @@
 <h2 class="text-center text-3xl font-bold mt-10 animate-fade-in">Program Unit Kegiatan Mahasiswa</h2>
 
 <!-- Main Content -->
-<div class="container mx-auto p-6 pt-24 relative">
+<div class="container mx-auto p-3 pt-24 relative">
   <!-- Slider container with horizontal scrolling -->
   <div id="slider" class="flex space-x-6 overflow-x-auto scrollbar-hide scroll-smooth">
     <!-- Identity Design Section -->

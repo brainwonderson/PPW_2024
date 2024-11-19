@@ -1,114 +1,124 @@
-@extends('layouts.app')
-
-@section('content')
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
-<!-- Navbar -->
-<nav class="bg-gray-900 text-white w-full fixed top-0 left-0 z-50 shadow-md fade-in">
-</nav>
-
-<!-- Section dengan background dan animasi -->
-<section class="w-full bg-blue-100 py-20 fade-in">
-    <div class="container mx-auto flex flex-col md:flex-row items-start md:space-x-10">
-        <!-- Bagian Teks dengan animasi -->
-        <div class="w-full md:w-2/3 text-left mb-10 fade-in">
-            <h2 class="text-32xl font-bold py-15 px-5">Sejarah</h2>
-            <p class="text-black-600 mt-5 px-5">
-                Institut Teknologi Del (IT Del) didirikan pada tahun 2001 di Laguboti, Sumatera Utara, dengan tujuan menjadi pusat pendidikan unggul di bidang teknologi dan rekayasa. IT Del bertujuan untuk mencetak lulusan yang tidak hanya kompeten di bidang akademis, tetapi juga memiliki integritas tinggi dan semangat pelayanan kepada masyarakat. Dengan visi "Menjadi Perguruan Tinggi Berkualitas Dunia yang Berlandaskan Nilai Kearifan Lokal", IT Del terus berkembang menjadi salah satu institusi pendidikan terkemuka di Indonesia.
-                <br><br>
-                Badan Eksekutif Mahasiswa (BEM) IT Del adalah organisasi mahasiswa yang mewakili seluruh mahasiswa di Institut Teknologi Del (IT Del). Kami berdedikasi untuk menjadi ruang aspirasi, inovasi, dan pengembangan diri bagi mahasiswa, serta berperan dalam membangun lingkungan kampus yang inklusif, dinamis, dan berorientasi pada perubahan positif.
-            </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ asset('css/try.css') }}">
+    <title>BEM Institut Teknologi Del</title>
+    @vite('resources/css/app.css')
+    <style>
+        /* Custom CSS for the blur effect */
+        .blur-effect {
+          filter: blur(100px);
+          pointer-events: none;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          background-color: rgba(255, 255, 255, 0.3);
+          border-radius: 50%;
+          z-index: 10;
+        }
+      </style>
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-white shadow p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
+                <div class="flex flex-col text-center md:text-left">
+                    <span class="text-2xl font-bold text-gray-800">BEM IT Del</span>
+                    <span class="text-sm font-bold text-gray-800">Kabinet Sahala Saunduran</span>
+                </div>
+            </div>
+         <!-- Hamburger menu -->
+         <div class="relative">
+            <button id="hamburgerMenu" class="text-gray-700 hover:text-blue-500 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+            <div id="hamburgerDropdown" class="hidden absolute right-0 top-full mt-2 w-48 bg-white rounded-md shadow-lg z-50">
+                <a href="/" class="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white">Home</a>
+                <a href="/about" class="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white">About Us</a>
+                <a href="/vote" class="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white">Voting</a>
+                <a href="/department" class="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white">Department</a>
+                <a href="/contact" class="block px-4 py-2 text-gray-700 hover:bg-blue-500 hover:text-white">Contact</a>
+            </div>
         </div>
 
-        <!-- Bagian Gambar dengan animasi -->
-        <div class="w-full md:w-1/3 flex justify-center md:justify-end items-center mt-6 md:mt-0 fade-in">
-            <img src="{{ asset('image/about.png') }}" alt="Samuel Simbolon" 
-                 class="w-50 h-50 md:w-70 md:h-64 mx-auto md:mt-10 md:mb-5 no-border fade-in">
+            <ul class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-6 ml-9">
+                <li><a href="/" class="text-gray-700 hover:text-blue-500">Home</a></li>
+                <li><a href="/about" class="text-gray-700 hover:text-blue-500">About us</a></li>
+                
+                <!-- Dropdown Menu -->
+                <li class="relative group">
+                    <button class="text-gray-700 hover:text-blue-500 flex items-center" onclick="toggleDropdown(event)">
+                        Department
+                       <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div id="dropdownMenu" style="position: absolute; top: 100%; left: 0; margin-top: 4px; width: 192px; background-color: white; border-radius: 0.25rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" class="hidden z-50">
+                        <!-- Konten Dropdown -->
+                        <a href="/diptek" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DIPTEK</a>
+                        <a href="/depagsos" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPAGSOS</a>
+                        <a href="/dpdk" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DPDK</a>
+                        <a href="/dhpm" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DHPM</a>
+                        <a href="/depkominfo" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPKOMINFO</a>
+                        <a href="/sarpras" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">SARPRAS</a>
+                        <a href="/depol" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPOL</a>
+                        <a href="/depkebdis" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPKEBDIS</a>
+                        <a href="/depsenbud" class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white">DEPSENBUD</a>
+                    </div>
+                </li>
+                <li><a href="/vote" class="text-gray-700 hover:text-blue-500">Voting</a></li>
+            </ul>
+            <div class="mt-4 md:mt-0">
+                <a href="{{ url('/login') }}" class="bg-blue-900 text-white px-4 py-2 ml-0 rounded-md">Login</a>
+                <!-- <a href="{{ url('/register') }}" class="bg-blue-900 text-white px-4 py-2 rounded-md">Register</a> -->
+            </div>
         </div>
-    </div>    
-</section>
-
-<!-- Program Unit Kegiatan Mahasiswa dengan animasi -->
-<h2 class="text-center text-3xl font-bold mt-10 fade-in">Program Unit Kegiatan Mahasiswa</h2>
-
-<!-- Main Content dengan animasi -->
-<div class="container mx-auto p-6 pt-24 fade-in">
-  <!-- Kontainer fleksibel yang dapat digeser ke samping -->
-  <div class="flex space-x-6 overflow-x-auto scrollbar-hide">
-    <!-- Basket -->
-<div class="min-w-[200px] text-center group">
-  <img src="{{ asset('image/basket.png') }}" alt="Basket" class="w-full h-auto object-cover mb-3">
-  <h3 class="text-lg font-semibold">Basket</h3>
-</div>
-
-<!-- GDSC -->
-<div class="min-w-[200px] text-center group">
-  <img src="{{ asset('image/gdsc.png') }}" alt="GDSC" class="w-full h-auto object-cover mb-3">
-  <h3 class="text-lg font-semibold">GDSC</h3>
-</div>
-
-<!-- Gitar -->
-<div class="min-w-[200px] text-center group">
-  <img src="{{ asset('image/gitar.png') }}" alt="Gitar" class="w-full h-auto object-cover mb-3">
-  <h3 class="text-lg font-semibold">Gitar</h3>
-</div>
-
-<!-- PSM -->
-<div class="min-w-[200px] text-center group">
-  <img src="{{ asset('image/padus.png') }}" alt="PSM" class="w-full h-auto object-cover mb-3">
-  <h3 class="text-lg font-semibold">PSM</h3>
-</div>
-
-<!-- English -->
-<div class="min-w-[200px] text-center group">
-  <img src="{{ asset('image/english.png') }}" alt="English" class="w-full h-auto object-cover cursor-pointer mb-3">
-  <h3 class="text-lg font-semibold">English</h3>
-</div>
-
-
-    <!-- Item tambahan UKM lainnya -->
-    {{-- <div class="min-w-[200px] text-center">
-      <img src="{{ asset('image/english.png') }}" alt="PSM" class="w-full h-auto object-cover mb-3">
-      <h3 class="text-lg font-semibold">English</h3>
-    </div> --}}
-    <!-- Tambahan item UKM jika diperlukan -->
-    {{-- <div class="min-w-[200px] text-center">
-      <img src="{{ asset('image/padus.png') }}" alt="PSM" class="w-full h-auto object-cover mb-3">
-      <h3 class="text-lg font-semibold">PSM</h3>
+    </nav>
+    <div id="blur" class="blur-effect"></div>
+    <main>
+        @yield('content')
+    </main>
+    <script src="{{ asset('js/script.js') }}"></script>
+</body>
+   <!-- Footer -->
+<footer class="bg-gray-900 text-white py-6 mt-10">
+    <div class="container mx-auto text-center md:text-left md:flex justify-between items-center">
+        <div class="flex items-center mb-4 md:mb-0">
+            <img src="{{ asset('image/logodel.png') }}" alt="Logo IT Del" class="w-20 h-20 mx-4">
+            <div class="ml-2">
+                <h3 class="text-lg font-bold">Kontak Kami</h3>
+                <p>Institut Teknologi Del</p>
+                <p>Jl. Sisingamangaraja, Sitoluama, Laguboti, Toba, Sumatera Utara, Indonesia</p>
+                <p>Kode Pos: 22381</p>
+                <p>+62 632 331234</p>
+                <p>info@del.ac.id</p>
+            </div>
+        </div>
+        <div class="flex space-x-4 justify-center md:justify-start mx-4">
+            <!-- Email Icon -->
+            <a href="mailto:hims@del.ac.id" target="_blank" class="text-white hover:text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 12.713L.015 6V20h23.97V6L12 12.713z" />
+                    <path d="M12 11.287L.015 4.573h23.97L12 11.287z" />
+                </svg>
+            </a>
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/bem.itdel/" target="_blank" class="text-white hover:text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.057 1.98.24 2.43.402.53.182.91.398 1.311.799.402.401.618.782.799 1.311.162.45.345 1.26.402 2.43.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.057 1.17-.24 1.98-.402 2.43-.182.53-.398.91-.799 1.311-.401.402-.782.618-1.311.799-.45.162-1.26.345-2.43.402-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.057-1.98-.24-2.43-.402-.53-.182-.91-.398-1.311-.799-.402-.401-.618-.782-.799-1.311-.162-.45-.345-1.26-.402-2.43-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.057-1.17.24-1.98.402-2.43.182-.53.398-.91.799-1.311.401-.402.782-.618 1.311-.799.45-.162 1.26-.345 2.43-.402 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.275.058-2.145.256-2.907.548a5.92 5.92 0 0 0-2.162 1.462 5.92 5.92 0 0 0-1.462 2.162c-.292.762-.49 1.632-.548 2.907-.058 1.28-.072 1.688-.072 4.947s.014 3.667.072 4.947c.058 1.275.256 2.145.548 2.907a5.92 5.92 0 0 0 1.462 2.162 5.92 5.92 0 0 0 2.162 1.462c.762.292 1.632.49 2.907.548 1.28.058 1.688.072 4.947.072s3.667-.014 4.947-.072c1.275-.058 2.145-.256 2.907-.548a5.92 5.92 0 0 0 2.162-1.462 5.92 5.92 0 0 0 1.462-2.162c.292-.762.49-1.632.548-2.907.058-1.28.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.058-1.275-.256-2.145-.548-2.907a5.92 5.92 0 0 0-1.462-2.162 5.92 5.92 0 0 0-2.162-1.462c-.762-.292-1.632-.49-2.907-.548-1.28-.058-1.688-.072-4.947-.072zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/>
+                </svg>
+            </a>
+            <!-- YouTube Icon -->
+            <a href="https://www.youtube.com/@bemitdel" target="_blank" class="text-white hover:text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19.615 3.184c1.202.176 2.168 1.142 2.344 2.344.338 2.297.338 7.092.338 7.092s0 4.795-.338 7.092c-.176 1.202-1.142 2.168-2.344 2.344-2.297.338-7.092.338-7.092.338s-4.795 0-7.092-.338c-1.202-.176-2.168-1.142-2.344-2.344C2.176 17.415 2.176 12.62 2.176 12.62s0-4.795.338-7.092c.176-1.202 1.142-2.168 2.344-2.344C7.155 2.846 12 2.846 12 2.846s4.795 0 7.092.338c1.202.176 2.168 1.142 2.344 2.344zM9.746 15.465l5.51-3.465-5.51-3.465v6.93z"/>
+                </svg>
+            </a>
+        </div>
     </div>
-  </div> --}}
-</div>
-
-<!-- Custom CSS untuk fade-in -->
-<style>
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-  
-  .fade-in.appear {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  /* Custom CSS untuk menyembunyikan scrollbar */
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-  .scrollbar-hide {
-    -ms-overflow-style: none;  /* IE dan Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-</style>
-
-<!-- JavaScript untuk menambahkan kelas fade-in setelah halaman dimuat -->
-<script>
-    window.addEventListener('load', function() {
-        document.querySelectorAll('.fade-in').forEach(function(element) {
-            element.classList.add('appear');
-        });
-    });
-</script>
-
-@endsection
+</footer>
