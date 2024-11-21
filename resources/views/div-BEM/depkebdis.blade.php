@@ -20,8 +20,7 @@
         <div class="text-center mb-12 animate__animated animate__fadeIn">
             <h1 class="text-4xl font-bold mb-4">DEPARTEMEN KETERTIBAN DAN KEDISIPLINAN</h1>
             <p class="text-gray-600 max-w-5zxl mx-auto">
-                Departemen Ketertiban dan Kedisiplinan
-                merupakan departemen yang berinteraksi langsung dan sangat akrab dengan mahasiswa/masiswi IT Del di lingkungan kampus. Departemen ini mengawasi proses jalannya ketertiban dan kedisiplinan mahasiswa/mahasiswi sesuai dengan peraturan dan regulasi yang berlaku di IT Del.        </div>
+                Departemen Ketertiban dan Kedisiplinan merupakan departemen yang mengemban tugas menegakkan dan meningkatkan ketertiban dan kedisiplinan seluruh mahasiswa.    </div>
 
         <!-- Images and Description -->
         <div class="flex justify-center mb-12 space-x-4 animate__animated animate__fadeInUp animate__delay-1s">
@@ -29,7 +28,7 @@
                 <img src="{{ asset('image/ketertiban.png') }}" alt="Department Logo" class="rounded-md mx-auto">
             </div>
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/Depol_keg.jpg') }}" alt="Department Event" class="rounded-md mx-auto">
+                <img src="{{ asset('image/depkebdis.jpg') }}" alt="Department Event" class="rounded-md mx-auto">
             </div>
         </div>
 
@@ -54,12 +53,11 @@
         <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-3s">
             <h2 class="text-3xl font-bold mb-8">PROGRAM KERJA</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Penyusunan Kalender KM</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pembentukan Panitia PCA</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pembubaran Panitia PCA</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Rapat Koordinasi bersama MPM</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pemilihan Ketua Natal Ephipania</a>
-                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">UKM Day</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Berkoordinasi dengan Kemahasiswaan terkait Ketertiban dan Kedisiplinan</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Support Antar Departemen BEM IT Del</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pemeriksaan Perlengkapan Makan Mahasiswa/Mahasiswi</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pengawasan Pelaksanaan Piket Makan</a>
+                <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Membuat Denah Makan Mahasiswa/Mahasiswi</a>
             </div>
         </div>
 

@@ -40,12 +40,12 @@
         <div class="flex justify-center space-x-16">
             <div class="text-center">
                 <img src="{{ asset('image/joseph.png') }}" alt="Leader 1" class="h-30 w-30 rounded-full mb-4 mx-auto">
-                <p class="text-lg font-bold">JOSEPH NAPITUPULU</p>
+                <p class="text-lg font-bold">JOSEP NAPITUPULU</p>
                 <p>Kepala Divisi</p>
             </div>
             <div class="text-center">
                 <img src="{{ asset('image/youni.png') }}" alt="Leader 2" class="h-30 w-30 rounded-full mb-4 mx-auto">
-                <p class="text-lg font-bold">YUNI LIMBAN TOBING</p>
+                <p class="text-lg font-bold">YOUNI LUMBAN TOBING</p>
                 <p>Wakil Kepala Divisi</p>
             </div>
         </div>

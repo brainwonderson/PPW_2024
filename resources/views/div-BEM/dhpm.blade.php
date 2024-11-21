@@ -38,12 +38,12 @@
             <div class="flex justify-center space-x-16">
                 <div class="text-center ml-3 mb-1">
                     <img src="{{ asset('image/togab.png') }}" alt="Leader 1" class="w-72 rounded-full mt-20">
-                    <p class="text-lg font-bold">ALBERT PANGGABEAN</p>
+                    <p class="text-lg font-bold">SITOGAB GIRSANG</p>
                     <p>Kepala Divisi</p>
                 </div>
                 <div class="text-center my-2">
                     <img src="{{ asset('image/dhpmwakil.png') }}" alt="Leader 2" class="w-72 rounded-full -mt-10">
-                    <p class="text-lg font-bold">SALWA HARAHAP</p>
+                    <p class="text-lg font-bold">GABRIEL SIGALINGGING</p>
                     <p>Wakil Kepala Divisi</p>
                 </div>
             </div>

@@ -30,7 +30,7 @@
                 <img src="{{ asset('image/logodepsen.png') }}" alt="Department Logo" class="rounded-md mx-auto">
             </div>
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/prodeg.png') }}" alt="Department Event" class="rounded-md mx-auto">
+                <img src="{{ asset('image/depsenbud.jpg') }}" alt="Department Event" class="rounded-md mx-auto">
             </div>
         </div>
 
@@ -44,8 +44,8 @@
 
                 </div>
                 <div class="text-center">
-                    <img src="{{ asset('image/Richard.png') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mx-7">
-                    <p class="text-lg font-bold">Richard</p>
+                    <img src="{{ asset('image/wakdepsenbud.jpg') }}" alt="Leader 2"  class="w-30 h-26 rounded-full float-left mx-7">
+                    <p class="text-lg font-bold">Salomo</p>
                     <p>Wakil Kepala Divisi</p>
                 </div>
             </div>

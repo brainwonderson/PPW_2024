@@ -29,7 +29,7 @@
                 <img src="{{ asset('image/logodepko.png') }}" alt="Department Logo" class="rounded-md mx-auto w-auto h-96">
             </div>
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/keg dhpm.jpg') }}" alt="Department Event" class="rounded-md mx-auto w-auto h-80">
+                <img src="{{ asset('image/depkominfo rame.jpg') }}" alt="Department Event" class="rounded-md mx-auto w-auto h-80">
             </div>
         </div>
 
@@ -52,59 +52,16 @@
     <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-3s">
         <h2 class="text-3xl font-bold mb-8">PROGRAM KERJA</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <!-- Program Card 1 -->
-            <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
-                Pengadaan Barang dan Alat Musik
-                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Menyediakan alat musik ketika ada acara di IT DEL
-                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
-                </div>
-            </div>
-        
-                <!-- Program Card 2 -->
-                <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
-                    Merawat Kebersihan Ruangan SARPRAS
-                    <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                        Del Mathematic and Science Competition, kompetisi matematika dan sains yang diadakan oleh Institut Teknologi del
-                        <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
-                    </div>
-                </div>
-        
-                <!-- Program Card 3 -->
-                <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
-                    Pengadaan Barang dan Alat Musik
-                    <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                        Program Kreativitas Mahasiswa, untuk mendukung kreativitas mahasiswa dalam berbagai bidang.
-                        <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
-                    </div>
-                </div>
-
-                <!-- Program Card 4 -->
-                <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
-                    Peminjaman Alat, Barang, dan Studio Musik
-                    <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                        Program Kreativitas Mahasiswa, untuk mendukung kreativitas mahasiswa dalam berbagai bidang.
-                        <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
-                    </div>
-                </div>
-
-                <!-- Program Card 5 -->
-                <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
-                    Peminjaman Alat, Barang, dan Studio Musik
-                    <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                        Program Kreativitas Mahasiswa, untuk mendukung kreativitas mahasiswa dalam berbagai bidang.
-                        <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
-                   </div>
-                </div>  
-                {{-- Program Card 6 --}}
-                <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
-                    Pelatihan dan Maintenance
-                    <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                        Program Kreativitas Mahasiswa, untuk mendukung kreativitas mahasiswa dalam berbagai bidang.
-                        <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
-                   </div>
-                </div>  
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Mendokumentasikan setiap event yang diadakan oleh BEM IT Del</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Merancang dan Membuat Desain Template serta Postingan di Media Sosial BEM IT Del</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Membuat Publikasi Visual di Poster Kegiatan atau Kompetisi</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Mengelola Sosial Media IT Del</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Mengelola Segala Informasi yang Ada di Sosial Media dan di IT Del</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Mengembangkan dan Memelihara Sistem Informasi yang Berhubungan Dengan KM IT Del</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Menanggungjawabi Informasi yang Diberikan pada Sistem Informasi KM IT Del</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Melayani Setiap Permintaan Data dan Informasi oleh Setiap Unit KM IT Del</a>
         </div>
     </div>
+</div>
 
 @endsection
