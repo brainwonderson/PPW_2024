@@ -111,18 +111,22 @@ route::get('/home', [AdminController::class, 'index'])->name('home');
 
 route::get('/admin', [BEMController::class, 'admin'])->name('admin');
 
-route::get('/keanggotaan', [BEMController::class, 'keanggotaan'])->name('keanggotaan');
-
 route::get('/tambahdata-keanggotaan', [BEMController::class, 'tambahdatakeanggotaan'])->name('tambahdata-keanggotaan');
 
 route::get('/tambahdata-departemen', [BEMController::class, 'tambahdatadepartemen'])->name('tambahdata-departemen');
+
+route::get('/tambahdata-ukm', [BEMController::class, 'tambahdataukm'])->name('tambahdata-ukm');
 
 route::post('/insertkeanggotaan', [BEMController::class, 'insertdatakeanggotaan'])->name('insertkeanggotaan');
 
 route::post('/insertdepartemen', [BEMController::class, 'insertdatadepartemen'])->name('insertdepartemen');
 
+route::post('/insertukm', [BEMController::class, 'insertdataukm'])->name('insertukm');
+
+route::get('/keanggotaan', [BEMController::class, 'keanggotaan'])->name('keanggotaan');
+
 route::get('/departemen', [BEMController::class, 'departemen'])->name('departemen');
 
 route::get('/ukm', [BEMController::class, 'ukm'])->name('ukm');
 
-
+route::get('/tampilkandata/{id}', [BEMController::class, 'tampilkandata'])->name('tampilkandata');

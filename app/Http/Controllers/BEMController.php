@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\keanggotaan; 
 use App\Models\departemen; 
+use App\Models\ukm; 
 use Illuminate\Http\Request;
 
 class BEMController extends Controller
