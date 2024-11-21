@@ -96,8 +96,15 @@
                 <li><a href="/vote" class="text-gray-700 hover:text-blue-500">Voting</a></li>
             </ul>
             <div>
-                <a href="{{ url('/login') }}" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
+                @if (Auth::check())
+                    <a href="/login" class="bg-blue-900 text-white px-4 py-2 rounded-md">Logout</a>
+                @else
+                    <a href="/login" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
+                @endif
             </div>
+            <!-- <div>
+                <a href="{{ url('/login') }}" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
+            </div> -->
         </div>
     </nav>
     <div id="blur" class="blur-effect"></div>
