@@ -20,7 +20,7 @@
         <div class="text-center mb-12 animate__animated animate__fadeIn">
             <h1 class="text-4xl font-bold mb-4">DEPARTEMEN PUSAT DALAM KAMPUS</h1>
             <p class="text-gray-600 max-w-3xl mx-auto">
-            Berperan dalam mengurus aktivitas serta melakukan konsolidasi internal pada UKM dan HIMPARO.            </p>
+            Berperan dalam mengurus aktivitas serta melakukan konsolidasi internal pada UKM dan HIMAPRO.            </p>
         </div>
 
         <!-- Images and Description -->

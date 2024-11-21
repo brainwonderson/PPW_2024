@@ -46,12 +46,10 @@
     <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-3s">
         <h2 class="text-3xl font-bold mb-8">PROGRAM KERJA</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Penyusunan Kalender KM</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pembentukan Panitia PCA</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pembubaran Panitia PCA</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Rapat Koordinasi bersama MPM</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pemilihan Ketua Natal Ephipania</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">UKM Day</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Pengumpulan Dana Inventory</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Senam Pagi</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Fun Match with IT Del</a>
+            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300">Keluarga Mahasiswa Cup (KM Cup)</a>
         </div>
     </div>
 </div>
