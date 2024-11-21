@@ -46,16 +46,66 @@
     <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-3s">
         <h2 class="text-3xl font-bold mb-8">PROGRAM KERJA</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition transform duration-300 hover:scale-105">Ibadah Jumat</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition transform duration-300 hover:scale-105">Weekly reflection</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition transform duration-300 hover:scale-105">Festival Musik Rohani</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition transform duration-300 hover:scale-105">Paskah</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition transform duration-300 hover:scale-105">Pengajian</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition transform duration-300 hover:scale-105">Sharing session</a>
-            <a href="#" class="bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition transform duration-300 hover:scale-105">Charity</a>
+            
+            <!-- Box with Popup for Ibadah Jumat -->
+            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
+                Ibadah Jumat
+                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
+                    <p class="text-gray-700">Informasi lebih lanjut tentang Ibadah Jumat.</p>
+                </div>
+            </a>
+            
+            <!-- Box with Popup for Weekly Reflection -->
+            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
+                Weekly reflection
+                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
+                    <p class="text-gray-700">Informasi tentang Weekly Reflection.</p>
+                </div>
+            </a>
 
+            <!-- Box with Popup for Festival Musik Rohani -->
+            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
+                Festival Musik Rohani
+                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
+                    <p class="text-gray-700">Informasi tentang Festival Musik Rohani.</p>
+                </div>
+            </a>
+
+            <!-- Box with Popup for Paskah -->
+            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
+                Paskah
+                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
+                    <p class="text-gray-700">Informasi lebih lanjut tentang Paskah.</p>
+                </div>
+            </a>
+
+            <!-- Box with Popup for Pengajian -->
+            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
+                Pengajian
+                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
+                    <p class="text-gray-700">Informasi lebih lanjut tentang Pengajian.</p>
+                </div>
+            </a>
+
+            <!-- Box with Popup for Sharing Session -->
+            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
+                Sharing session
+                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
+                    <p class="text-gray-700">Informasi tentang Sharing Session.</p>
+                </div>
+            </a>
+
+            <!-- Box with Popup for Charity -->
+            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
+                Charity
+                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
+                    <p class="text-gray-700">Informasi lebih lanjut tentang kegiatan Charity.</p>
+                </div>
+            </a>
+            
         </div>
     </div>
+
 </div>
 
 

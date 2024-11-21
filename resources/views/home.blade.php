@@ -123,7 +123,7 @@
                 <img src="{{ asset('image/DPDK.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-xl font-semibold mb-2">Departemen Pusat Dalam Kampus</h3>
                 <p class="text-gray-600">Departemen Sarana dan Prasarana
-                    merupakan departemen yang membantu segala kegiatan yang dilakukan oleh departemen lain BEM IT Del.  Departemen ini memiliki tanggung jawab untuk menyediakan alat dan keperluan yang mungkin dibutuhkan dalam kegiatan departemen lain.</p>
+                    merupakan departemen yang membantu segala kegiatan yang dilakukan oleh departemen lain BEM IT Del. Departemen ini memiliki tanggung jawab untuk menyediakan alat dan keperluan yang mungkin dibutuhkan dalam kegiatan departemen lain.</p>
             </div>
 
             <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer">
