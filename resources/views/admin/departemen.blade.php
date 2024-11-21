@@ -7,12 +7,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UKM</title>
-    @vite('resources/css/app.css')
+    <title>Keanggotaan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100">
-<div class="hero_area">
+
 
     <div class="container mx-auto p-4">
         <!-- <h1 class="text-2xl font-bold mb-4 ml-20">Struktur Bem Table </h1> -->
@@ -35,8 +35,9 @@
                         <th class="py-2 px-4 border-b text-left w-12">#</th>
                         <th class="py-2 px-4 border-b text-left w-32">Nama</th>
                         <th class="py-2 px-4 border-b text-left w-32">Deskripsi</th>
-                        <th class="py-2 px-4 border-b text-left w-64">Program Kerja</th>
+                        <th class="py-2 px-4 border-b text-left w-64">Logo</th>
                         <th class="py-2 px-4 border-b text-left w-35">Ketua</th>
+                        <th class="py-2 px-4 border-b text-left w-35">Wakil Ketua</th>
                         <th class="py-2 px-4 border-b text-center w-36">Aksi</th>
                     </tr>
                 </thead>
@@ -49,8 +50,9 @@
                         <td class="py-2 px-4 border-b">{{$no++}}</td>
                         <td class="py-2 px-4 border-b">{{$row->nama}}</td>
                         <td class="py-2 px-4 border-b">{{$row->deskripsi}}</td>
-                        <td class="py-2 px-4 border-b">{{$row->programkerja}}</td>
+                        <td class="py-2 px-4 border-b">{{$row->logo}}</td>
                         <td class="py-2 px-4 border-b">{{$row->ketua}} </td>
+                        <td class="py-2 px-4 border-b">{{$row->wakilketua}} </td>
                         <td class="py-2 px-4 border-b text-center">
                             <div class="inline-flex space-x-2">
                                 <a href="/tampilkandata/{{$row->id}}" type=button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">Edit</a>
@@ -67,5 +69,4 @@
 
 </body>
 </html>
-
 @endsection

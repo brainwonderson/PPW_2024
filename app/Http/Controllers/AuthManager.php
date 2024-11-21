@@ -32,7 +32,7 @@ class AuthManager extends Controller
             // }
             return view('home');
         }
-        return view('login');
+        return view('menu.login');
         // return redirect(route('home'))->with("error","Login details are not valid");
         
         return back()->withErrors([

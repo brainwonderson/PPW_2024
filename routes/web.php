@@ -115,7 +115,14 @@ route::get('/keanggotaan', [BEMController::class, 'keanggotaan'])->name('keanggo
 
 route::get('/tambahdata-keanggotaan', [BEMController::class, 'tambahdatakeanggotaan'])->name('tambahdata-keanggotaan');
 
-route::post('/insertdata', [BEMController::class, 'insertdata'])->name('insertdata');
+route::get('/tambahdata-departemen', [BEMController::class, 'tambahdatadepartemen'])->name('tambahdata-departemen');
 
+route::post('/insertkeanggotaan', [BEMController::class, 'insertdatakeanggotaan'])->name('insertkeanggotaan');
+
+route::post('/insertdepartemen', [BEMController::class, 'insertdatadepartemen'])->name('insertdepartemen');
+
+route::get('/departemen', [BEMController::class, 'departemen'])->name('departemen');
+
+route::get('/ukm', [BEMController::class, 'ukm'])->name('ukm');
 
 

@@ -13,8 +13,11 @@ return new class extends Migration
     {
         Schema::create('departemen', function (Blueprint $table) {
             $table->id();
-            $table->string('username');
-            $table->string('password');
+            $table->string('nama');
+            $table->string('deskripsi');
+            $table->string('ketua');
+            $table->string('wakilketua');
+            $table->string('logo')->default('');
             $table->timestamps();
         });
     }

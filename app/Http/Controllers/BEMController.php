@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\keanggotaan; // Perbaiki pengimporan model
+use App\Models\keanggotaan; 
+use App\Models\departemen; 
 use Illuminate\Http\Request;
 
 class BEMController extends Controller
@@ -14,13 +15,35 @@ class BEMController extends Controller
     
     public function keanggotaan()
     {
-        $data = keanggotaan::all(); // Ganti 'keanggotaan' dengan 'keanggotaan'
+        $data = keanggotaan::all(); 
         return view('admin.keanggotaan', compact('data'));
+    }
+    
+    public function departemen()
+    {
+        $data = departemen::all(); 
+        return view('admin.departemen', compact('data'));
+    } 
+    
+    public function ukm()
+    {
+        $data = ukm::all(); 
+        return view('admin.ukm', compact('data'));
     }
 
     public function tambahdatakeanggotaan()
     {
-        return view('admin.tambahdata-keanggotaan');
+        return view('admin.tambahdata.+keanggotaan');
+    }
+    
+    public function tambahdataukm()
+    {
+        return view('admin.tambahdata.+ukm');
+    }
+    
+    public function tambahdatadepartemen()
+    {
+        return view('admin.tambahdata.+departemen');
     }
     
     public function admin()
@@ -28,11 +51,25 @@ class BEMController extends Controller
         return view('admin.admin');
     }
     
-    public function insertdata(Request $request)
+    public function insertdatakeanggotaan(Request $request)
     {   
         // dd($request->all());
         keanggotaan::create($request->all());
         return redirect()->route('keanggotaan');
+    }
+    
+    public function insertdatadepartemen(Request $request)
+    {   
+        // dd($request->all());
+        departemen::create($request->all());
+        return redirect()->route('departemen');
+    }
+    
+    public function insertdataukm(Request $request)
+    {   
+        // dd($request->all());
+        ukm::create($request->all());
+        return redirect()->route('ukm');
     }
 
     public function tampilkandata($id)

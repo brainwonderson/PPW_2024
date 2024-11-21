@@ -13,8 +13,10 @@ return new class extends Migration
     {
         Schema::create('ukm', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('description');
+            $table->string('nama');
+            $table->string('deskripsi');
+            $table->string('programkerja');
+            $table->string('ketua');
             $table->timestamps();
         });
     }
