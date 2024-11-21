@@ -10,7 +10,7 @@ class StrukturBEM extends Model
     use HasFactory;
 
     // Nama tabel yang digunakan
-    protected $table = 'strukturbem';
+    protected $table = 'keanggotaan';
 
     // Kolom yang dapat diisi secara massal
     protected $guarded = [];

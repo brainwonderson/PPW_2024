@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keanggotaan</title>
-    @vite('resources/css/app.css')
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-gray-100">
@@ -24,7 +24,7 @@
             <div class="flex justify-between items-center mb-4">
                 <!-- Button Tambah Data berada di atas ujung kiri tabel -->
                 <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-green-700 rounded">
-                    <a href="/tambahdata" > Tambah Data </a>
+                    <a href="/tambahdata-keanggotaan" > Tambah Data </a>
                 </button>
             </div>
 

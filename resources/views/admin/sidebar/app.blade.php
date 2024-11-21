@@ -34,21 +34,21 @@
         class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
       >
         <i class="bi bi-house-door-fill"></i>
-        <a href="admin" class="text-[15px] ml-4 text-gray-200 font-bold">Home</a>
+        <a href="/admin" class="text-[15px] ml-4 text-gray-200 font-bold">Home</a>
       </div>
       <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
         <i class="bi bi-bookmark-fill"></i>
-        <a href="" class="text-[15px] ml-4 text-gray-200 font-bold">Departemen</a>
+        <a href="/admin" class="text-[15px] ml-4 text-gray-200 font-bold">Departemen</a>
       </div>
       <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
         <i class="bi bi-bookmark-fill"></i>
-        <a href="" class="text-[15px] ml-4 text-gray-200 font-bold">UKM</a>
+        <a href="/admin" class="text-[15px] ml-4 text-gray-200 font-bold">UKM</a>
       </div>
       <!-- <div class="my-4 bg-gray-600 h-[1px]"></div> -->
       <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
         <i class="bi bi-chat-left-text-fill"></i>
         <div class="flex justify-between w-full items-center">
-          <a href="strukturbem"  class="text-[15px] ml-4 text-gray-200 font-bold">Keanggotaan</a>
+          <a href="keanggotaan"  class="text-[15px] ml-4 text-gray-200 font-bold">Keanggotaan</a>
         </div>
       </div>
       <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">

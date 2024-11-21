@@ -2,20 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\StrukturBEM; // Perbaiki pengimporan model
+use App\Models\keanggotaan; // Perbaiki pengimporan model
 use Illuminate\Http\Request;
 
 class BEMController extends Controller
 {
     public function index()
     {
-        $data = StrukturBEM::all(); // Ganti 'strukturbem' dengan 'StrukturBEM'
-        return view('admin.StrukturBEM', compact('data'));
+        return view('admin.keanggotaan');
+    }
+    
+    public function keanggotaan()
+    {
+        $data = keanggotaan::all(); // Ganti 'keanggotaan' dengan 'keanggotaan'
+        return view('admin.keanggotaan', compact('data'));
     }
 
-    public function tambahdata()
+    public function tambahdatakeanggotaan()
     {
-        return view('admin.tambahdata');
+        return view('admin.tambahdata-keanggotaan');
     }
     
     public function admin()
@@ -26,28 +31,28 @@ class BEMController extends Controller
     public function insertdata(Request $request)
     {   
         // dd($request->all());
-        StrukturBEM::create($request->all());
-        return redirect()->route('strukturbem');
+        keanggotaan::create($request->all());
+        return redirect()->route('keanggotaan');
     }
 
     public function tampilkandata($id)
     {
-        $data = StrukturBEM::find($id);
+        $data = keanggotaan::find($id);
         return view('admin.tampilkandata', compact('data'));
     }
     
     public function updatedata(Request $request, $id)
     {
-        $data = StrukturBEM::find($id);
+        $data = keanggotaan::find($id);
         $data->update($request->all());
-        return redirect()->route('strukturbem')->with('success', 'Data berhasil diubah');
+        return redirect()->route('keanggotaan')->with('success', 'Data berhasil diubah');
     }
 
     public function delete($id)
     {
-        $data = StrukturBEM::find($id);
+        $data = keanggotaan::find($id);
         $data->delete();
-        return redirect()->route('strukturbem')->with('success', 'Data berhasil dihapus');
+        return redirect()->route('keanggotaan')->with('success', 'Data berhasil dihapus');
     }
 
 }
