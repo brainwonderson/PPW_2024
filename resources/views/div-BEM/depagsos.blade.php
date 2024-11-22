@@ -4,10 +4,19 @@
 <head>
     <!-- Tambahkan Animate.css jika kamu belum menginstalnya -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        /* Custom Tooltip styling */
+        .tooltip {
+            display: none;
+        }
+        .program-card:hover .tooltip {
+            display: block;
+        }
+    </style>
 </head>
 
 
-<div class="container mx-auto py-10">
+<div class="container mx-auto py-10 bg-gradient-to-b from-light-blue to-white min-h-screen">
     <!-- Header Section -->
     <div class="text-center mb-12 animate__animated animate__fadeIn">
         <h1 class="text-4xl font-bold mb-4">Departemen Agama dan Sosial</h1>
@@ -17,7 +26,7 @@
     </div>
 
     <!-- Images and Description -->
-    <div class="flex justify-center mb-12 space-x-4 animate__animated animate__fadeInUp animate__delay-1s">
+    <div class="flex justify-center mb-12 space-x-4 animate_animated animatefadeInUp animate_delay-1s">
         <div class="w-1/2 p-4">
             <img src="{{ asset('image/logodepag.png') }}" alt="Department Logo" class="rounded-md mx-auto">
         </div>
@@ -28,15 +37,15 @@
 
     <!-- Leaders Section -->
     <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-2s">
-        <div class="flex justify-center space-x-20">
+        <div class="flex justify-center space-x-16">
             <div class="text-center">
-                <img src="{{ asset('image/markus.png') }}" alt="Leader 1" class="h-30 w-30 rounded-full mb-4 mt-3">
+                <img src="{{ asset('image/markus.png') }}" alt="Leader 1" class="h-30 w-30 rounded-full mb-4 mx-auto">
                 <p class="text-lg font-bold">Markus Hutagalung</p>
                 <p>Kepala Divisi</p>
             </div>
-            <div class="text-center mt-0">
+            <div class="text-center">
                 <img src="{{ asset('image/Richard.png') }}" alt="Leader 2" class="h-30 w-30 rounded-full mb-4 mx-auto">
-                <p class="text-lg font-bold mt-1">Richard Aritonang</p>
+                <p class="text-lg font-bold">Richard Aritonang</p>
                 <p>Wakil Kepala Divisi</p>
             </div>
         </div>
@@ -46,66 +55,106 @@
     <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-3s">
         <h2 class="text-3xl font-bold mb-8">PROGRAM KERJA</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-            
-            <!-- Box with Popup for Ibadah Jumat -->
-            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
+            <!-- Program Card 1 -->
+            <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Ibadah Jumat
-                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
-                    <p class="text-gray-700">Informasi lebih lanjut tentang Ibadah Jumat.</p>
+                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
+                    Ibadah yang rutin diadakan setiap hari Jumat oleh keasramaan.
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
-            </a>
-            
-            <!-- Box with Popup for Weekly Reflection -->
-            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
-                Weekly reflection
-                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
-                    <p class="text-gray-700">Informasi tentang Weekly Reflection.</p>
+            </div>
+    
+            <!-- Program Card 2 -->
+            <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
+                Weekly Reflection
+                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
+                    Meng-email renungan singkat dan pertanyaan tentang isi renungan tersebut kepada setiap mahasiswa pada awal minggu. Dan memberikan apresiasi berupa sticky note jika jawaban mahasiswa tersebut tepat.
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
-            </a>
+            </div>
+    
+            <!-- Program Card 3 -->
+            <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
+                Sharing Session
+                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
+                    Melakukan pertemuan keluarga Muslim dan sharing session sesama muslim. Dan memberikan apresiasi berupa door prize bagi mahasiswa yang hapal ayat Al-quran.
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
+                </div>
+            </div>
 
-            <!-- Box with Popup for Festival Musik Rohani -->
-            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
-                Festival Musik Rohani
-                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
-                    <p class="text-gray-700">Informasi tentang Festival Musik Rohani.</p>
-                </div>
-            </a>
-
-            <!-- Box with Popup for Paskah -->
-            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
-                Paskah
-                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
-                    <p class="text-gray-700">Informasi lebih lanjut tentang Paskah.</p>
-                </div>
-            </a>
-
-            <!-- Box with Popup for Pengajian -->
-            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
+            <!-- Program Card 4 -->
+            <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Pengajian
-                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
-                    <p class="text-gray-700">Informasi lebih lanjut tentang Pengajian.</p>
+                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
+                    Belajar ilmu agama bersama seorang Alim atau orang yang berilmu yang merupakan bentuk ibadah yang wajib bagi setiap Muslim.
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
-            </a>
+            </div>
 
-            <!-- Box with Popup for Sharing Session -->
-            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
-                Sharing session
-                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
-                    <p class="text-gray-700">Informasi tentang Sharing Session.</p>
+            <!-- Program Card 5 -->
+            <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
+                Ibadah Misa
+                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
+                    Ibadah yang rutin oleh mahasiswa yang beragama Katolik.
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
-            </a>
-
-            <!-- Box with Popup for Charity -->
-            <a href="#" class="relative group bg-gray-200 p-6 rounded-lg text-center hover:bg-gray-300 transition duration-300 transform hover:scale-105">
-                Charity
-                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
-                    <p class="text-gray-700">Informasi lebih lanjut tentang kegiatan Charity.</p>
-                </div>
-            </a>
+            </div>
             
+            <!-- Program Card 6 -->
+            <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
+                FMR
+                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
+                    Festival yang diikuti oleh seluruh Mahasiswa. Setiap peserta akan menyanyikan lagu Rohani yang ditentukan oleh Departemen Agama dan Sosial.
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
+                </div>
+            </div>
+
+            <!-- Program Card 7 -->
+            <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
+                Bakti Paskah
+                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
+                    Kegiatan sosial berupa pembuatan kotak tabungan di asrama yang akan diisi oleh mahasiswa dan dibongkar dalam waktu yang ditentukan.
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
+                </div>
+            </div>
+
+            <!-- Program Card 8 -->
+            <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
+                Hoppin' into Easter
+                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
+                    Games di pagi hari sebelum ibadah paskah (Egg-cellent Adventure Quest, Bible Intelligence, Fast and Furios Egg). Kegiatan ini juga diselingi oleh penampilan dari tiap-tiap himpunan.
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
+                </div>
+            </div>
+
+            <!-- Program Card 9 -->
+            <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
+                Jalan Salib
+                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
+                    Pawai mahasiswa Kristen dan civitas Del dari kampus ke lokasi ibadah.
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
+                </div>
+            </div>
+
+            <!-- Program Card 10 -->
+            <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
+                Charity x Aksi Peduli
+                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
+                    Penyelenggaraan kesejahteraan sosial yang dikumpulkan oleh seluruh civitas Del dan bekerjasama dengan Departemen Hubungan dan Pengabdian Masyarakat.
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
+                </div>
+            </div>
+
+            <!-- Program Card 11 -->
+            <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
+                Hari Besar Agama Islam
+                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
+                Memperingati hari besar Agama Islam, yaitu: Maulid Nabi Muhammad, Isra' mi'raj, Hari raya Idul Fitri.
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
+                </div>
+            </div>
         </div>
     </div>
-
 </div>
 
 

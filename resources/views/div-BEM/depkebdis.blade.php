@@ -23,12 +23,12 @@
                 Departemen Ketertiban dan Kedisiplinan merupakan departemen yang mengemban tugas menegakkan dan meningkatkan ketertiban dan kedisiplinan seluruh mahasiswa.    </div>
 
         <!-- Images and Description -->
-        <div class="flex justify-center mb-12 space-x-4 animate__animated animate__fadeInUp animate__delay-1s">
+        <div class="flex justify-center mb-12 space-x-50 animate__animated animate__fadeInUp animate__delay-1s">
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/ketertiban.png') }}" alt="Department Logo" class="rounded-md mx-auto">
+                <img src="{{ asset('image/ketertiban.png') }}" alt="Department Logo" class="rounded-md mx-auto w-80 h-100">
             </div>
             <div class="w-1/2 p-4">
-                <img src="{{ asset('image/depkebdis.jpg') }}" alt="Department Event" class="rounded-md mx-auto">
+                <img src="{{ asset('image/depkebdis.jpg') }}" alt="Department Event" class="rounded-md mx-auto w-auto h-100 ">
             </div>
         </div>
 
