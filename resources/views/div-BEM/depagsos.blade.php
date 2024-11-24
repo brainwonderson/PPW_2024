@@ -21,7 +21,7 @@
     <div class="text-center mb-12 animate__animated animate__fadeIn">
         <h1 class="text-4xl font-bold mb-4">Departemen Agama dan Sosial</h1>
         <p class="text-gray-600 max-w-3xl mx-auto">
-            Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.
+        Departemen Agama dan Sosial merupakan departemen yang berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.
         </p>
     </div>
 

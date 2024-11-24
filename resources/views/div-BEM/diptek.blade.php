@@ -68,7 +68,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 DMSC
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Del Mathematic and Science Competition, kompetisi matematika dan sains yang diadakan oleh Institut Teknologi del
+                    Del Mathematic and Science Competition, kompetisi matematika dan sains yang diadakan oleh Institut Teknologi Del.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
