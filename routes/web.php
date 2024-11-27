@@ -5,13 +5,19 @@ use App\Http\Controllers\AuthManager;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BEMController;
+use App\Http\Controllers\VoteController;
+
+Route::middleware('auth')->post('/vote/{candidateId}', [VoteController::class, 'vote']);
 
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
+
 Route::get('/index', [HomeController::class, 'indexes'])->name('indexes');
 Route::get('/register', [AuthManager::class, 'register'])->name('register'); 
 Route::post('/register', [AuthManager::class, 'registerPost'])->name('register.post'); 
@@ -21,11 +27,11 @@ Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 
 Route::get('/about', function () {
     return view('menu/aboutus');
-})->name('home');
+})->name('about');
 
 Route::get('/admin', function () {
     return view('admin');
-})->name('home');
+})->name('admin');
 
 Route::get('/content', function () {
     return view('Departcontent');
@@ -107,7 +113,6 @@ Route::get('/3DC', function () {
     return view('ukm/3DC');
 })->name('3DC');
 
-route::get('/home', [AdminController::class, 'index'])->name('home');
 
 route::get('/admin', [BEMController::class, 'admin'])->name('admin');
 

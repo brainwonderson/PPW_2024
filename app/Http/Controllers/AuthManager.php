@@ -1,45 +1,47 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class AuthManager extends Controller
 {
-    function login(){
-        return view('menu/login');
-    }
-    
-    function register(){
-        return view('menu/register');
+    public function login()
+    {
+        return view('menu.login');
     }
 
-    function loginPost(Request $request){
+    public function register()
+    {
+        return view('menu.register');
+    }
+
+    public function loginPost(Request $request)
+    {
         $request->validate([
             'email' => 'required|email',
-            'password' => 'required'
+            'password' => 'required',
         ]);
+
         $credentials = $request->only('email', 'password');
+
         if (Auth::attempt($credentials)) {
-            // return redirect(route('home'));
-            if(Auth::user()->role == 'admin'){
-                return view('admin.admin');
+            // Redirect based on user role
+            if (Auth::user()->role == 'admin') {
+                return redirect()->route('admin.dashboard'); // Use named route for better maintainability
             }
-            // if(Auth::admin_role()->role == 'admin'){
-            //     return view('admin.admin');
-            // }
-            return view('home');
+            return redirect()->route('home'); // Use named route for better maintainability
         }
-        return view('menu.login');
-        // return redirect(route('home'))->with("error","Login details are not valid");
-        
+
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
         ]);
     }
-    
+
     function registerPost(Request $request){
         $request->validate([
             'name' => 'required',
@@ -56,12 +58,12 @@ class AuthManager extends Controller
         }
         return redirect(route('login'))->with("succes","Registeration succesfull");
 
-        function logout(){
-            Session::flush();
-            Auth::logout();
-            return redirect(route('login'));
-        }
-
     }
 
+    public function logout()
+    {
+        Auth::logout(); // Log the user out
+        Session::flush(); // Clear the session data
+        return redirect()->route('login'); // Redirect to login
+    }
 }
