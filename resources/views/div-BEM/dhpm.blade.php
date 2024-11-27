@@ -31,7 +31,7 @@
             <img src="{{ asset('image/DHPM.png') }}" alt="Department Logo" class="rounded-md mx-auto">
         </div>
         <div class="w-1/2 p-4">
-            <img src="{{ asset('image/dhpm.jpg') }}" alt="Department Event" class="rounded-md mx-auto">
+            <img src="{{ asset('image/keg   dhpm.jpg') }}" alt="Department Event" class="rounded-md mx-auto">
         </div>
     </div>
 
@@ -39,12 +39,12 @@
     <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-2s">
         <div class="flex justify-center space-x-16">
             <div class="text-center">
-                <img src="{{ asset('image/togab.png') }}" alt="Leader 1" class="h-30 w-30 rounded-full mb-4 mx-auto">
+                <img src="{{ asset('image/togab.png') }}" alt="Leader 1" class="w-72 rounded-full mt-20">
                 <p class="text-lg font-bold">SITOGAB GIRSANG</p>
                 <p>Kepala Divisi</p>
             </div>
             <div class="text-center">
-                <img src="{{ asset('image/dhpmwakil.png') }}" alt="Leader 2" class="h-30 w-30 rounded-full mb-4 mx-auto">
+                <img src="{{ asset('image/dhpmwakil.png') }}" alt="Leader 2" class="w-72 rounded-full -mt-10">
                 <p class="text-lg font-bold">GABRIEL SIGALINGGING</p>
                 <p>Wakil Kepala Divisi</p>
             </div>

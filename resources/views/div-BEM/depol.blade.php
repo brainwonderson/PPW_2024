@@ -28,7 +28,7 @@
     <!-- Images and Description -->
     <div class="flex justify-center mb-12 space-x-4 animate__animated animate__fadeInUp animate__delay-1s">
         <div class="w-1/2 p-4">
-            <img src="{{ asset('image/DEPOL.png') }}" alt="Department Logo" class="rounded-md mx-auto w-fit h-80">
+            <img src="{{ asset('image/depol.png') }}" alt="Department Logo" class="rounded-md mx-auto w-fit h-80">
         </div>
         <div class="w-1/2 p-4">
             <img src="{{ asset('image/Depol_keg.jpg') }}" alt="Department Event" class="rounded-md mx-auto w-fit h-80">

@@ -35,7 +35,7 @@
   <!-- Slider container with horizontal scrolling -->
   <div id="slider" class="flex space-x-6 overflow-x-auto scrollbar-hide scroll-smooth">
     <!-- Identity Design Section -->
-    <a href="{{ route('basket') }}" target="basket">
+    <a href="{{ route('basket') }}">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
       <img src="{{ asset('image/basket.png') }}" alt="Basket" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
@@ -44,7 +44,7 @@
     </div>
 
     <!-- GDSC -->
-    <a href="{{ route('GDSC') }}" target="GDSC">
+    <a href="{{ route('GDSC') }}">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
       <img src="{{ asset('image/gdsc.png') }}" alt="GDSC" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
@@ -53,7 +53,7 @@
     </div>
 
     <!-- Gitar -->
-    <a href="{{ route('Gitar') }}" target="Gitar">
+    <a href="{{ route('Gitar') }}">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
       <img src="{{ asset('image/gitar.png') }}" alt="Gitar" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
@@ -71,7 +71,7 @@
     </div>
 
     <!-- English -->
-    <a href="{{ route('English') }}" target="English">
+    <a href="{{ route('English') }}">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
       <img src="{{ asset('image/english.png') }}" alt="English" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
@@ -80,7 +80,7 @@
     </div>
 
     <!-- 3DC -->
-    <a href="/3DC" target="3DC">
+    <a href="{{ route('3DC') }}">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
       <img src="{{ asset('image/padus.png') }}" alt="3dc" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
