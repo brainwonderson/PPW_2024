@@ -11,3 +11,4 @@ Route::get('/user', function (Request $request) {
 //posts
 Route::apiResource('/posts', App\Http\Controllers\Api\PostController::class);
 Route::apiResource('/posts/AnggotaBEM', App\Http\Controllers\Api\AnggotaBEM::class);
+Route::get('/posts/AnggotaBEM/{id}', [App\Http\Controllers\Api\PostController::class, 'show'])->name('anggota.show');

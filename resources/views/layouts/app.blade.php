@@ -14,7 +14,7 @@
             position: absolute;
             width: 300px;
             height: 300px;
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(49, 45, 45, 0);
             border-radius: 50%;
             z-index: 10;
         }
@@ -38,7 +38,7 @@
                 display: none;
                 flex-direction: column;
                 width: 100%;
-                background: white;
+                background: rgba(174, 174, 174);
                 position: absolute;
                 top: 100%;
                 left: 0;
@@ -69,7 +69,7 @@
             </div>
             
             <!-- Navbar Links -->
-            <ul class="nav-links flex md:flex-row space-y-3 md:space-y-0 md:space-x-6">
+            <ul class="nav-links flex md:flex-row space-y-3 md:space-y-0 md:space-x-6 p-4 font-bold">
                 <li><a href="/" class="text-gray-700 hover:text-blue-500">Home</a></li>
                 <li><a href="/about" class="text-gray-700 hover:text-blue-500">About us</a></li>
                 
@@ -94,14 +94,14 @@
                     </div>
                 </li>
                 <li><a href="/vote" class="text-gray-700 hover:text-blue-500">Voting</a></li>
+                <div>
+                    @if (Auth::check())
+                        <a href="/login" class="bg-blue-900 text-white px-4 py-2 rounded-md">Logout</a>
+                    @else
+                        <a href="/login" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
+                    @endif
+                </div>
             </ul>
-            <div>
-                @if (Auth::check())
-                    <a href="/login" class="bg-blue-900 text-white px-4 py-2 rounded-md">Logout</a>
-                @else
-                    <a href="/login" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
-                @endif
-            </div>
             <!-- <div>
                 <a href="{{ url('/login') }}" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
             </div> -->

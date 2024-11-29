@@ -7,19 +7,9 @@ use Illuminate\Http\Resources\Json\JsonResource;
 
 class PostResource extends JsonResource
 {
-    //define properti
     public $status;
     public $message;
-    public $resource;
 
-    /**
-     * __construct
-     *
-     * @param  mixed $status
-     * @param  mixed $message
-     * @param  mixed $resource
-     * @return void
-     */
     public function __construct($status, $message, $resource)
     {
         parent::__construct($resource);
@@ -27,18 +17,34 @@ class PostResource extends JsonResource
         $this->message = $message;
     }
 
-    /**
-     * toArray
-     *
-     * @param  mixed $request
-     * @return array
-     */
     public function toArray(Request $request): array
     {
         return [
             'success'   => $this->status,
             'message'   => $this->message,
-            'data'      => $this->resource
+            'data'      => $this->resource,
+            'links'     => $this->when($this->resource !== null, [
+                [
+                    'rel' => 'self',
+                    'href' => route('posts.show', ['post' => $this->id]),
+                    'method' => 'GET',
+                ],
+                [
+                    'rel' => 'update',
+                    'href' => route('posts.update', ['post' => $this->id]),
+                    'method' => 'PUT',
+                ],
+                [
+                    'rel' => 'delete',
+                    'href' => route('posts.destroy', ['post' => $this->id]),
+                    'method' => 'DELETE',
+                ],
+                [
+                    'rel' => 'create',
+                    'href' => route('posts.store'),
+                    'method' => 'POST',
+                ]
+            ])
         ];
     }
 }

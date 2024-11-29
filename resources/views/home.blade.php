@@ -11,28 +11,47 @@
 </div>
 
 
-    <section class="container mx-auto py-20">
-    <div class="flex items-start mb-10 mx-10">
-        <!-- Bagian Teks -->
-        <div class="w-1/2 pr-10">
-            <h2 class="text-4xl font-bold py-2">Know about us</h2>
-            <h2 class="text-3xl font-bold">We empower your voice on campus</h2>
-            <p class="text-gray-600 mt-4">Kami hadir sebagai wadah bagi mahasiswa ITDel untuk berkolaborasi, berinovasi, dan menyuarakan aspirasi. Kami berperan dalam menyelenggarakan berbagai program serta kegiatan yang mendukung pengembangan akademik dan karakter mahasiswa, sekaligus menjadi jembatan antara mahasiswa dan pihak kampus.</p>
-            <div class="mt-6">
-                <a href="about" class="inline-block bg-yellow-500 text-white px-6 py-3 rounded-md hover:bg-yellow-600">Learn more</a>
-            </div>
+<div class="container mx-auto my-10">
+    <h3 class="text-3xl font-bold text-center mt-20">Landasan</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card Martuhan -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center">
+        <img src="https://img.freepik.com/free-photo/praying-hands-with-faith-religion-belief-god-power-hope-devotion_79161-710.jpg?size=626&ext=jpg" 
+             alt="Martuhan Image" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-xl font-bold mb-2">Martuhan</h5>
+          <p class="text-gray-700">“Kasihinilah Tuhan Allahmu, dengan segenap hatimu dan dengan segenap jiwamu dan dengan segenap akal budimu.”</p>
         </div>
-
-        <!-- Bagian Gambar -->
-        <div class="w-1/2 pl-10">
-            <img src="{{ asset('image/inagurasi.jpg') }}" alt="Campus Collaboration" class="rounded-lg shadow-md">
+      </div>
+      
+      <!-- Card Marroha -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center">
+        <img src="{{ asset('image/marroha.jpeg') }}" 
+             alt="Marroha Image" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-xl font-bold mb-2">Marroha</h5>
+          <p class="text-gray-700">“Ajarlah kami menghitung hari-hari kami sedemikian, hingga kami beroleh hati yang bijaksana.”</p>
         </div>
+      </div>
+      
+      <!-- Card Marbisuk -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center">
+        <img src="{{ asset('image/marbisuk.jpg') }}" 
+             alt="Marbisuk Image" class="w-full h-48 object-cover">
+        <div class="p-5">
+          <h5 class="text-xl font-bold mb-2">Marbisuk</h5>
+          <p class="text-gray-700">“Berbahagialah orang yang mendapat hikmat, orang yang memperoleh kepandaian.”</p>
+        </div>
+      </div>
+  
     </div>
-</section>
+  </div>
+  
 
 
     <!-- Bagian Visi dan Misi -->
-<section class="bg-yellow-100 py-20">
+<section class="bg-yellow-100 py-20 mt-10">
     <div class="container mx-auto text-left px-4 md:px-8">
         <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left">VISI & MISI</h2>
 
@@ -74,14 +93,14 @@
         </div>
     </div>
 </section>
-<style>
+{{-- <style>
     .parallax {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-</style>
+</style> --}}
 
     <!-- Bagian Departemen -->
     <section class="container mx-auto py-20">
