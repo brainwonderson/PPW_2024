@@ -7,8 +7,10 @@ use App\Models\departemen;
 use App\Models\ukm; 
 use Illuminate\Http\Request;
 
+
 class BEMController extends Controller
 {
+
     public function index()
     {
         return view('admin.keanggotaan');
@@ -52,11 +54,40 @@ class BEMController extends Controller
         return view('admin.admin');
     }
     
-    public function insertdatakeanggotaan(Request $request)
+    public function store(Request $request)
     {   
         // dd($request->all());
         keanggotaan::create($request->all());
         return redirect()->route('keanggotaan');
+    }
+
+    public function insertdatakeanggotaan(Request $request)
+    {
+        // Validate the request
+        $request->validate([
+            'nama' => 'required|string|max:255',
+            'departemen' => 'required|string',
+            'jabatan' => 'required|string',
+            // 'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', 
+        ]);
+
+        // Handle file upload
+        $path = null;
+        if ($request->hasFile('foto')) {
+            $path = $request->file('foto')->store('image', 'public'); // Store in storage/app/public/images
+        }
+
+        // keanggotaan::create($request->all());
+        // Create a new member in the database
+        keanggotaan::create([
+            'nama' => $request->input('nama'),
+            'departemen' => $request->input('departemen'),
+            'jabatan' => $request->input('jabatan'),
+            'foto' => $path, 
+        ]);
+
+        // Redirect back with a success message
+        return redirect()->route('keanggotaan')->with('success', 'Data has been added successfully!');
     }
     
     public function insertdatadepartemen(Request $request)
