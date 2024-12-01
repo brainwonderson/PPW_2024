@@ -137,3 +137,5 @@ route::get('/departemen', [BEMController::class, 'departemen'])->name('departeme
 route::get('/ukm', [BEMController::class, 'ukm'])->name('ukm');
 
 route::get('/tampilkandata/{id}', [BEMController::class, 'tampilkandata'])->name('tampilkandata');
+route::get('/delete/{id}', [BEMController::class, 'delete'])->name('delete');
+route::get('/updatedata/{id}', [BEMController::class, 'updatedata'])->name('updatedata');
