@@ -62,7 +62,7 @@
     </div>
 
     <!-- PSM -->
-    <a href="{{ route('Psm') }}">
+    <a href="{{ route('Psm') }}" target="Psm">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
       <img src="{{ asset('image/padus.png') }}" alt="PSM" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
@@ -81,14 +81,63 @@
 
     <!-- 3DC -->
     <a href="{{ route('3DC') }}">
-    <a href="/3DC">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
-      <img src="{{ asset('image/padus.png') }}" alt="3dc" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+      <img src="{{ asset('image/3dc.png') }}" alt="3dc" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer w-96 h-96">
       <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">3dc</h3>
       </div>
     </div>
   </div>
+
+  <section class="w-full py-16 bg-gray-100">
+    <div class="container mx-auto flex flex-col md:flex-row md:space-x-10 items-start">
+    <section class="w-full py-16 bg-gray-100">
+    <div class="container mx-auto flex flex-col md:flex-row md:space-x-10 items-start">
+    <section class="w-full py-16 bg-gray-100">
+    <div class="container mx-auto flex flex-col items-start">
+    <section class="w-full py-16 bg-gray-100">
+    <div class="container mx-auto flex flex-col items-start">
+        <!-- Profil Kemahasiswaan -->
+        <div class="w-full md:flex md:space-x-10 items-start">
+            <div class="w-full md:w-1/2 flex flex-col justify-center">
+                <h2 class="text-center text-3xl font-bold text-gray-900 pb-5">
+                    Profil Kemahasiswaan
+                    <span class="block w-18 h-2 mx-auto bg-yellow-500 mt-2"></span>
+                </h2>
+                <p class="text-justify text-gray-800 text-lg md:text-xl mt-8 leading-relaxed px-6 md:px-1">
+                    Bidang Kemahasiswaan IT Del dikelola oleh Wakil Rektor Bidang Akademik dan Kemahasiswaan. Bidang ini bertanggung jawab atas kesejahteraan mahasiswa serta pengembangan potensi mereka melalui berbagai kegiatan dan layanan, seperti administrasi akademik, pengembangan karir, serta pembinaan karakter. Dengan komitmen untuk menghasilkan lulusan yang berdaya saing global dan berjiwa kepemimpinan, bidang kemahasiswaan IT Del menjadi salah satu pilar penting dalam pengelolaan dan pemberdayaan mahasiswa.
+                </p>
+            </div>
+ 
+            <!-- Struktur Organisasi -->
+            <div class="w-full md:w-1/2 flex flex-col items-center">
+                <h2 class="text-center text-2xl font-bold text-gray-800 pb-3">
+                    Struktur Organisasi
+                    <span class="block w-16 h-1 mx-auto bg-yellow-500 mt-2"></span>
+                </h2>
+                <div class="mt-6 flex flex-col items-center">
+                    <!-- Ukuran gambar rektor yang lebih kecil -->
+                    <img src="{{ asset('image/rektor.png') }}" 
+                         alt="Rektor IT Del" 
+                         style="width: 20%" 
+                         class="w-24 h-24 rounded-lg shadow-md"> <!-- Ukuran lebih kecil -->
+                    <div class="text-center mt-4">
+                        <h3 class="text-xl font-bold text-gray-800">Dr. Arnaldo Marulitua Sinaga, ST., M.InfoTech</h3>
+                        <p class="text-gray-600 font-semibold">REKTOR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Diagram Organisasi di Bawah -->
+        <div class="w-full flex justify-center mt-12">
+            <img src="{{ asset('image/diagram.png') }}" 
+                 alt="Diagram Organisasi" 
+                 class="w-full md:w-3/4 lg:w-2/3 h-auto shadow-lg">
+        </div>
+    </div>
+</section>
+
 
 <!-- Custom CSS for animations and to hide default scrollbar -->
 <style>
