@@ -58,9 +58,8 @@
             <!-- Program Card 1 -->
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Ibadah Jumat
-                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Ibadah yang rutin diadakan setiap hari Jumat oleh keasramaan.
-                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
+                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
+                    <p class="text-gray-700">Informasi lebih lanjut tentang Ibadah Jumat.</p>
                 </div>
             </div>
     

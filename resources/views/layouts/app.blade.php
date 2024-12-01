@@ -69,7 +69,7 @@
             </div>
             
             <!-- Navbar Links -->
-            <ul class="nav-links flex md:flex-row space-y-3 md:space-y-0 md:space-x-6 p-4 font-bold">
+            <ul class="nav-links flex md:flex-row space-y-3 md:space-y-0 md:space-x-6 p-4 font">
                 <li><a href="/" class="text-gray-700 hover:text-blue-500">Home</a></li>
                 <li><a href="/about" class="text-gray-700 hover:text-blue-500">About us</a></li>
                 

@@ -3,16 +3,33 @@
 @section('content')
 <div class="parallax bg-cover bg-center h-screen relative" style="background-image: url('{{ asset('image/del.jpg') }}')">
     <div class="absolute inset-0 bg-black opacity-50"></div>
-    <div class="container mx-auto h-full flex flex-col justify-end items-start relative z-10 text-white text-left p-10">
-        <h1 class="text-4xl font-bold mb-10">BEM INSTITUT TEKNOLOGI DEL</h1>
-        <h2 class="text-2xl mb-10">KABINET SAHALA SAUDURAN 2023/2024</h2>
-        <a href="#" class="mb-9 px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">What we do</a>
+    <div class="container mx-auto h-full flex flex-col justify-center items-center relative z-10 text-white text-center p-5 md:p-10">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 lg:mb-8">
+            BEM INSTITUT TEKNOLOGI DEL
+        </h1>
+        <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-6 md:mb-8 lg:mb-10">
+            KABINET SAHALA SAUDURAN 2023/2024
+        </h2>
+        <a href="#" class="px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">
+            What we do
+        </a>
     </div>
 </div>
 
+<div class="container mt-10">
+    <div class="row justify-content-center">
+        <div class="col-12 px-3">
+            <p class="text text-center responsive-text">
+                Badan Eksekutif Mahasiswa (BEM) merupakan sebuah organisasi yang dikenal sebagai
+                lembaga eksekutif intra kampus yang bertugas untuk menghimpun seluruh kegiatan umum secara institusi
+                yang diselenggarakan oleh Keluarga Mahasiswa Institut Teknologi Del (KM IT Del).
+            </p>
+        </div>
+    </div>
+</div>
 
 <div class="container mx-auto my-10">
-    <h3 class="text-3xl font-bold text-center mt-20">Landasan</h3>
+    <h3 class="text-3xl font-bold text-center mb-8">Landasan</h3>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       
       <!-- Card Martuhan -->
@@ -46,12 +63,13 @@
       </div>
   
     </div>
-  </div>
+</div>
+
+
   
 
-
     <!-- Bagian Visi dan Misi -->
-<section class="bg-yellow-100 py-20 mt-10">
+<section class="bg-sky-200 py-20">
     <div class="container mx-auto text-left px-4 md:px-8">
         <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left">VISI & MISI</h2>
 

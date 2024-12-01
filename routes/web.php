@@ -29,9 +29,9 @@ Route::get('/about', function () {
     return view('menu/aboutus');
 })->name('about');
 
-Route::get('/admin', function () {
-    return view('admin');
-})->name('admin');
+// Route::get('/admin', function () {
+//     return view('admin/admin');
+// })->name('admin');
 
 Route::get('/content', function () {
     return view('Departcontent');
@@ -92,6 +92,7 @@ Route::get('/test', function () {
 Route::get('/basket', function () {
     return view('ukm/basket');
 })->name('basket');
+
 
 Route::get('/GDSC', function () {
     return view('ukm/GDSC');

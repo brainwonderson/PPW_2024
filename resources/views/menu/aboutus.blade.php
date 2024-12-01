@@ -62,7 +62,7 @@
     </div>
 
     <!-- PSM -->
-    <a href="{{ route('Psm') }}" target="Psm">
+    <a href="{{ route('Psm') }}">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
       <img src="{{ asset('image/padus.png') }}" alt="PSM" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
@@ -81,6 +81,7 @@
 
     <!-- 3DC -->
     <a href="{{ route('3DC') }}">
+    <a href="/3DC">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
       <img src="{{ asset('image/padus.png') }}" alt="3dc" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
