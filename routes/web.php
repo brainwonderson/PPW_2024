@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BEMController;
 use App\Http\Controllers\VoteController;
+use App\Http\Controllers\Auth\LoginController;
 
 Route::middleware('auth')->post('/vote/{candidateId}', [VoteController::class, 'vote']);
 

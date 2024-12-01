@@ -32,7 +32,7 @@ class AuthManager extends Controller
         if (Auth::attempt($credentials)) {
             // Redirect based on user role
             if (Auth::user()->role == 'admin') {
-                return redirect()->route('admin.dashboard'); // Use named route for better maintainability
+                return redirect()->route('admin'); // Use named route for better maintainability
             }
             return redirect()->route('home'); // Use named route for better maintainability
         }
