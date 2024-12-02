@@ -7,6 +7,17 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BEMController;
 use App\Http\Controllers\VoteController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Departemen\SarprasController;
+use App\Http\Controllers\Departemen\DhpmController;
+use App\Http\Controllers\Departemen\DiptekController;
+use App\Http\Controllers\Departemen\DpdkController;
+use App\Http\Controllers\Departemen\DepolController;
+use App\Http\Controllers\Departemen\DepkominfoController;
+use App\Http\Controllers\Departemen\DepkebdisController;
+use App\Http\Controllers\Departemen\DepsenbudController;
+use App\Http\Controllers\Departemen\DepagsosController;
+
+
 
 Route::middleware('auth')->post('/vote/{candidateId}', [VoteController::class, 'vote']);
 
@@ -46,38 +57,6 @@ Route::get('/vote', function () {
     return view('menu/vote');
 })->name('vote');
 
-Route::get('/depagsos', function () {
-    return view('div-BEM/depagsos');
-})->name('depagsos');
-
-Route::get('/depkominfo', function () {
-    return view('div-BEM/depkominfo');
-})->name('depkominfo');
-
-Route::get('/depsenbud', function () {
-    return view('div-BEM/depsenbud');
-})->name('depsenbud');
-
-Route::get('/depkebdis', function () {
-    return view('div-BEM/depkebdis');
-})->name('depkebdis');
-
-Route::get('/depol', function () {
-    return view('div-BEM/depol');
-})->name('depol');
-
-Route::get('/dpdk', function () {
-    return view('div-BEM/dpdk');
-})->name('dpdk');
-
-Route::get('/dhpm', function () {
-    return view('div-BEM/dhpm');
-})->name('dhpm');
-
-Route::get('/sarpras', function () {
-    return view('div-BEM/sarpras');
-})->name('sarpras');
-
 Route::get('/try', function () {
     return view('try');
 })->name('try');
@@ -111,7 +90,15 @@ Route::get('/3DC', function () {
     return view('ukm/3DC');
 })->name('3DC');
 
-route::get('/diptek', [HomeController::class, 'diptek'])->name('diptek');
+route::get('/diptek', [DiptekController::class, 'index'])->name('diptek');
+route::get('/sarpras', [SarprasController::class, 'index'])->name('sarpras');
+route::get('/dpdk', [DpdkController::class, 'index'])->name('dpdk');
+route::get('/depol', [DepolController::class, 'index'])->name('depol');
+route::get('/depkominfo', [DepkominfoController::class, 'index'])->name('depkominfo');
+route::get('/depkebdis', [DepkebdisController::class, 'index'])->name('depkebdis');
+route::get('/depsenbud', [DepsenbudController::class, 'index'])->name('depsenbud');
+route::get('/depagsos', [DepagsosController::class, 'index'])->name('depagsos');
+route::get('/dhpm', [DhpmController::class, 'index'])->name('dhpm');
 
 route::get('/admin', [BEMController::class, 'admin'])->name('admin');
 
