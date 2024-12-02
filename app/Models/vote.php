@@ -9,5 +9,5 @@ class Vote extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id', 'candidate_id'];
+    protected $fillable = ['nama_kandidat'];
 }

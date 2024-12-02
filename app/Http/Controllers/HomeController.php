@@ -19,4 +19,12 @@ class HomeController extends Controller
 
         return view('home', compact('ketua', 'wakilKetua', 'departemen'));
     }
+    
+    public function diptek()
+    {
+        $kadep = keanggotaan::where('jabatan', 'Ketua')->where('departemen', 'DIPTEK')->first();
+        $wakadep = keanggotaan::where('jabatan', 'Wakil Ketua')->where('departemen', 'DIPTEK')->first();
+
+        return view('div-BEM.diptek', compact('kadep', 'wakadep'));
+    }
 }

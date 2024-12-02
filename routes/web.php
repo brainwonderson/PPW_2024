@@ -46,10 +46,6 @@ Route::get('/vote', function () {
     return view('menu/vote');
 })->name('vote');
 
-Route::get('/diptek', function () {
-    return view('div-BEM/diptek');
-})->name('diptek');
-
 Route::get('/depagsos', function () {
     return view('div-BEM/depagsos');
 })->name('depagsos');
@@ -115,8 +111,11 @@ Route::get('/3DC', function () {
     return view('ukm/3DC');
 })->name('3DC');
 
+route::get('/diptek', [HomeController::class, 'diptek'])->name('diptek');
 
 route::get('/admin', [BEMController::class, 'admin'])->name('admin');
+
+route::get('/admin/vote', [BEMController::class, 'vote'])->name('vote');
 
 route::get('/tambahdata-keanggotaan', [BEMController::class, 'tambahdatakeanggotaan'])->name('tambahdata-keanggotaan');
 
