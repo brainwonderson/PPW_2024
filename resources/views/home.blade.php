@@ -86,28 +86,24 @@
             </div>
             <!-- Foto Ketua di sebelah kanan -->
             <div class="w-full md:w-1/3 flex justify-center md:justify-end items-center mt-6 md:mt-0">
-                
                 @if(isset($ketua->departemen) && strtoupper($ketua->departemen) == 'BPH INTI')
-                    <div class="text-center">
-                        <img src="{{ asset('bem/' . $ketua->foto) }}" alt="{{ $ketua->name }}" class="w-48 h-48 md:w-64 md:h-64 mb-25 ml-10">
-                        <p class="mt-2 text-lg">{{ $ketua->nama }}, Ketua BEM 2023/2024</p>
-                    </div>
+                <div class="text-center">
+                    <img src="{{ asset('/bem/'. $ketua->foto) }}" alt="{{ $ketua->name }}" class="w-48 h-48 md:w-64 md:h-64 mx-auto">
+                    <p class="mt-2 text-lg">{{ $ketua->nama }}, Ketua BEM 2023/2024</p>
+                </div>
                 @endif
-
             </div>
         </div>
 
         <div class="flex flex-wrap md:flex-nowrap justify-between items-start mt-10">
             <!-- Foto Wakil Ketua di sebelah kiri -->
             <div class="w-full md:w-1/3 flex justify-center md:justify-start items-center mb-6 mr-20 md:mb-0 mr-5">
-                
                 @if(isset($wakilKetua->departemen) && strtoupper($wakilKetua->departemen) == 'BPH INTI')
-                    <div class="text-center">
-                        <img src="{{ asset('bem/' . $wakilKetua->foto) }}" alt="{{ $wakilKetua->name }}" class="w-48 h-48 md:w-64 md:h-64 mb-25 ml-10">
-                        <p class="mt-2 text-lg">{{ $wakilKetua->nama }}, Wakil Ketua BEM 2023/2024</p>
-                    </div>
+                <div class="text-center">
+                    <img src="{{ asset('/bem/'. $wakilKetua->foto) }}" alt="{{ $wakilKetua->name }}" class="w-48 h-48 md:w-64 md:h-64 mb-25 ml-10">
+                    <p class="mt-2 text-lg">{{ $wakilKetua->nama }}, Wakil Ketua BEM 2023/2024</p>
+                </div>
                 @endif
-
             </div>
             <!-- Misi -->
             <div class="w-full md:w-2/3 pr-0 md:pr-10">
