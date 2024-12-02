@@ -172,7 +172,7 @@
 
         <div class="bg-blue-100 p-6 rounded-lg shadow-lg text-center transform transition duration-300 hover:scale-105 cursor-pointer">
             <img src="{{ asset('image/DHPM.png') }}" alt="Departemen 2" class="w-16 h-16 mx-auto mb-4">
-            <h3 class="text-xl font-semibold mb-2">Departemen Hubungan dan Pengabdian Masyarakat</class=>
+            <h3 class="text-xl mb-2">Departemen Hubungan dan Pengabdian Masyarakat</class=>
             <p class="text-gray-600">Departemen Hubungan dan Pengabdian Masyarakat (DHPM) bertanggung jawab atas kegiatan kemahasiswaan, pengabdian masyarakat, hubungan eksternal, dan reputasi BEM IT Del.</p>
         </div>
 
