@@ -50,7 +50,7 @@
                         <td class="py-2 px-4 border-b">{{$row->nama}}</td>
                         <td class="py-2 px-4 border-b">{{$row->departemen}}</td>
                         <td class="py-2 px-4 border-b">{{$row->jabatan}}</td>
-                        <td class="py-2 px-4 border-b">{{$row->foto}} </td>
+                        <td class="py-2 px-4 border-b"><img src="{{ asset('bem/' . $row->foto) }} "></td>
                         <td class="py-2 px-4 border-b text-center">
                             <div class="inline-flex space-x-2">
                                 <a href="/tampilkandata/{{$row->id}}" type=button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">Edit</a>

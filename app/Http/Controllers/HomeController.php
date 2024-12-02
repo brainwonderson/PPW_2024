@@ -14,8 +14,9 @@ class HomeController extends Controller
     public function tes()
     {
         $ketua = keanggotaan::where('jabatan', 'Ketua')->first();
+        $departemen = keanggotaan::where('departemen', 'BPH INTI')->first();
         $wakilKetua = keanggotaan::where('jabatan', 'Wakil Ketua')->first();
 
-        return view('home', compact('ketua', 'wakilKetua'));
+        return view('home', compact('ketua', 'wakilKetua', 'departemen'));
     }
 }
