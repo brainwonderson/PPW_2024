@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nama');
             $table->string('departemen');
             $table->string('jabatan');
-            $table->string('foto')->default('');
+            $table->string('foto')->default('')->nullable();
             $table->timestamps();
         });
     }

@@ -36,15 +36,28 @@
         <!-- Leaders Section -->
         <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-2s">
             <div class="flex justify-center space-x-8">
-                <div>
-                <img src="{{ asset('image/archiko.png') }}" alt="Leader 1" class="w-96 h-72 rounded-full mt-20">
-                    <p class="text-lg font-bold">ARCHICO SEMBIRING</p>
-                    <p>Kepala Divisi</p>
-
-                </div>
-                <div>
-                    
-                </div>
+                @if(!$kadep)
+                        <p>Kepala Divisi</p>
+                    </div>
+                @endif
+                @if(!$wakadep)
+                        <p>Wakil Kepala Divisi</p>
+                    </div>
+                @endif
+                @if($kadep)
+                    <div class="text-center">
+                        <img src="{{ asset('bem/' . $kadep->foto) }}" alt="{{ $kadep->nama }}" class="w-72 rounded-full mt-20">
+                        <p class="text-lg font-bold">{{ $kadep->nama }}</p>
+                        <p>Kepala Divisi</p>
+                    </div>
+                @endif
+                @if($wakadep)
+                    <div class="text-center">
+                        <img src="{{ asset('bem/' . $wakadep->foto) }}" alt="{{ $wakadep->nama }}" class="w-72 rounded-full mt-20">
+                        <p class="text-lg font-bold">{{ $wakadep->nama }}</p>
+                        <p>Wakil Kepala Divisi</p>
+                    </div>
+                @endif
             </div>
         </div>
 

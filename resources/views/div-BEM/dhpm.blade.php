@@ -38,16 +38,28 @@
     <!-- Leaders Section -->
     <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-2s">
         <div class="flex justify-center space-x-16">
-            <div class="text-center">
-                <img src="{{ asset('image/togab.png') }}" alt="Leader 1" class="w-72 rounded-full mt-20">
-                <p class="text-lg font-bold">SITOGAB GIRSANG</p>
-                <p>Kepala Divisi</p>
-            </div>
-            <div class="text-center">
-                <img src="{{ asset('image/dhpmwakil.png') }}" alt="Leader 2" class="w-72 rounded-full -mt-10">
-                <p class="text-lg font-bold">GABRIEL SIGALINGGING</p>
-                <p>Wakil Kepala Divisi</p>
-            </div>
+            @if(!$kadep)
+                    <p>Kepala Divisi</p>
+                </div>
+            @endif
+            @if(!$wakadep)
+                    <p>Wakil Kepala Divisi</p>
+                </div>
+            @endif
+            @if($kadep)
+                <div class="text-center">
+                    <img src="{{ asset('bem/' . $kadep->foto) }}" alt="{{ $kadep->nama }}" class="w-72 rounded-full mt-20">
+                    <p class="text-lg font-bold">{{ $kadep->nama }}</p>
+                    <p>Kepala Divisi</p>
+                </div>
+            @endif
+            @if($wakadep)
+                <div class="text-center">
+                    <img src="{{ asset('bem/' . $wakadep->foto) }}" alt="{{ $wakadep->nama }}" class="w-72 rounded-full mt-20">
+                    <p class="text-lg font-bold">{{ $wakadep->nama }}</p>
+                    <p>Wakil Kepala Divisi</p>
+                </div>
+            @endif
         </div>
     </div>
 

@@ -10,6 +10,8 @@ class DepagsosController extends Controller
 {
     public function index()
     {
+        $kadep = '';
+        $wakadep = '';
         $kadep = keanggotaan::where('jabatan', 'Ketua')->where('departemen', 'DEPAGSOS')->first();
         $wakadep = keanggotaan::where('jabatan', 'Wakil Ketua')->where('departemen', 'DEPAGSOS')->first();
 

@@ -38,33 +38,28 @@
     <!-- Leaders Section -->
     <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-2s">
         <div class="flex justify-center space-x-16">
-
-                @if(isset($kadep->departemen) && strtoupper($kadep->departemen) == 'DIPTEK')
-                    <div class="text-center">
-                        <img src="{{ asset('bem/' . $kadep->foto) }}" alt="{{ $kadep->nama }}" class="h-30 w-30 rounded-full mb-4 mx-auto">
-                        <p class="mt-2 text-lg">{{ $kadep->nama }}</p>
-                        <p>Kepala Divisi</p>
-                    </div>
-                @endif
-                @if(isset($kadep->departemen) && strtoupper($kadep->departemen) == 'DIPTEK')
-                    <div class="text-center">
-                        <img src="{{ asset('bem/' . $wakadep->foto) }}" alt="{{ $wakadep->nama }}" class="h-30 w-30 rounded-full mb-4 mx-auto">
-                        <p class="mt-2 text-lg">{{ $wakadep->nama }}</p>
-                        <p>Kepala Divisi</p>
-                    </div>
-                @endif
-
-            <!-- <div class="text-center">
-                <img src="{{ asset('image/joseph.png') }}" alt="Leader 1" class="h-30 w-30 rounded-full mb-4 mx-auto">
-                <p class="text-lg font-bold">JOSEP NAPITUPULU</p>
-                <p>Kepala Divisi</p>
-            </div> -->
-            {{-- <div class="text-center">
-                <!-- <img src="{{ asset('image/youni.png') }}" alt="Leader 2" class="h-30 w-30 rounded-full mb-4 mx-auto"> -->
-                <img src="{{ asset('bem/' . $kadep->foto) }}" alt="{{ $kadep->nama }}" class="h-30 w-30 rounded-full mb-4 mx-auto">
-                <p class="text-lg font-bold">YOUNI LUMBAN TOBING</p>
-                <p>Wakil Kepala Divisi</p>
-            </div> --}}
+            @if(!$kadep)
+                    <p>Kepala Divisi</p>
+                </div>
+            @endif
+            @if(!$wakadep)
+                    <p>Wakil Kepala Divisi</p>
+                </div>
+            @endif
+            @if($kadep)
+                <div class="text-center">
+                    <img src="{{ asset('bem/' . $kadep->foto) }}" alt="{{ $kadep->nama }}" class="w-72 rounded-full mt-20">
+                    <p class="text-lg font-bold">{{ $kadep->nama }}</p>
+                    <p>Kepala Divisi</p>
+                </div>
+            @endif
+            @if($wakadep)
+                <div class="text-center">
+                    <img src="{{ asset('bem/' . $wakadep->foto) }}" alt="{{ $wakadep->nama }}" class="w-72 rounded-full mt-20">
+                    <p class="text-lg font-bold">{{ $wakadep->nama }}</p>
+                    <p>Wakil Kepala Divisi</p>
+                </div>
+            @endif
         </div>
     </div>
 
