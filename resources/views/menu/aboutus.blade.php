@@ -100,7 +100,7 @@
         <!-- Profil Kemahasiswaan -->
         <div class="w-full md:flex md:space-x-10 items-start">
             <div class="w-full md:w-1/2 flex flex-col justify-center">
-                <h2 class="text-center text-3xl font-bold text-gray-900 pb-5">
+                <h2 class="text-center text-3xl font-bold text-gray-900 pb-5 animate-fade-in">
                     Profil Kemahasiswaan
                     <span class="block w-18 h-2 mx-auto bg-yellow-500 mt-2"></span>
                 </h2>
@@ -110,7 +110,7 @@
             </div>
  
             <!-- Struktur Organisasi -->
-            <div class="w-full md:w-1/2 flex flex-col items-center">
+            <div class="w-full md:w-1/2 flex flex-col items-center animate-fade-in">
                 <h2 class="text-center text-2xl font-bold text-gray-800 pb-3">
                     Struktur Organisasi
                     <span class="block w-16 h-1 mx-auto bg-yellow-500 mt-2"></span>

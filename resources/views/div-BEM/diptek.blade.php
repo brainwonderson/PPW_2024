@@ -49,7 +49,7 @@
                 @if(isset($kadep->departemen) && strtoupper($kadep->departemen) == 'DIPTEK')
                     <div class="text-center">
                         <img src="{{ asset('bem/' . $wakadep->foto) }}" alt="{{ $wakadep->nama }}" class="h-30 w-30 rounded-full mb-4 mx-auto">
-                        <p class="mt-2 text-lg">{{ $kadep->nama }}</p>
+                        <p class="mt-2 text-lg">{{ $wakadep->nama }}</p>
                         <p>Kepala Divisi</p>
                     </div>
                 @endif
@@ -59,12 +59,12 @@
                 <p class="text-lg font-bold">JOSEP NAPITUPULU</p>
                 <p>Kepala Divisi</p>
             </div> -->
-            <div class="text-center">
+            {{-- <div class="text-center">
                 <!-- <img src="{{ asset('image/youni.png') }}" alt="Leader 2" class="h-30 w-30 rounded-full mb-4 mx-auto"> -->
                 <img src="{{ asset('bem/' . $kadep->foto) }}" alt="{{ $kadep->nama }}" class="h-30 w-30 rounded-full mb-4 mx-auto">
                 <p class="text-lg font-bold">YOUNI LUMBAN TOBING</p>
                 <p>Wakil Kepala Divisi</p>
-            </div>
+            </div> --}}
         </div>
     </div>
 
