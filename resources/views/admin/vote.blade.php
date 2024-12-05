@@ -24,7 +24,7 @@
             <div class="flex justify-between items-center mb-4">
                 <!-- Button Tambah Data berada di atas ujung kiri tabel -->
                 <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-green-700 rounded">
-                    <a href="/tambahdata-ukm" > Tambah Data </a>
+                    <a href="/tambahdata-vote" > Tambah Data </a>
                 </button>
             </div>
 
@@ -33,11 +33,9 @@
                 <thead>
                     <tr class="bg-gray-200">
                         <th class="py-2 px-4 border-b text-left w-12">#</th>
-                        <th class="py-2 px-4 border-b text-left w-32">Nama</th>
-                        <th class="py-2 px-4 border-b text-left w-32">Deskripsi</th>
-                        <th class="py-2 px-4 border-b text-left w-64">Program Kerja</th>
-                        <th class="py-2 px-4 border-b text-left w-35">Ketua</th>
-                        <th class="py-2 px-4 border-b text-center w-36">Aksi</th>
+                        <th class="py-2 px-4 border-b text-left w-32">Nomor Kandidat</th>
+                        <th class="py-2 px-4 border-b text-left w-32">Nama Kandidat</th>
+                        <th class="py-2 px-4 border-b text-left w-64">Foto</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,10 +45,9 @@
                     @foreach ($data as $row)
                     <tr>
                         <td class="py-2 px-4 border-b">{{$no++}}</td>
-                        <td class="py-2 px-4 border-b">{{$row->nama}}</td>
-                        <td class="py-2 px-4 border-b">{{$row->deskripsi}}</td>
-                        <td class="py-2 px-4 border-b">{{$row->programkerja}}</td>
-                        <td class="py-2 px-4 border-b">{{$row->ketua}} </td>
+                        <td class="py-2 px-4 border-b">{{$row->nomor_kandidat}}</td>
+                        <td class="py-2 px-4 border-b">{{$row->nama_kandidat}}</td>
+                        <td class="py-2 px-4 border-b">{{$row->foto_kandidat}}</td>
                         <td class="py-2 px-4 border-b text-center">
                             <div class="inline-flex space-x-2">
                                 <a href="/tampilkandata/{{$row->id}}" type=button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">Edit</a>

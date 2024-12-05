@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\keanggotaan; 
 use App\Models\departemen; 
 use App\Models\ukm; 
-use App\Models\Vote; 
+use App\Models\votes; 
 use Illuminate\Http\Request;
 
 
@@ -25,7 +25,7 @@ class BEMController extends Controller
     
     public function vote()
     {
-        $data = vote::all(); 
+        $data = votes::all(); 
         return view('admin.vote', compact('data'));
     }
     
@@ -51,6 +51,11 @@ class BEMController extends Controller
         return view('admin.tambahdata.+ukm');
     }
     
+    public function tambahdatavote()
+    {
+        return view('admin.tambahdata.+vote');
+    }
+
     public function tambahdatadepartemen()
     {
         return view('admin.tambahdata.+departemen');
@@ -69,7 +74,7 @@ class BEMController extends Controller
     
     public function addvote(Request $request)
     {   
-        vote::create($request->all());
+        votes::create($request->all());
         return redirect()->route('vote');
     }
 
@@ -109,6 +114,12 @@ class BEMController extends Controller
     {   
         ukm::create($request->all());
         return redirect()->route('ukm');
+    }
+    
+    public function insertvote(Request $request)
+    {   
+        votes::create($request->all());
+        return redirect()->route('votes');
     }
 
     public function tampilkandata($id)

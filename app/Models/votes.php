@@ -5,9 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Vote extends Model
+class votes extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nama_kandidat'];
+    protected $table = 'keanggotaan';
+
+    protected $guarded = [];
+
 }
