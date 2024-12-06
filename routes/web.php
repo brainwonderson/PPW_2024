@@ -102,7 +102,7 @@ route::get('/dhpm', [DhpmController::class, 'index'])->name('dhpm');
 
 route::get('/admin', [BEMController::class, 'admin'])->name('admin');
 
-route::get('/admin/vote', [BEMController::class, 'vote'])->name('vote');
+route::get('/vote_admin', [BEMController::class, 'vote'])->name('vote');
 
 route::get('/tambahdata-keanggotaan', [BEMController::class, 'tambahdatakeanggotaan'])->name('tambahdata-keanggotaan');
 
@@ -110,11 +110,15 @@ route::get('/tambahdata-departemen', [BEMController::class, 'tambahdatadeparteme
 
 route::get('/tambahdata-ukm', [BEMController::class, 'tambahdataukm'])->name('tambahdata-ukm');
 
+route::get('/tambahdata-vote', [BEMController::class, 'tambahdatavote'])->name('tambahdata-vote');
+
 route::post('/insertkeanggotaan', [BEMController::class, 'insertdatakeanggotaan'])->name('insertkeanggotaan');
 
 route::post('/insertdepartemen', [BEMController::class, 'insertdatadepartemen'])->name('insertdepartemen');
 
 route::post('/insertukm', [BEMController::class, 'insertdataukm'])->name('insertukm');
+
+route::post('/insertvote', [BEMController::class, 'insertdatavote'])->name('insertvote');
 
 route::get('/keanggotaan', [BEMController::class, 'keanggotaan'])->name('keanggotaan');
 

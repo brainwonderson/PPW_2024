@@ -8,20 +8,23 @@ use App\Models\ukm;
 use App\Models\Vote; 
 use Illuminate\Http\Request;
 
-
 class BEMController extends Controller
 {
-
     public function index()
     {
         return view('admin.keanggotaan');
     }
-    
-    public function keanggotaan()
+
+    public function admin()
     {
-        $data = keanggotaan::all(); 
-        return view('admin.keanggotaan', compact('data'));
+        return view('admin.admin'); 
     }
+    
+    // public function keanggotaan()
+    // {
+    //     $data = keanggotaan::all(); 
+    //     return view('admin.keanggotaan', compact('data'));
+    // }
     
     public function vote()
     {
@@ -43,22 +46,17 @@ class BEMController extends Controller
 
     public function tambahdatakeanggotaan()
     {
-        return view('admin.tambahdata.+keanggotaan');
+        return view('admin.tambahdata.keanggotaan'); 
     }
     
     public function tambahdataukm()
     {
-        return view('admin.tambahdata.+ukm');
+        return view('admin.tambahdata.ukm'); 
     }
     
     public function tambahdatadepartemen()
     {
-        return view('admin.tambahdata.+departemen');
-    }
-    
-    public function admin()
-    {
-        return view('admin.admin');
+        return view('admin.tambahdata.departemen'); 
     }
     
     public function store(Request $request)
