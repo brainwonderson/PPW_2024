@@ -19,17 +19,17 @@
             <form action="/insertvote" method="POST" enctype="multipart/form-data"  class="space-y-4">
                 @csrf
                 <div>
-                    <label class="block text-gray-700 text-sm font-semibold mb-2" for="nama">
+                    <label class="block text-gray-700 text-sm font-semibold mb-2" for="nomor_kandidat">
                         Nomor Kandidat
                     </label>
-                    <input class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" name="nama" id="nama" type="text" placeholder="masukkan nomor kandidat">
+                    <input class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" name="nomor_kandidat" id="nomor_kandidat" type="text" placeholder="masukkan nomor kandidat">
                 </div>
                 
                 <div>
-                    <label class="block text-gray-700 text-sm font-semibold mb-2" for="deskripsi">
+                    <label class="block text-gray-700 text-sm font-semibold mb-2" for="nama_kandidat">
                         Nama Kandidat
                     </label>
-                    <input class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" name="deskripsi" id="deskripsi" type="text" placeholder="masukkan nama kandidat">
+                    <input class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" name="nama_kandidat" id="nama_kandidat" type="text" placeholder="masukkan nama kandidat">
                 </div>
 
                 <!-- component -->
@@ -47,7 +47,7 @@
                         </label>
 
                         <div class="mb-8">
-                        <input type="file" name="foto" id="file" class="sr-only" />
+                        <input type="file" name="foto_kandidat" id="file" class="sr-only" />
                         <label
                             for="file"
                             class="relative flex min-h-[200px] items-center justify-center rounded-md border border-dashed border-[#e0e0e0] p-12 text-center"
@@ -88,29 +88,6 @@
                     </form>
                 </div>
                 </div>
-
-                <!-- <div class="flex items-center justify-center p-12">
-                <div class="mx-auto w-full max-w-[550px] bg-white">
-            
-                    <div class="flex items-center justify-between">
-                    
-                    </div>
-                    <div>
-                        <form
-                        class="py-6 px-9"
-                        action="https://formbold.com/s/FORM_ID"
-                        method="POST"
-                        >
-                        <button
-                        class="bg-green-500 hover:bg-green-700 hover:shadow-form w-full rounded-md py-3 px-8 text-center text-base font-semibold text-white outline-none"
-                        >
-                        Tambahkan Data
-                        </button>
-                    </div>
-                    </form>
-                </div>
-                </div> -->
-
             </form>
         </div>
     </div>

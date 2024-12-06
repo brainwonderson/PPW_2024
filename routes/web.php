@@ -31,6 +31,7 @@ Route::middleware('auth')->post('/vote/{candidateId}', [VoteController::class, '
 // })->name('home');
 
 Route::get('/', [HomeController::class, 'tes'])->name('home');
+Route::get('/vote', [HomeController::class, 'vote'])->name('vote');
 Route::get('/register', [AuthManager::class, 'register'])->name('register'); 
 Route::post('/register', [AuthManager::class, 'registerPost'])->name('register.post'); 
 Route::get('/login', [AuthManager::class, 'login'])->name('login');
@@ -52,10 +53,6 @@ Route::get('/content', function () {
 Route::get('/creator', function () {
     return view('content');
 })->name('creatorcontent');
-
-Route::get('/vote', function () {
-    return view('menu/vote');
-})->name('vote');
 
 Route::get('/try', function () {
     return view('try');

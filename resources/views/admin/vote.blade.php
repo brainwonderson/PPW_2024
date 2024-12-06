@@ -36,18 +36,19 @@
                         <th class="py-2 px-4 border-b text-left w-32">Nomor Kandidat</th>
                         <th class="py-2 px-4 border-b text-left w-32">Nama Kandidat</th>
                         <th class="py-2 px-4 border-b text-left w-64">Foto</th>
+                        <th class="py-2 px-4 border-b text-left w-64">Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
                     @php 
                         $no = 1;
                     @endphp
-                    @foreach ($data as $row)
+                    @foreach ($data_vote as $row)
                     <tr>
                         <td class="py-2 px-4 border-b">{{$no++}}</td>
                         <td class="py-2 px-4 border-b">{{$row->nomor_kandidat}}</td>
                         <td class="py-2 px-4 border-b">{{$row->nama_kandidat}}</td>
-                        <td class="py-2 px-4 border-b">{{$row->foto_kandidat}}</td>
+                        <td class="py-2 px-4 border-b"><img src="{{ asset('bem/' . $row->foto_kandidat) }} "></td>
                         <td class="py-2 px-4 border-b text-center">
                             <div class="inline-flex space-x-2">
                                 <a href="/tampilkandata/{{$row->id}}" type=button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">Edit</a>

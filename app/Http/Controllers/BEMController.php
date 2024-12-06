@@ -25,8 +25,8 @@ class BEMController extends Controller
     
     public function vote()
     {
-        $data = votes::all(); 
-        return view('admin.vote', compact('data'));
+        $data_vote = votes::all(); 
+        return view('admin.vote', compact('data_vote'));
     }
     
     public function departemen()
@@ -77,7 +77,7 @@ class BEMController extends Controller
         votes::create($request->all());
         return redirect()->route('vote');
     }
-
+    
     public function insertdatakeanggotaan(Request $request)
     {
         $request->validate([
@@ -104,6 +104,30 @@ class BEMController extends Controller
         return redirect()->route('keanggotaan')->with('success', 'Data has been added successfully!');
     }
     
+    public function insertdatavote(Request $request)
+    {
+        $request->validate([
+            'nomor_kandidat' => 'required|string',
+            'nama_kandidat' => 'required|string',
+            // 'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', 
+        ]);
+
+        $path = null;
+        if($request->hasFile('foto_kandidat') == null) {
+            $path = ''; 
+        } else {
+            $path = time() . '.' . $request->foto_kandidat->getClientOriginalExtension(); 
+            $request->foto_kandidat->move(public_path('bem'), $path);
+        }
+
+        votes::create([
+            'nomor_kandidat' => $request->input('nomor_kandidat'),
+            'nama_kandidat' => $request->input('nama_kandidat'),
+            'foto_kandidat' => $path, 
+        ]);
+        return redirect()->route('vote')->with('success', 'Data has been added successfully!');
+    }
+    
     public function insertdatadepartemen(Request $request)
     {   
         departemen::create($request->all());
@@ -116,11 +140,6 @@ class BEMController extends Controller
         return redirect()->route('ukm');
     }
     
-    public function insertvote(Request $request)
-    {   
-        votes::create($request->all());
-        return redirect()->route('votes');
-    }
 
     public function tampilkandata($id)
     {

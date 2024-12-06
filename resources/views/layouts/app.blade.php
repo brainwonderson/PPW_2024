@@ -52,13 +52,15 @@
 </head>
 <body class="bg-gray-100">
     <nav class="bg-white shadow p-4 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
+        <div href='/'class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-4">
-                <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
-                <div class="flex flex-col text-center md:text-left">
-                    <span class="text-2xl font-bold text-gray-800">BEM IT Del</span>
-                    <span class="text-sm font-bold text-gray-800">Kabinet Sahala Saunduran</span>
-                </div>
+                <a href="{{ url('/') }}" class="flex items-center">
+                    <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
+                    <div class="flex flex-col text-center md:text-left">
+                        <span class="text-2xl font-bold text-gray-800">BEM IT Del</span>
+                        <span class="text-sm font-bold text-gray-800">Kabinet Sahala Saunduran</span>
+                    </div>
+                </a>
             </div>
             
             <!-- Hamburger Menu -->

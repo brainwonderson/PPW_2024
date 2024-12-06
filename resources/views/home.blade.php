@@ -10,7 +10,7 @@
         <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-6 md:mb-8 lg:mb-10">
             KABINET SAHALA SAUDURAN 2023/2024
         </h2>
-        <a href="#" class="px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">
+        <a href="about" class="px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">
             What we do
         </a>
     </div>
