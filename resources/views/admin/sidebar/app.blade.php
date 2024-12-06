@@ -82,7 +82,7 @@
         </div>
         <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
             <i class="bi bi-chat-left-text-fill"></i>
-            <a href="/admin/vote" class="text-[15px] ml-4 text-gray-200 font-bold">Vote</a>
+            <a href="/vote_admin" class="text-[15px] ml-4 text-gray-200 font-bold">Vote</a>
         </div>
         <div class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white">
             <i class="bi bi-box-arrow-in-right"></i>

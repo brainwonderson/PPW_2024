@@ -57,7 +57,7 @@
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
       <img src="{{ asset('image/gitar.png') }}" alt="Gitar" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
-        <h3 class="text-lg font-semibold">Gitar</h3>
+        <h3 class="text-lg font-semibold">PGM</h3>
       </div>
     </div>
 

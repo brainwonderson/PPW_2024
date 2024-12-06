@@ -45,11 +45,6 @@
                         <option >DEPKEBDIS</option>
                         <option >SARPRAS</option>
                     </select>
-                    <!-- <input class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" name="departemen" id="departemen" type="text"> -->
-                    <!-- <label class="block text-gray-700 text-sm font-semibold mb-2" for="jabatan">
-                        Departemen 
-                    </label>
-                    <input class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" name="jabatan" id="jabatan" type="text" placeholder="Masukkan jabatan"> -->
                 </div>
 
                 <div>
@@ -62,20 +57,8 @@
                         <option >Bendahara</option>
                         <option >Anggota</option>
                     </select>
-                    <!-- <input class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" name="jabatan" id="jabatan" type="text" placeholder="Masukkan Nama Lengkap"> -->
-                    <!-- <label class="block text-gray-700 text-sm font-semibold mb-2" for="jabatan">
-                        Jabatan 
-                    </label>
-                    <input class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent" name="jabatan" id="jabatan" type="text" placeholder="Masukkan jabatan"> -->
                 </div>
                 
-                <!-- <div>
-                    <label class="block text-gray-700 text-sm font-semibold mb-2" for="password">
-                        Foto 
-                    </label>
-                    <input class="shadow appearance-none border border-red-500 rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-red-400 focus:border-transparent" id="password" type="password" placeholder="******************">
-                    <p class="text-red-500 text-xs italic mt-2">Please choose a stronger password.</p>
-                </div> -->
 
                 <!-- component -->
                 <div class="flex items-center justify-center p-12">
