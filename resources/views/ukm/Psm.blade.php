@@ -11,42 +11,61 @@
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
     <!-- Content Section -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paduan Suara Mahasiswa (PSM)</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Header Section -->
     <div class="container mx-auto px-6 py-12">
-        <!-- Header Content -->
-        <div class="bg-yellow-100 p-8 rounded-md text-center animate__animated animate__fadeIn">
-            <h1 class="text-3xl font-bold mb-4">Paduan Suara Mahasiswa (PSM)</h1>
-            <p class="text-gray-700 mb-4">Organisasi seni kampus yang memfokuskan diri pada pembelajaran dan penampilan musik vokal secara berkelompok untuk acara internal dan eksternal.</p>
-            <img src="image1.jpg" alt="Group Photo" class="w-full max-w-xs mx-auto rounded-md">
-        </div>
+        <!-- About Section -->
+        <div class="bg-yellow-100 p-10 rounded-lg shadow-lg text-center">
+            <div class="flex flex-col items-center">
+                <!-- Logo/Avatar -->
+                <img src="{{ asset('image/psmm.jpg') }}" alt="PSM Logo" class="w-20 h-20 rounded-full mb-4">
+                <!-- Title -->
+                <h1 class="text-3xl font-bold mb-6">Paduan Suara Mahasiswa (PSM)</h1>
+                <!-- Description -->
+                <p class="text-gray-800 text-lg mb-4 leading-relaxed">
+                UKM PSM (Unit Kegiatan Mahasiswa Paduan Suara Mahasiswa) adalah organisasi kemahasiswaan yang bergerak di bidang seni musik vokal, khususnya paduan suara, yang bertujuan untuk mengembangkan bakat dan minat mahasiswa dalam bernyanyi serta meningkatkan keterampilan musikal melalui berbagai kegiatan dan penampilan.
+                </p>
+                <!-- Image -->
+                <img src="{{ asset('image/psmm.jpg') }}" alt="PSM Group Photo"
+                    class="w-full max-w-md rounded-lg shadow-md">
+            </div>
 
         <!-- Program Kerja Section -->
-        <div class="program-kerja text-center mt-12 animate__animated animate__fadeInUp animate__delay-1s">
+        <div class="program-kerja text-center mt-12 animate_animated animatefadeInUp animate_delay-1s">
             <h2 class="text-2xl font-semibold mb-6">Program Kerja</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <div class="program-item bg-white p-6 rounded-md shadow-md">Inaugurasi, Dies Natalis dan Graduation (IDG)</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">Pembukaan & Penutupan KM Cup</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">Festival Budaya</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">UKM Day</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">Latihan Rutin Anggota 3DC</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">Penerimaan Anggota 3DC</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">Evaluasi Anggota 3DC</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">IT Del Fest</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">Latihan Rutin PSM</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">Kunjungan Gereja</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">Evaluasi Bulanan</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">Penerimaan anggota baru</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">Mengikuti Event</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">Mengadakan konser PSM</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">Refreshing PSM</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">Reorganisasi</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">Ephipania</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">IDG</div>
             </div>
         </div>
 
         <!-- Struktur Keanggotaan Section -->
-        <div class="struktur-keanggotaan text-center mt-12 animate__animated animate__fadeInUp animate__delay-2s">
+        <div class="struktur-keanggotaan text-center mt-12 animate_animated animatefadeInUp animate_delay-2s">
             <h2 class="text-2xl font-semibold mb-6">Struktur Keanggotaan 2023/2024</h2>
             <div class="flex justify-center space-x-12">
                 <div class="leader-item text-center">
-                    <img src="leader1.jpg" alt="Ketua Divisi" class="w-24 h-24 rounded-full mx-auto">
-                    <p class="mt-4 font-semibold">Markus Hutagalung</p>
-                    <p class="text-gray-600">Kepala Divisi</p>
+                    <img src="psm.jpg" alt="Ketua Divisi" class="w-24 h-24 rounded-full mx-auto">
+                    <p class="mt-4 font-semibold">Joy Lamtardas Manurung</p>
+                    <p class="text-gray-600">Ketua UKM</p>
                 </div>
                 <div class="leader-item text-center">
-                    <img src="leader2.jpg" alt="Wakil Kepala Divisi" class="w-24 h-24 rounded-full mx-auto">
-                    <p class="mt-4 font-semibold">Salwa Harahap</p>
-                    <p class="text-gray-600">Wakil Kepala Divisi</p>
+                    <img src="psm.jpg" alt="Wakil Kepala Divisi" class="w-24 h-24 rounded-full mx-auto">
+                    <p class="mt-4 font-semibold">Lusiana Silaen</p>
+                    <p class="text-gray-600">Wakil Ketua UKM</p>
                 </div>
             </div>
         </div>

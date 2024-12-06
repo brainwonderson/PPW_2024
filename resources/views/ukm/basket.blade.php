@@ -4,49 +4,57 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BASKET</title>
+    <title>Basket</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdn.tailwindcss.com"></script> <!-- Add this line to include Tailwind -->
 
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
 
     <!-- Content Section -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basket</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Header Section -->
     <div class="container mx-auto px-6 py-12">
-        <!-- Header Content -->
-        <div class="bg-yellow-100 p-8 rounded-md text-center animate__animated animate__fadeIn">
-            <h1 class="text-3xl font-bold mb-4">BASKET</h1>
-            <p class="text-gray-700 mb-4">Organisasi mahasiswa yang memfasilitasi kegiatan olahraga basket, bertujuan untuk meningkatkan kesehatan fisik, kemampuan bermain, dan jiwa sportivitas.</p>
-            <img src="image1.jpg" alt="Group Photo" class="w-full max-w-xs mx-auto rounded-md">
-        </div>
+        <!-- About Section -->
+        <div class="bg-yellow-100 p-10 rounded-lg shadow-lg text-center">
+            <div class="flex flex-col items-center">
+                <!-- Logo/Avatar -->
+                <img src="{{ asset('image/BASKET.jpg') }}" alt="BASKET Logo" class="w-20 h-20 rounded-full mb-4">
+                <!-- Title -->
+                <h1 class="text-3xl font-bold mb-6">Basket</h1>
+                <!-- Description -->
+                <p class="text-gray-800 text-lg mb-4 leading-relaxed">
+                UKM Basket di IT DEL adalah organisasi atau kelompok yang bergerak dalam bidang olahraga basket dan berfungsi sebagai wadah bagi mahasiswa untuk mengembangkan keterampilan, pengetahuan, dan kecintaan mereka terhadap olahraga tersebut. Meskipun tidak berfokus pada turnamen antar kampus, UKM ini tetap menyediakan sarana dan kesempatan bagi anggotanya untuk berlatih secara rutin, meningkatkan kemampuan teknis, serta memperkuat ikatan sosial di antara anggota. UKM Basket bertujuan untuk menciptakan lingkungan yang mendukung kesehatan fisik, kerja sama tim, dan semangat kebersamaan, serta menjadi tempat bagi mahasiswa untuk menikmati olahraga basket dalam suasana yang positif dan menyenangkan.
+                </p>
+                <!-- Image -->
+                <img src="{{ asset('image/BASKET.jpg') }}" alt="BASKET Group Photo"
+                    class="w-full max-w-md rounded-lg shadow-md">
+            </div>
 
         <!-- Program Kerja Section -->
-        <div class="program-kerja text-center mt-12 animate__animated animate__fadeInUp animate__delay-1s">
+        <div class="program-kerja text-center mt-12 animate_animated animatefadeInUp animate_delay-1s">
             <h2 class="text-2xl font-semibold mb-6">Program Kerja</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <div class="program-item bg-white p-6 rounded-md shadow-md">Inaugurasi, Dies Natalis dan Graduation (IDG)</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">Pembukaan & Penutupan KM Cup</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">Festival Budaya</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">UKM Day</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">Latihan Rutin Anggota 3DC</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">Penerimaan Anggota 3DC</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">Evaluasi Anggota 3DC</div>
-                <div class="program-item bg-white p-6 rounded-md shadow-md">IT Del Fest</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">PROKER</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">PROKER</div>
+                <div class="program-item bg-white p-6 rounded-md shadow-md">PROKER</div>
+       
             </div>
         </div>
 
         <!-- Struktur Keanggotaan Section -->
-        <div class="struktur-keanggotaan text-center mt-12 animate__animated animate__fadeInUp animate__delay-2s">
+        <div class="struktur-keanggotaan text-center mt-12 animate_animated animatefadeInUp animate_delay-2s">
             <h2 class="text-2xl font-semibold mb-6">Struktur Keanggotaan 2023/2024</h2>
             <div class="flex justify-center space-x-12">
                 <div class="leader-item text-center">
-                    <img src="leader1.jpg" alt="Ketua Divisi" class="w-24 h-24 rounded-full mx-auto">
-                    <p class="mt-4 font-semibold">Markus Hutagalung</p>
-                    <p class="text-gray-600">Kepala Divisi</p>
-                </div>
-                <div class="leader-item text-center">
-                    <img src="leader2.jpg" alt="Wakil Kepala Divisi" class="w-24 h-24 rounded-full mx-auto">
-                    <p class="mt-4 font-semibold">Salwa Harahap</p>
-                    <p class="text-gray-600">Wakil Kepala Divisi</p>
+                    <img src="psm.jpg" alt="Ketua Divisi" class="w-24 h-24 rounded-full mx-auto">
+                    <p class="mt-4 font-semibold">JONATHAN SITORUS</p>
+                    <p class="text-gray-600">Ketua UKM</p>
                 </div>
             </div>
         </div>
