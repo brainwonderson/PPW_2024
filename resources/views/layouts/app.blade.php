@@ -52,9 +52,9 @@
 </head>
 <body class="bg-gray-100">
     <nav class="bg-white shadow p-4 sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-4">
-                <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12  cursor-pointer">
+        <div href='/'class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center space-x-4 mb-4 md:mb-0">
+                <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 md:ml-10 mx-auto ml-5 cursor-pointer">
                 <div class="flex flex-col text-center md:text-left">
                     <span class="text-2xl font-bold text-gray-800">BEM IT Del</span>
                     <span class="text-sm font-bold text-gray-800">Kabinet Sahala Saunduran</span>

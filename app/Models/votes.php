@@ -9,7 +9,7 @@ class votes extends Model
 {
     use HasFactory;
 
-    protected $table = 'keanggotaan';
+    protected $table = 'votes';
 
     protected $guarded = [];
 

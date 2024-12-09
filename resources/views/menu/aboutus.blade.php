@@ -31,13 +31,13 @@
 <h2 class="text-center text-3xl font-bold mt-10 animate-fade-in">Program Unit Kegiatan Mahasiswa</h2>
 
 <!-- Main Content -->
-<div class="container mx-auto p-6 pt-24 relative">
+<div class="container mx-auto p-6 pt-24 relative items-center">
   <!-- Slider container with horizontal scrolling -->
-  <div id="slider" class="flex space-x-6 overflow-x-auto scrollbar-hide scroll-smooth">
+  <div id="slider" class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6 overflow-x-auto scrollbar-hide scroll-smoot items-center">
     <!-- Identity Design Section -->
     <a href="{{ route('basket') }}">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
-      <img src="{{ asset('image/basket.png') }}" alt="Basket" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+      <img src="{{ asset('image/basket.png') }}" alt="Basket" class="w-96 h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">Basket</h3>
       </div>
@@ -46,7 +46,7 @@
     <!-- GDSC -->
     <a href="{{ route('GDSC') }}">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
-      <img src="{{ asset('image/gdsc.png') }}" alt="GDSC" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+      <img src="{{ asset('image/gdsc.png') }}" alt="GDSC" class="w-96 h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">GDSC</h3>
       </div>
@@ -55,7 +55,7 @@
     <!-- Gitar -->
     <a href="{{ route('Gitar') }}">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
-      <img src="{{ asset('image/gitar.png') }}" alt="Gitar" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+      <img src="{{ asset('image/gitar.png') }}" alt="Gitar" class="w-96 h-auto object-cover rounded-lg shadow-lg cursor-pointer ">
       <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">PGM</h3>
       </div>
@@ -64,7 +64,7 @@
     <!-- PSM -->
     <a href="{{ route('Psm') }}" target="Psm">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
-      <img src="{{ asset('image/padus.png') }}" alt="PSM" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+      <img src="{{ asset('image/padus.png') }}" alt="PSM" class="w-96 h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">PSM</h3>
       </div>
@@ -73,7 +73,7 @@
     <!-- English -->
     <a href="{{ route('English') }}">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
-      <img src="{{ asset('image/english.png') }}" alt="English" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer">
+      <img src="{{ asset('image/english.png') }}" alt="English" class="w-96 h-auto object-cover rounded-lg shadow-lg cursor-pointer">
       <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">English</h3>
       </div>
@@ -82,7 +82,7 @@
     <!-- 3DC -->
     <a href="{{ route('3DC') }}">
     <div class="relative group min-w-[250px] md:min-w-[200px] lg:min-w-[300px] animate-slide-up">
-      <img src="{{ asset('image/3dc.png') }}" alt="3dc" class="w-full h-auto object-cover rounded-lg shadow-lg cursor-pointer w-96 h-96">
+      <img src="{{ asset('image/3dc.png') }}" alt="3dc" class="w-96 h-auto object-cover rounded-lg shadow-lg cursor-pointer ">
       <div class="text-center mt-2">
         <h3 class="text-lg font-semibold">3dc</h3>
       </div>

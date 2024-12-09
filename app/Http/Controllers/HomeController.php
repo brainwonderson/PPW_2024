@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\keanggotaan;
+use App\Models\votes;
 
 class HomeController extends Controller
 {
@@ -18,5 +19,11 @@ class HomeController extends Controller
         $wakilKetua = keanggotaan::where('jabatan', 'Wakil Ketua')->first();
 
         return view('home', compact('ketua', 'wakilKetua', 'departemen'));
+    }
+    
+    public function vote()
+    {
+        $data = votes::all(); 
+        return view('menu.vote', compact('data'));
     }
 }

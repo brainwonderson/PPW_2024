@@ -10,7 +10,7 @@
         <h2 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-6 md:mb-8 lg:mb-10">
             KABINET SAHALA SAUDURAN 2023/2024
         </h2>
-        <a href="#" class="px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">
+        <a href="about" class="px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white rounded">
             What we do
         </a>
     </div>
@@ -18,7 +18,7 @@
 
 <div class="flex items-center justify-center my-10 md:mx-10">
     <div class="text-center sm:px-24 md:px-10">
-        <p class="text-lg leading-relaxed sm:text-xl md:text-2xl lg:text-3xl">
+        <p class="text-sm leading-relaxed sm:text-base md:text-lg lg:text-xl">
             Badan Eksekutif Mahasiswa (BEM) merupakan sebuah organisasi yang dikenal sebagai
             lembaga eksekutif intra kampus yang bertugas untuk menghimpun seluruh kegiatan umum secara institusi
             yang diselenggarakan oleh Keluarga Mahasiswa Institut Teknologi Del (KM IT Del).
@@ -31,14 +31,14 @@
 </div>
 </div>
 
-<div class="container mx-auto my-10">
+<div class="container mx-auto my-10 ml-3">
     <h3 class="text-3xl font-bold text-center mb-8">Landasan</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ml-3">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mx-auto ml-5">
       
       <!-- Card Martuhan -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center max-w-lg mx-auto sm:max-w-full martuhan-image">
         <img src="https://img.freepik.com/free-photo/praying-hands-with-faith-religion-belief-god-power-hope-devotion_79161-710.jpg?size=626&ext=jpg" 
-             alt="Martuhan Image" class="w-full h-48 object-cover">
+             alt="Martuhan Image" class="w-full h-32 object-cover sm:h-32 md:h-64 lg:h-80">
         <div class="p-5">
           <h5 class="text-xl font-bold mb-2">Martuhan</h5>
           <p class="text-gray-700">“Kasihinilah Tuhan Allahmu, dengan segenap hatimu dan dengan segenap jiwamu dan dengan segenap akal budimu.”</p>
@@ -46,9 +46,9 @@
       </div>
       
       <!-- Card Marroha -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center max-w-lg mx-auto sm:max-w-full">
         <img src="{{ asset('image/marroha.jpeg') }}" 
-             alt="Marroha Image" class="w-full h-48 object-cover">
+             alt="Marroha Image" class="w-full h-48 object-cover sm:h-64 md:h-72 lg:h-80">
         <div class="p-5">
           <h5 class="text-xl font-bold mb-2">Marroha</h5>
           <p class="text-gray-700">“Ajarlah kami menghitung hari-hari kami sedemikian, hingga kami beroleh hati yang bijaksana.”</p>
@@ -56,9 +56,9 @@
       </div>
       
       <!-- Card Marbisuk -->
-      <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center">
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center max-w-lg mx-auto sm:max-w-full">
         <img src="{{ asset('image/marbisuk.jpg') }}" 
-             alt="Marbisuk Image" class="w-full h-48 object-cover">
+             alt="Marbisuk Image" class="w-full h-48 object-cover sm:h-64 md:h-72 lg:h-80">
         <div class="p-5">
           <h5 class="text-xl font-bold mb-2">Marbisuk</h5>
           <p class="text-gray-700">“Berbahagialah orang yang mendapat hikmat, orang yang memperoleh kepandaian.”</p>
@@ -67,13 +67,12 @@
   
     </div>
 </div>
-</div>
 
 
 <!-- Bagian Visi dan Misi -->
 <section class="bg-sky-200 py-20">
     <div class="container text-left px-4 md:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left ml-20">VISI & MISI</h2>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:text-left  md:text-left ml-20">VISI & MISI</h2>
 
         <div class="flex flex-wrap md:flex-nowrap justify-between items-start">
             <!-- Visi -->
@@ -119,7 +118,7 @@
 </section>
 
 <!-- Bagian Departemen -->
-<section class="container mx-auto py-20 ml-3 sm:ml-3 md:ml-3">
+<section class="container mx-auto py-20 px-4 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-bold text-center mb-10">DEPARTEMEN</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- departemen -->
@@ -177,6 +176,7 @@
             <p class="text-gray-600">Berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.</p>
         </div>
     </div>
+    
 </section>
 
 @endsection
