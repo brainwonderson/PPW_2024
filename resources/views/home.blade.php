@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="parallax bg-cover bg-center h-screen relative" style="background-image: url('{{ asset('image/del.jpg') }}')">
+<div class=" bg-cover bg-center h-screen relative" style="background-image: url('{{ asset('image/del.jpg') }}')">
     <div class="absolute inset-0 bg-black opacity-50"></div>
     <div class="container mx-auto h-full flex flex-col justify-center items-center relative z-10 text-white text-center p-5 md:p-10">
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 lg:mb-8">
@@ -16,9 +16,9 @@
     </div>
 </div>
 
-<div class=" flex items-center justify-center mt-10">
-    <div class="text-center px-6">
-        <p class="text-lg leading-relaxed sm:text-xl lg:text-2xl">
+<div class="flex items-center justify-center my-10 md:mx-10">
+    <div class="text-center sm:px-24 md:px-10">
+        <p class="text-lg leading-relaxed sm:text-xl md:text-2xl lg:text-3xl">
             Badan Eksekutif Mahasiswa (BEM) merupakan sebuah organisasi yang dikenal sebagai
             lembaga eksekutif intra kampus yang bertugas untuk menghimpun seluruh kegiatan umum secara institusi
             yang diselenggarakan oleh Keluarga Mahasiswa Institut Teknologi Del (KM IT Del).
@@ -26,13 +26,14 @@
     </div>
 </div>
 
+
 </div>
 </div>
 </div>
 
 <div class="container mx-auto my-10">
     <h3 class="text-3xl font-bold text-center mb-8">Landasan</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 ml-3">
       
       <!-- Card Martuhan -->
       <div class="bg-white shadow-lg rounded-lg overflow-hidden text-center">
@@ -71,19 +72,19 @@
 
 <!-- Bagian Visi dan Misi -->
 <section class="bg-sky-200 py-20">
-    <div class="container mx-auto text-left px-4 md:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left">VISI & MISI</h2>
+    <div class="container text-left px-4 md:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center md:text-left ml-20">VISI & MISI</h2>
 
         <div class="flex flex-wrap md:flex-nowrap justify-between items-start">
             <!-- Visi -->
             <div class="w-full md:w-2/3 p-5">
-                <h3 class="text-2xl md:text-4xl roboto mb-4">VISI</h3>
-                <p class="text-gray-800 font-semibold">
+                <h3 class="text-2xl md:text-4xl roboto mb-4 ml-20">VISI</h3>
+                <p class="text-gray-800 font-semibold ml-20">
                     Mewujudkan Badan Eksekutif Mahasiswa IT Del yang lebih baik melalui partisipasi aktif mahasiswa dalam berbagai aspek kehidupan kampus dan masyarakat serta mendengar segala bentuk aspirasi Mahasiswa.
                 </p>
             </div>
             <!-- Foto Ketua di sebelah kanan -->
-            <div class="w-full md:w-1/3 flex justify-center md:justify-end items-center mt-6 md:mt-0">
+            <div class="w-full md:w-1/3 flex justify-center mr-5 md:justify-end items-center mt-6 md:mt-0">
               @if(isset($ketua->departemen) && strtoupper($ketua->departemen) == 'BPH INTI')
                 <div class="text-center">
                     <img src="{{ asset('/bem/'. $ketua->foto) }}" alt="{{ $ketua->name }}" class="w-48 h-48 md:w-64 md:h-64 mx-auto">
@@ -105,8 +106,8 @@
             </div>
             <!-- Misi -->
             <div class="w-full md:w-2/3 pr-0 md:pr-10">
-                <h3 class="text-2xl md:text-4xl font-semibold mb-4">MISI</h3>
-                <ul class="text-gray-700 list-disc list-inside space-y-2">
+                <h3 class="text-2xl md:text-4xl font-roboto mb-4 ml-20">MISI</h3>
+                <ul class="text-gray-800 font-semibold list-disc list-inside space-y-2 ml-20">
                     <li>Mewakili suara mahasiswa dan memperjuangkan kepentingan mahasiswa di tingkat kampus dan nasional.</li>
                     <li>Menyelenggarakan berbagai kegiatan yang bermanfaat dan menarik untuk kemajuan akademik, sosial, dan keagamaan mahasiswa.</li>
                     <li>Membangun jaringan kerjasama dengan lembaga di dalam dan luar kampus untuk meningkatkan kualitas dan kuantitas kegiatan BEM.</li>
@@ -116,17 +117,9 @@
         </div>
     </div>
 </section>
-{{-- <style>
-    .parallax {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-</style> --}}
 
 <!-- Bagian Departemen -->
-<section class="container mx-auto py-20">
+<section class="container mx-auto py-20 ml-3 sm:ml-3 md:ml-3">
     <h2 class="text-3xl font-bold text-center mb-10">DEPARTEMEN</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- departemen -->

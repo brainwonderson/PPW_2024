@@ -54,7 +54,7 @@
     <nav class="bg-white shadow p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-4">
-                <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
+                <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12  cursor-pointer">
                 <div class="flex flex-col text-center md:text-left">
                     <span class="text-2xl font-bold text-gray-800">BEM IT Del</span>
                     <span class="text-sm font-bold text-gray-800">Kabinet Sahala Saunduran</span>
@@ -69,7 +69,7 @@
             </div>
             
             <!-- Navbar Links -->
-            <ul class="nav-links flex md:flex-row space-y-3 md:space-y-0 md:space-x-6 p-4 font">
+            <ul class="nav-links flex md:flex-row space-y-3 md:space-y-0 md:space-x-6 p-4 font-bold">
                 <li><a href="/" class="text-gray-700 hover:text-blue-500">Home</a></li>
                 <li><a href="/about" class="text-gray-700 hover:text-blue-500">About us</a></li>
                 
