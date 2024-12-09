@@ -71,7 +71,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Pengumpulan Dana Inventory
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                Kegiatan ini merupakan program kerja rutin dari Departemen Olahraga. Panitia akan mendiskuasikan tenggat waktu dan jumlah dana yang akan dikumpulkan oleh mahasiswa, panitia juga akan menyampaikan informasi terkait pengadaan pengumpulan inventori kepada mahasiswa angkatan 2023, dan dananya akan dipakai untuk membeli peralatan olahraga.
+                    Pengumpulan dana untuk membeli peralatan olahraga tiap angkatan.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Senam Pagi
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Kegiatan yang dilaksanakan oleh seluruh mahasiswa yang berada di asrama dalam setiap hari Selasa dan Jumat pada pukul 05.00 pagi.
+                    Senam untuk mahasiswa yang berada di asrama dalam setiap hari Selasa dan Jumat pada pukul 05.00 pagi.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Fun Match With IT Del
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                Wadah bagi mahasiswa yang ingin berkompetisi dalam bidang olahraga. Kompetisi ini mengikutsertakan olahraga futsal dan voli.
+                    Kompetisi ini futsal dan voli bagi Mahasiswa/i.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Keluaga Mahasiswa Cup (KM Cup)
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                Meliputi pertandingan untuk beberapa cabang olahraga yang diikuti oleh seluruh Mahasiswa/i serta dosen/staff. Dalam kegiatan KM-Cup ini setiap Mahasiswa/i berkesempatan menyalurkan dan mengembangkan bakat yang dimilikinya dalam bidang olahraga. Hal ini diperkuat dengan fakta bahwa Institut Teknologi Del memiliki Dosen, Staf, serta Mahasiswa/i yang sangat menyukai olahraga.
+                    Pertandingan untuk beberapa cabang olahraga yang diikuti oleh seluruh Mahasiswa/i serta dosen/staff. 
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
