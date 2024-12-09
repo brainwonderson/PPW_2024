@@ -80,7 +80,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Support Antar Departemen BEM IT Del
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Membantu Departemen BEM IT Del lainnya dalam usaha menyukseskan program kerja yang sedang/ telah dipersiapkan. Yang dimana, DEPKEBDIS akan membantu dalam menjaga ketertiban dan kedisplinan.
+                    Membantu Departemen BEM IT Del lainnya dalam usaha menyukseskan program kerja.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Pemeriksaan perlengkapan makan Mahasiswa/Mahasiswi
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                Membariskan Mahasiswa/i sebelum makan dan melakukan pemeriksaan perlengkapan makan dari setiap Mahasiswa/i (Pin, Tupperware, Payung, Sendok dan Garpu). Jika ada Mahasiswa/i yang tidak membawa salah satu perlengkapan makan maka akan dikenakan sanksi sesuai dengan peraturan yang berlaku.
+                Membariskan Mahasiswa/i sebelum makan dan melakukan pemeriksaan perlengkapan makan.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Pengawasan Pelaksanaan Piket Makan
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Mengatur penjadwalan piket makan dan mengawasi pelaksanaan piket makan yang dilakukan oleh seluruh Mahasiswa/i Institut Teknologi Del. Apabila ada Mahasiswa/i yang terlambat melakukan tugas piket atau tidak melaksanakannya maka Departemen Ketertiban dan Kedisiplinan akan melaporkan nama-nama tersebut kepada pihak Keasramaan untuk nantinya ditindaklanjuti sesuai dengan peraturan yang berlaku di lingkungan Institut Teknologi Del.
+                    Mengatur penjadwalan piket makan dan mengawasi pelaksanaan piket makan yang dilakukan oleh seluruh Mahasiswa/i.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Membuat Denah Makan Mahasiswa/Mahasiswi
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Membuat denah makan untuk mengalokasikan tempat Mahasiswa/i dan akan dilakukan penomoran pada setiap meja di kantin sehingga tidak ada yang boleh memindahkan meja serta pindah tempat duduk. Hal ini juga dilakukan untuk memudahkan anggota Departemen Ketertiban dan Kedisiplinan dan pihak keasramaan ketika melakukan pendataan Mahasiswa/i yang mungkin tidak makan ke kantin untuk selanjutnya ditindaklanjuti.
+                    Membuat denah makan untuk mengalokasikan tempat makan Mahasiswa/i.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Lomba Peraturan Baris Berbaris (PBB)
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                Perlombaan untuk menguji kemampuan peserta didik dalam mempraktikkan Peraturan Baris Berbaris. Kegiatan ini diselenggarakan 1 kali dalam satu semester.
+                Perlombaan yang diselenggarakan 1 kali dalam satu semester.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
