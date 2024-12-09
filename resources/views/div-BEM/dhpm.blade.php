@@ -80,7 +80,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Mengumpulkan Dana Jika Terjadi Bencana Alam di Sekitar Kampus IT Del dan Daerah Lainnya
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Program ini dilakukan untuk membantu masyarakat dalam mengatasi  bencana yang sedang dialami dan meningkatkan kepedulian kita terhadap orang sekeliling.
+                    Program ini dilakukan untuk membantu masyarakat dalam mengatasi  bencana yang sedang dialami.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Membantu Mencari Sponsor dalam Kegiatan Besar yang Akan Dilakukan oleh BEM IT Del
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Sponsor yang akan dilakukan  akan membantu dana BEM IT Del dalam penyelenggaraan acara dan memperkenalkan IT Del menjadi semakin luas di instansi Perusahaan atau pun Yayasan.
+                    Akan membantu dana BEM IT Del dalam penyelenggaraan acara.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Sponsor yang Akan Dilakukan Akan Membantu Dana BEM IT Del dalam Penyelenggaraan Acara dan Memperkenalkan IT Del Menjadi Semakin Luas di Instansi Perusahaan ataupun Yayasan
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Program ini dilaksanakan untuk melakukan pengabdian kepada lingkungan sekitar kampus, seperti mengutip sampah yang berada di sekitar kampus IT Del.
+                    Pengabdian kepada lingkungan sekitar kampus, seperti mengutip sampah yang berada di sekitar kampus IT Del.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Mengadakan Penyuluhan Terkait Kesadaran akan Sampah ke Sekolah-Sekolah di Balige dan Sekitarnya
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Program ini dilaksanakan untuk menyampaikan kepada para siswa akan kesadaran terhadap sampah di lingkungan sekitar mereka.
+                    Program untuk menyampaikan kepada para siswa akan kesadaran terhadap sampah di lingkungan sekitar mereka.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Mengadakan Kerjasama dengan Media Massa
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                Program ini dilakukan untuk memperluas pengaruh del bukan hanya di daerah Tobasa, diharapkan dapat mencapai luar provinsi. 
+                Program untuk memperluas pengaruh del bukan hanya di daerah Tobasa, diharapkan dapat mencapai luar provinsi. 
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -134,7 +134,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Mengadakan Kerjasama dengan Pemerintah Tobasa
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Program ini dilakukan untuk menciptakan dan membangun kepedulian mahasiswa/i IT Del terhadap event yang diadakan di wilayah Tobasa melalui partisipasi dalam program yang disusun oleh pemerintah Tobasa.
+                    Program untuk membangun kepedulian mahasiswa/i IT Del terhadap event yang diadakan di wilayah Tobasa dengan cara berpartisipasi.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -143,7 +143,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Mengadakan Donasi Buku
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Program kerja ini bertujuan untuk menggalang donasi buku dan mendistribusikannya ke rumah baca. Kegiatan ini melibatkan partisipasi mahasiswa dalam memberikan buku-buku bekas yang masih layak baca agar dapat dimanfaatkan oleh lebih banyak orang, terutama anak-anak dan remaja yang memiliki akses terbatas terhadap bahan bacaan.
+                    Program untuk menggalang donasi buku dan mendistribusikannya ke rumah baca. 
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
