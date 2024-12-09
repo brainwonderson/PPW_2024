@@ -82,7 +82,6 @@ class BEMController extends Controller
             'nama' => 'required|string|max:255',
             'departemen' => 'required|string',
             'jabatan' => 'required|string',
-            // 'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', 
         ]);
 
         $path = null;
@@ -107,7 +106,6 @@ class BEMController extends Controller
         $request->validate([
             'nomor_kandidat' => 'required|string',
             'nama_kandidat' => 'required|string',
-            // 'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', 
         ]);
 
         $path = null;
@@ -127,17 +125,49 @@ class BEMController extends Controller
     }
     
     public function insertdatadepartemen(Request $request)
-    {   
-        departemen::create($request->all());
-        return redirect()->route('departemen');
+    {
+        $request->validate([
+            'nama' => 'required|string',
+            'deskripsi' => 'required|string',
+            'ketua' => 'required|string',
+            'wakilketua' => 'required|string',
+        ]);
+
+        $path = null;
+        if($request->hasFile('logo') == null) {
+            $path = ''; 
+        } else {
+            $path = time() . '.' . $request->logo->getClientOriginalExtension(); 
+            $request->logo->move(public_path('bem'), $path);
+        }
+
+        departemen::create([
+            'nama' => $request->input('nama'),
+            'deskripsi' => $request->input('deskripsi'),
+            'ketua' => $request->input('ketua'),
+            'wakilketua' => $request->input('wakilketua'),
+            'logo' => $path, 
+        ]);
+        return redirect()->route('departemen')->with('success', 'Data has been added successfully!');
     }
     
-    public function insertdataukm(Request $request)
-    {   
-        ukm::create($request->all());
-        return redirect()->route('ukm');
+    public function insertukm(Request $request)
+    {
+        $request->validate([
+            'nama' => 'required|string',
+            'deskripsi' => 'required|string',
+            'programkerja' => 'required|string',
+            'ketua' => 'required|string',
+        ]);
+
+        ukm::create([
+            'nama' => $request->input('nama'),
+            'deskripsi' => $request->input('deskripsi'),
+            'programkerja' => $request->input('programkerja'),
+            'ketua' => $request->input('ketua'),
+        ]);
+        return redirect()->route('ukm')->with('success', 'Data has been added successfully!');
     }
-    
 
     public function tampilkandata($id)
     {
@@ -153,7 +183,6 @@ class BEMController extends Controller
             'nama' => 'required|string|max:255',
             'departemen' => 'required|string',
             'jabatan' => 'required|string',
-            // 'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', 
         ]);
 
         $updateData = [
@@ -180,11 +209,41 @@ class BEMController extends Controller
         return redirect()->route('keanggotaan')->with('success', 'Data berhasil diubah');
     }
 
-    public function delete($id)
+    public function delete_keanggotaan($id)
     {
         $data = keanggotaan::find($id);
         $data->delete();
         return redirect()->route('keanggotaan')->with('success', 'Data berhasil dihapus');
     }
+    
+    public function delete_vote($id)
+    {
+        $data = votes::find($id);
+        $data->delete();
+        return redirect()->route('vote')->with('success', 'Data berhasil dihapus');
+    }
+    
+    public function delete_departemen($id)
+    {
+        $data = departemen::find($id);
+        $data->delete();
+        return redirect()->route('departemen')->with('success', 'Data berhasil dihapus');
+    }
+    
+    public function delete_ukm($id)
+    {
+        $data = ukm::find($id);
+        $data->delete();
+        return redirect()->route('ukm')->with('success', 'Data berhasil dihapus');
+    }
+
+    public function openSession()
+    {
+        // Mengaktifkan semua kandidat
+        DB::table('candidates')->update(['is_active' => true]);
+
+        return redirect('/admin/vote')->with('success', 'Session has been opened. All candidates are now visible.');
+    }
+
 
 }

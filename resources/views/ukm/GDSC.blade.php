@@ -24,7 +24,7 @@
         <div class="bg-yellow-100 p-10 rounded-lg shadow-lg text-center">
             <div class="flex flex-col items-center">
                 <!-- Logo/Avatar -->
-                <img src="{{ asset('image/gdsc.jpg') }}" alt="GDSC Logo" class="w-20 h-20 rounded-full mb-4">
+                <img src="{{ asset('image/gdsc.png') }}" alt="GDSC Logo" class="w-20 h-20 rounded-full mb-4">
                 <!-- Title -->
                 <h1 class="text-3xl font-bold mb-6">Google Developer Student Clubs (GDSC)</h1>
                 <!-- Description -->
@@ -38,7 +38,7 @@
 
         <!-- Program Kerja Section -->
         <div class="program-kerja text-center mt-12 animate_animated animatefadeInUp animate_delay-1s">
-            <h2 class="text-2xl font-semibold mb-6">Program Kerja</h2>
+            <h2 class="text-2xl font-semibold mb-6">Jenis Kegiatan</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <div class="program-item bg-white p-6 rounded-md shadow-md">Workshops dan Pelatihan Teknologi</div>
                 <div class="program-item bg-white p-6 rounded-md shadow-md">Bootcamp Pengembangan Keterampilan</div>

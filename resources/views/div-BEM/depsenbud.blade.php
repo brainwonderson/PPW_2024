@@ -71,7 +71,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
             Cover Online
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Tiap anggota Depsenbud akan mengupload bakat yang dimiliki dan mengupload ke social media Depsenbud seperti Instagram dan Youtube dan Depsenbud akan menjadi penghubung kepada mahasiswa apabila mahasiswa ingin bakat dari mahasiswa tersebut di up ke social media Depsenbud. Program kerja rutin ini akan diadakan 1 x 2 minggu.Dengan tujuan sebagai wadah menanamkan atau mengingatkan kembali mengenai keberagaman budaya Indonesia ,jiwa nasionalisme serta kreativitas dari mahasiswa Institut Teknologi Del.
+                    Tiap anggota Depsenbud akan mengupload bakat yang dimiliki dan mengupload ke social media Depsenbud.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Podcast
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Merupakan rekaman asli audio atau video yang dilakukan oleh Depsenbud. Program kerja rutin ini diadakan 1 x 2 minggu Dimana tiap anggota Depsenbud akan mewawancarai narasumber dari setiap departemen dan Himpunan Mahasiswa.
+                    Tiap anggota Depsenbud akan mewawancarai narasumber dari setiap departemen dan Himpunan Mahasiswa.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Del Music Corner
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Music Corner adalah acara/program kerja rutin dari Departemen Seni dan Budaya. Acara ini akan diadakan 1 kali setiap 3 bulan, bertempat di EH dan bergantian dengan OT pada pukul 14.00 s/d 18.00 WIB. Acara dapat diisi setiap mahasiswa yang ingin tampil dengan tema-tema yang berbeda setiap bulannya yang berkaitan dengan nusantara dan budaya.
+                    Acara diisi setiap mahasiswa yang ingin tampil dengan tema-tema yang berbeda setiap bulannya berkaitan dengan nusantara dan budaya.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -98,7 +98,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Festival Budaya
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Mahasiswa diberikan wadah untuk menanamkan atau mengingatkan kembali megenai keberagaman budaya Indonesia terkhusus 8 etnik budaya yang ada pada Sumut dan juga menamkan kembali jiwa nasionalisme. Dilaksanakan pada GSG dan dimulai dari pukul 13.00 s/d 18.00(selesai).
+                    Wadah untuk mengingatkan kembali megenai keberagaman budaya Indonesia.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Del Art Competition
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Mahasiswa diberi wadah untuk menyalurkan bakat dan menumbuhkan jiwa kompetisi serta meningkatkan kreativitas dan inovasi dari Mahasiswa dan merupakan salah satu acara untuk menambahkan softskill Mahasiswa yang berguna untuk menghadapi Industri 4.0, dengan mengangkat tema : Corak Nusantara. Penampilan atau karya peserta akan ditampilkan secara langsung dan akan di upload melalui akun Youtube dan Instagram DEPSENBUD.
+                    Acara untuk menambahkan softskill Mahasiswa yang berguna untuk menghadapi Industri 4.0, dengan mengangkat tema : Corak Nusantara.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Konser
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                Konser adalah suatu pertunjukan langsung, biasanya musik, di depan penonton. Musik dapat dimainkan oleh musikus tunggal, kadang disebut resital, atau suatu ensembel musik, seperti orkestra, paduan suara, atau grup musik. Di manapun dilangsungkan, musisi biasanya tampil di atas suatu panggung.
+                Pertunjukan langsung, biasanya musik, di depan civitas akademika IT Del. 
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -125,7 +125,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Makrab
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Makrab merupakan program kerja internal dari Depsenbud yang bertujuan untuk mengakrabkan dan lebih mengenal antar anggota dalam Depsenbud. Kegiatan ini diisi dengan kegiatan-kegiatan yang mendukung bagaimana caranya agar anggota-anggota bisa lebih dekat dan lebih akrab khususnya anggota baru. Kegiatan yang dilakukan yakni permainan berkelompok, sharing pendapat, makan bersama sampai camping bersama sama dalam satu tempat. Dimana kegiatan ini akan dilakukan di luar lingkungan kampus dan dilaksanakan ketika weekend atau libur kuliah.
+                    Bertujuan untuk lebih mengenal antar anggota dalam Depsenbud. 
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>

@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -20,16 +19,22 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         DB::table('users')->insert([
-            'username' => 'seed',
-            'email' => 'seed@gmail.com',
-            'password' => Hash::make('admin12345'),
+            'name' => 'user',
+            'email' => 'user@gmail.com',
+            'password' => Hash::make('user'),
         ]);
    
         DB::table('users')->insert([
-            'username' => 'adm',
-            'email' => 'adm@gmail.com',
+            'name' => 'admin',
+            'email' => 'admin@gmail.com',
             'password' => Hash::make('admin'),
         ]);
+        keanggotaan::create([
+            'nama' => 'Jane Smith',
+            'departemen' => 'BPH INTI',
+            'jabatan' => 'Ketua',
+            'foto' => '1733384936.png', 
+        ]);
 
 
         // User::factory()->create([

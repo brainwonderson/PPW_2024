@@ -70,8 +70,9 @@
             <!-- Program Card 1 -->
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Ibadah Jumat
-                <div class="absolute hidden group-hover:block bg-white p-4 rounded-lg shadow-lg w-64 left-1/2 transform -translate-x-1/2 -top-24 z-20 text-left">
-                    <p class="text-gray-700">Informasi lebih lanjut tentang Ibadah Jumat.</p>
+                <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
+                    Ibadah yang rutin dilakukan oleh umat Kristiani pada hari Jumat.
+                    <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
     
@@ -79,7 +80,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Weekly Reflection
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Meng-email renungan singkat dan pertanyaan tentang isi renungan tersebut kepada setiap mahasiswa pada awal minggu. Dan memberikan apresiasi berupa sticky note jika jawaban mahasiswa tersebut tepat.
+                    Meng-email renungan singkat dan pertanyaan tentang isi renungan tersebut kepada setiap mahasiswa pada awal minggu. 
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -88,7 +89,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Sharing Session
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Melakukan pertemuan keluarga Muslim dan sharing session sesama muslim. Dan memberikan apresiasi berupa door prize bagi mahasiswa yang hapal ayat Al-quran.
+                    Pertemuan keluarga dan sharing session sesama muslim serta memberikan apresiasi berupa door prize bagi mahasiswa yang hapal ayat Al-quran.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -97,7 +98,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Pengajian
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Belajar ilmu agama bersama seorang Alim atau orang yang berilmu yang merupakan bentuk ibadah yang wajib bagi setiap Muslim.
+                    Belajar ilmu agama bersama seorang Alim yang merupakan bentuk ibadah yang wajib bagi setiap Muslim.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -106,7 +107,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Ibadah Misa
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Ibadah yang rutin oleh mahasiswa yang beragama Katolik.
+                    Ibadah yang rutin dilakukan oleh mahasiswa yang beragama Katolik.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -115,7 +116,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 FMR
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Festival yang diikuti oleh seluruh Mahasiswa. Setiap peserta akan menyanyikan lagu Rohani yang ditentukan oleh Departemen Agama dan Sosial.
+                    Diikuti oleh seluruh mahasiswa dan setiap peserta akan menyanyikan lagu Rohani yang ditentukan oleh Departemen Agama dan Sosial.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>
@@ -133,7 +134,7 @@
             <div class="relative bg-gray-200 p-6 rounded-lg text-center transform transition duration-300 hover:bg-gray-300 hover:scale-105 program-card cursor-pointer">
                 Hoppin' into Easter
                 <div class="tooltip absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-64 bg-teal-500 text-white text-sm p-3 rounded-lg shadow-lg">
-                    Games di pagi hari sebelum ibadah paskah (Egg-cellent Adventure Quest, Bible Intelligence, Fast and Furios Egg). Kegiatan ini juga diselingi oleh penampilan dari tiap-tiap himpunan.
+                    Games di pagi hari sebelum ibadah paskah yang juga diselingi oleh penampilan dari tiap-tiap himpunan.
                     <div class="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-t-8 border-t-teal-500"></div>
                 </div>
             </div>

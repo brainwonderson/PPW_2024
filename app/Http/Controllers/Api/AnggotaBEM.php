@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Api;
-use App\Models\PostAnggotaBEM;
+use App\Models\keanggotaan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\PostResource;
@@ -18,7 +18,7 @@ class AnggotaBEM extends Controller
     public function index()
     {
         //get all posts
-        $posts = PostAnggotaBEM::latest()->paginate(5);
+        $posts = keanggotaan::latest()->paginate(5);
 
         //return collection of posts as a resource
         return new PostResource(true, 'List Data Posts', $posts);
@@ -34,10 +34,10 @@ class AnggotaBEM extends Controller
     {
         //define validation rules
         $validator = Validator::make($request->all(), [
-            'foto'     => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'nama'     => 'required',
-            'divisi'   => 'required',
+            'departemen'   => 'required',
             'jabatan'  => 'required',
+            'foto'     => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
         //check if validation fails
@@ -50,11 +50,11 @@ class AnggotaBEM extends Controller
         $image->storeAs('public/posts/AnggotaBEM', $image->hashName());
 
         //create post
-        $post = PostAnggotaBEM::create([
-            'foto'     => $image->hashName(),
+        $post = keanggotaan::create([
             'nama'     => $request->nama,
-            'divisi'   => $request->divisi,
+            'departemen'   => $request->departemen,
             'jabatan'   => $request->jabatan,
+            'foto'     => $image->hashName(),
         ]);
 
         //return response
@@ -70,7 +70,7 @@ class AnggotaBEM extends Controller
     public function show($id)
     {
         //find post by ID
-        $post = PostAnggotaBEM::find($id);
+        $post = keanggotaan::find($id);
 
         //return single post as a resource
         return new PostResource(true, 'Detail Data Post!', $post);
@@ -88,7 +88,8 @@ class AnggotaBEM extends Controller
         //define validation rules
         $validator = Validator::make($request->all(), [
             'nama'     => 'required',
-            'divisi'   => 'required',
+            'departemen'   => 'required',
+            'jabatan'  => 'required',
         ]);
 
         //check if validation fails
@@ -97,7 +98,7 @@ class AnggotaBEM extends Controller
         }
 
         //find post by ID
-        $post = PostAnggotaBEM::find($id);
+        $post = keanggotaan::find($id);
 
         //check if image is not empty
         if ($request->hasFile('foto')) {
@@ -111,17 +112,17 @@ class AnggotaBEM extends Controller
 
             //update post with new image
             $post->update([
-                'foto'     => $image->hashName(),
                 'nama'     => $request->nama,
-                'divisi'   => $request->divisi,
+                'departemen'   => $request->divisi,
                 'jabatan'   => $request->jabatan,
+                'foto'     => $image->hashName(),
             ]);
         } else {
 
             //update post without image
             $post->update([
                 'nama'     => $request->nama,
-                'divisi'   => $request->divisi,
+                'departemen'   => $request->divisi,
                 'jabatan'   => $request->jabatan,
             ]);
         }
@@ -140,7 +141,7 @@ class AnggotaBEM extends Controller
     {
 
         //find post by ID
-        $post = PostAnggotaBEM::find($id);
+        $post = keanggotaan::find($id);
 
         //delete image
         Storage::delete('public/posts/AnggotaBEM'.basename($post->foto));

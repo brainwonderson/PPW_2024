@@ -13,4 +13,16 @@ class keanggotaan extends Model
 
     protected $guarded = [];
 
+    /**
+     * image
+     *
+     * @return Attribute
+     */
+    protected function image(): Attribute
+    {
+        return Attribute::make(
+            get: fn ($foto) => url('/storage/posts/AnggotaBEM' . $foto),
+        );
+    }
+
 }
