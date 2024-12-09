@@ -7,6 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>UKM</title>
     @vite('resources/css/app.css')
 </head>
@@ -27,6 +28,7 @@
                     <a href="/tambahdata-vote" > Tambah Data </a>
                 </button>
             </div>
+
 
             <!-- Tabel -->
             <table class="min-w-full bg-white border border-gray-200">
@@ -52,7 +54,13 @@
                         <td class="py-2 px-4 border-b text-center">
                             <div class="inline-flex space-x-2">
                                 <a href="/tampilkandata/{{$row->id}}" type=button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">Edit</a>
-                                <a href="/delete/{{$row->id}}" type=button class="bg-red-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">Delete</a>
+                                <!-- <a href="/delete/{{$row->id}}" type=button class="bg-red-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">Delete</a> -->
+                                <a 
+                                    href="javascript:void(0);" 
+                                    onclick="confirmDelete({{ $row->id }})" 
+                                    class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded-full">
+                                    Delete
+                                </a>
                             </div>
                         </td>
                     </tr>
@@ -62,6 +70,26 @@
         </div>
 
     </div>
+
+    <script>
+        function confirmDelete(id) {
+            Swal.fire({
+                title: 'Apakah Anda yakin?',
+                text: "Data yang dihapus tidak dapat dikembalikan!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Ya, Hapus!',
+                cancelButtonText: 'Batal'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Redirect ke URL untuk menghapus data
+                    window.location.href = `/delete/vote/${id}`;
+                }
+            });
+        }
+    </script>
 
 </body>
 </html>

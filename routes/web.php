@@ -17,18 +17,7 @@ use App\Http\Controllers\Departemen\DepkebdisController;
 use App\Http\Controllers\Departemen\DepsenbudController;
 use App\Http\Controllers\Departemen\DepagsosController;
 
-
-
 Route::middleware('auth')->post('/vote/{candidateId}', [VoteController::class, 'vote']);
-
-
-// Route::get('/', function () {
-//     return view('home');
-// })->name('home');
-
-// Route::get('/home', function () {
-//     return view('home');
-// })->name('home');
 
 Route::get('/', [HomeController::class, 'tes'])->name('home');
 Route::get('/vote', [HomeController::class, 'vote'])->name('vote');
@@ -113,7 +102,7 @@ route::post('/insertkeanggotaan', [BEMController::class, 'insertdatakeanggotaan'
 
 route::post('/insertdepartemen', [BEMController::class, 'insertdatadepartemen'])->name('insertdepartemen');
 
-route::post('/insertukm', [BEMController::class, 'insertdataukm'])->name('insertukm');
+route::post('/insertukm', [BEMController::class, 'insertukm'])->name('insertukm');
 
 route::post('/insertvote', [BEMController::class, 'insertdatavote'])->name('insertvote');
 
@@ -124,6 +113,9 @@ route::get('/departemen', [BEMController::class, 'departemen'])->name('departeme
 route::get('/ukm', [BEMController::class, 'ukm'])->name('ukm');
 
 route::get('/tampilkandata/{id}', [BEMController::class, 'tampilkandata'])->name('tampilkandata');
-route::get('/delete/{id}', [BEMController::class, 'delete'])->name('delete');
+route::get('/delete/keanggotaan/{id}', [BEMController::class, 'delete_keanggotaan'])->name('delete');
+route::get('/delete/vote/{id}', [BEMController::class, 'delete_vote'])->name('delete');
+route::get('/delete/departemen/{id}', [BEMController::class, 'delete_departemen'])->name('delete');
+route::get('/delete/ukm/{id}', [BEMController::class, 'delete_ukm'])->name('delete');
 route::get('/updatedata/{id}', [BEMController::class, 'updatedata'])->name('updatedata');
 route::post('/updatedata/{id}', [BEMController::class, 'updatedata'])->name('updatedata');
