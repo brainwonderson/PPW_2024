@@ -16,14 +16,14 @@ class keanggotaanSeeder extends Seeder
     {
         // BPH INTI
         keanggotaan::create([
-            'nama' => 'Rony Bakara',
+            'nama' => 'Samuel Janring Sitio',
             'departemen' => 'BPH INTI',
             'jabatan' => 'Ketua',
             'foto' => '1733384936.png', 
         ]);
 
         keanggotaan::create([
-            'nama' => 'Samuel Siagian',
+            'nama' => 'Riovan Sihombing',
             'departemen' => 'BPH INTI',
             'jabatan' => 'Wakil Ketua',
             'foto' => '1733384936.png',
