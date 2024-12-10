@@ -19,7 +19,7 @@ class keanggotaanSeeder extends Seeder
             'nama' => 'Rony Bakara',
             'departemen' => 'BPH INTI',
             'jabatan' => 'Ketua',
-            'foto' => '1733384936.png', 
+            'foto' => '1733710820.png', 
         ]);
 
         keanggotaan::create([
@@ -31,14 +31,14 @@ class keanggotaanSeeder extends Seeder
 
         // DIPTEK
         keanggotaan::create([
-            'nama' => 'Alice Johnson',
+            'nama' => 'Josep Napitupulu',
             'departemen' => 'DIPTEK',
             'jabatan' => 'Ketua',
             'foto' => '1733384936.png', 
         ]);
 
         keanggotaan::create([
-            'nama' => 'Bob Williams',
+            'nama' => 'Youni Lumban Tobing',
             'departemen' => 'DIPTEK',
             'jabatan' => 'Wakil Ketua',
             'foto' => '1733384936.png',
