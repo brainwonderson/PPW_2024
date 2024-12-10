@@ -19,7 +19,7 @@ class keanggotaanSeeder extends Seeder
             'nama' => 'Rony Bakara',
             'departemen' => 'BPH INTI',
             'jabatan' => 'Ketua',
-            'foto' => '1733384936.png', 
+            'foto' => '1733710820.png', 
         ]);
 
         keanggotaan::create([
@@ -31,14 +31,14 @@ class keanggotaanSeeder extends Seeder
 
         // DIPTEK
         keanggotaan::create([
-            'nama' => 'Alice Johnson',
+            'nama' => 'Josep Napitupulu',
             'departemen' => 'DIPTEK',
             'jabatan' => 'Ketua',
             'foto' => '1733384936.png', 
         ]);
 
         keanggotaan::create([
-            'nama' => 'Bob Williams',
+            'nama' => 'Youni Lumban Tobing',
             'departemen' => 'DIPTEK',
             'jabatan' => 'Wakil Ketua',
             'foto' => '1733384936.png',
@@ -46,14 +46,14 @@ class keanggotaanSeeder extends Seeder
 
         // DEPOL
         keanggotaan::create([
-            'nama' => 'Charlie Brown',
+            'nama' => 'Albert Panggabean',
             'departemen' => 'DEPOL',
             'jabatan' => 'Ketua',
             'foto' => '1733384936.png', 
         ]);
 
         keanggotaan::create([
-            'nama' => 'David Lee',
+            'nama' => 'Salwa Harahap',
             'departemen' => 'DEPOL',
             'jabatan' => 'Wakil Ketua',
             'foto' => '1733384936.png',
@@ -61,14 +61,14 @@ class keanggotaanSeeder extends Seeder
 
         // DEPAGSOS
         keanggotaan::create([
-            'nama' => 'Emily Carter',
+            'nama' => 'Markus Hutagalung',
             'departemen' => 'DEPAGSOS',
             'jabatan' => 'Ketua',
             'foto' => '1733384936.png', 
         ]);
 
         keanggotaan::create([
-            'nama' => 'Frank Miller',
+            'nama' => 'Richard Aritonang',
             'departemen' => 'DEPAGSOS',
             'jabatan' => 'Wakil Ketua',
             'foto' => '1733384936.png',
@@ -76,14 +76,14 @@ class keanggotaanSeeder extends Seeder
 
         // DEPSENBUD
         keanggotaan::create([
-            'nama' => 'Grace Wilson',
+            'nama' => 'Theo Manullang',
             'departemen' => 'DEPSENBUD',
             'jabatan' => 'Ketua',
             'foto' => '1733384936.png', 
         ]);
 
         keanggotaan::create([
-            'nama' => 'Henry Taylor',
+            'nama' => 'Salomo Sinambela',
             'departemen' => 'DEPSENBUD',
             'jabatan' => 'Wakil Ketua',
             'foto' => '1733384936.png',
@@ -91,14 +91,14 @@ class keanggotaanSeeder extends Seeder
 
         // DHPM
         keanggotaan::create([
-            'nama' => 'Isabella Anderson',
+            'nama' => 'Sitogab Girsang',
             'departemen' => 'DHPM',
             'jabatan' => 'Ketua',
             'foto' => '1733384936.png', 
         ]);
 
         keanggotaan::create([
-            'nama' => 'Jack Thomas',
+            'nama' => 'Gabriel Sigalingging',
             'departemen' => 'DHPM',
             'jabatan' => 'Wakil Ketua',
             'foto' => '1733384936.png',
@@ -106,14 +106,14 @@ class keanggotaanSeeder extends Seeder
 
         // DPDK
         keanggotaan::create([
-            'nama' => 'Liam Jackson',
+            'nama' => 'Mariana Hasibuan',
             'departemen' => 'DPDK',
             'jabatan' => 'Ketua',
             'foto' => '1733384936.png', 
         ]);
 
         keanggotaan::create([
-            'nama' => 'Mia White',
+            'nama' => 'Jaden Panggabean',
             'departemen' => 'DPDK',
             'jabatan' => 'Wakil Ketua',
             'foto' => '1733384936.png',
@@ -121,22 +121,15 @@ class keanggotaanSeeder extends Seeder
 
         // DEPKEBDIS
         keanggotaan::create([
-            'nama' => 'Noah Harris',
+            'nama' => 'Pany Matondang',
             'departemen' => 'DEPKEBDIS',
             'jabatan' => 'Ketua',
             'foto' => '1733384936.png', 
         ]);
 
-        keanggotaan::create([
-            'nama' => 'Olivia Martin',
-            'departemen' => 'DEPKEBDIS',
-            'jabatan' => 'Wakil Ketua',
-            'foto' => '1733384936.png',
-        ]);
-
         // SARPRAS
         keanggotaan::create([
-            'nama' => 'Parker Lee',
+            'nama' => 'Ondo Siagian',
             'departemen' => 'SARPRAS',
             'jabatan' => 'Ketua',
             'foto' => '1733384936.png', 
