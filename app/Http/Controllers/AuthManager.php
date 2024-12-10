@@ -62,8 +62,14 @@ class AuthManager extends Controller
 
     public function logout()
     {
-        Auth::logout(); // Log the user out
-        Session::flush(); // Clear the session data
-        return redirect()->route('login'); // Redirect to login
+        Auth::logout(); 
+        Session::flush();
+        return redirect()->route('login'); 
     }
+    // public function logout(): RedirectResponse
+    // {
+    //     Auth::logout();
+    //     Session::flush();
+    //     return redirect(route(login))->with('message', 'You have been logged out successfully!');
+    // }
 }

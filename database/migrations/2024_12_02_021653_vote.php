@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nomor_kandidat');
             $table->string('nama_kandidat');
             $table->string('foto_kandidat')->default('')->nullable();
+            $table->integer('jumlah_vote')->default(0);
             $table->timestamps();
         });
     }

@@ -34,7 +34,7 @@
             <img src="{{ asset('image/proker.png') }}" alt="Department Event" class="rounded-md mx-auto w-100 h-600">
         </div>
     </div>
-
+    
     <!-- Leaders Section -->
     <div class="text-center mb-12 animate__animated animate__fadeInUp animate__delay-2s">
         <div class="flex justify-center space-x-16">
