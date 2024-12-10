@@ -54,7 +54,7 @@
         <div class="text-gray-100 text-xl">
             <div class="p-2.5 mt-1 flex items-center justify-between gap-1">
                 <img src="{{ asset('image/bem.png') }}" alt="bem" class="w-12 h-12 cursor-pointer">
-                <h1 class="font-bold text-gray-200 text-[15px]">Admin BEM</h1>
+                <h1 class="font-bold text-gray-200 text-[15px] pr-5">Admin BEM</h1>
                 <div class="cross lg:hidden" onclick="toggleSidebar()">&#10005;</div>
             </div>
             <div class="my-2 bg-gray-600 h-[1px]"></div>
