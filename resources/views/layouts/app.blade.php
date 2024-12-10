@@ -96,13 +96,27 @@
                     </div>
                 </li>
                 <li><a href="/vote" class="text-gray-700 hover:text-blue-500">Voting</a></li>
+                <!-- <div>
+                    @if (Auth::check())
+                        <a href="/logout" class="bg-blue-900 text-white px-4 py-2 rounded-md">Logout</a>
+                    @else
+                        <a href="/login" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
+                    @endif
+                </div> -->
                 <div>
                     @if (Auth::check())
-                        <a href="/login" class="bg-blue-900 text-white px-4 py-2 rounded-md">Logout</a>
+                        <a href="{{ route('logout') }}" 
+                        class="bg-blue-900 text-white px-4 py-2 rounded-md" 
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="GET" style="display: none;">
+                        </form>
                     @else
                         <a href="/login" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
                     @endif
                 </div>
+
             </ul>
             <!-- <div>
                 <a href="{{ url('/login') }}" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
