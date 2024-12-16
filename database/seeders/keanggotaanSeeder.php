@@ -26,7 +26,7 @@ class keanggotaanSeeder extends Seeder
             'nama' => 'Samuel Siagian',
             'departemen' => 'BPH INTI',
             'jabatan' => 'Wakil Ketua',
-            'foto' => '1733384936.png',
+            'foto' => '1733710833.png',
         ]);
 
         // DIPTEK

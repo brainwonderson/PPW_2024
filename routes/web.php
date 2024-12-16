@@ -55,7 +55,6 @@ Route::get('/basket', function () {
     return view('ukm/basket');
 })->name('basket');
 
-
 Route::get('/GDSC', function () {
     return view('ukm/GDSC');
 })->name('GDSC');

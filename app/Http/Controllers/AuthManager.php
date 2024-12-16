@@ -57,7 +57,6 @@ class AuthManager extends Controller
             return redirect(route('register'))->with("error","Registeration failed, Try Again!");
         }
         return redirect(route('login'))->with("succes","Registeration succesfull");
-
     }
 
     public function logout()
