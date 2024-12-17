@@ -20,11 +20,11 @@ class BEMController extends Controller
         return view('admin.admin'); 
     }
     
-    // public function keanggotaan()
-    // {
-    //     $data = keanggotaan::all(); 
-    //     return view('admin.keanggotaan', compact('data'));
-    // }
+    public function keanggotaan()
+    {
+        $data = keanggotaan::all(); 
+        return view('admin.keanggotaan', compact('data'));
+    }
     
     public function vote()
     {

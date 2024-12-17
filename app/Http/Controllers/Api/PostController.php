@@ -1,22 +1,11 @@
 <?php
 
 namespace App\Http\Controllers\Api;
-
-//import model Post
 use App\Models\Post;
-
 use Illuminate\Http\Request;
-
-//import resource PostResource
 use App\Http\Controllers\Controller;
-
-//import Http request
 use App\Http\Resources\PostResource;
-
-//import facade Validator
 use Illuminate\Support\Facades\Validator;
-
-//import facade Storage
 use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
@@ -76,7 +65,7 @@ class PostController extends Controller
      * @param  mixed $id
      * @return void
      */
-    public function show__($id)
+    public function show($id)
     {
         //find post by ID
         $post = Post::find($id);
@@ -84,40 +73,6 @@ class PostController extends Controller
         //return single post as a resource
         return new PostResource(true, 'Detail Data Post!', $post);
     }
-
-    public function show($id)
-    {
-        $post = Post::find($id); // Pastikan tabel dan model sesuai
-
-        if (!$post) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Data tidak ditemukan'
-            ], 404);
-        }
-
-        return response()->json([
-            'success' => true,
-            'message' => 'Detail Data Post!',
-            'data' => [
-                'id' => $post->id,
-                'foto' => $post->foto,
-                'nama' => $post->nama,
-                'divisi' => $post->divisi,
-                'jabatan' => $post->jabatan,
-                'created_at' => $post->created_at,
-                'updated_at' => $post->updated_at,
-                'links' => [
-                    [
-                        'rel' => 'self',
-                        'href' => route('anggota.show', ['id' => $post->id]),
-                        'method' => 'GET'
-                    ]
-                ]
-            ]
-        ]);
-    }
-
 
     /**
      * update

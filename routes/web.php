@@ -20,7 +20,7 @@ use App\Http\Controllers\Departemen\DepagsosController;
 Route::middleware('auth')->post('/vote/{candidateId}', [VoteController::class, 'vote']);
 
 Route::get('/', [HomeController::class, 'tes'])->name('home');
-Route::get('/vote', [HomeController::class, 'vote'])->name('vote');
+Route::get('/vote', [HomeController::class, 'vote'])->name('vote')->middleware('auth');
 Route::get('/register', [AuthManager::class, 'register'])->name('register'); 
 Route::post('/register', [AuthManager::class, 'registerPost'])->name('register.post'); 
 Route::get('/login', [AuthManager::class, 'login'])->name('login');
@@ -54,7 +54,6 @@ Route::get('/test', function () {
 Route::get('/basket', function () {
     return view('ukm/basket');
 })->name('basket');
-
 
 Route::get('/GDSC', function () {
     return view('ukm/GDSC');

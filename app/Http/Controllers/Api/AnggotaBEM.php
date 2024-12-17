@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 use App\Models\keanggotaan;
+use App\Models\PostAnggotaBEM;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\PostResource;
@@ -113,7 +114,7 @@ class AnggotaBEM extends Controller
             //update post with new image
             $post->update([
                 'nama'     => $request->nama,
-                'departemen'   => $request->divisi,
+                'departemen'   => $request->departemen,
                 'jabatan'   => $request->jabatan,
                 'foto'     => $image->hashName(),
             ]);
@@ -122,7 +123,7 @@ class AnggotaBEM extends Controller
             //update post without image
             $post->update([
                 'nama'     => $request->nama,
-                'departemen'   => $request->divisi,
+                'departemen'   => $request->departemen,
                 'jabatan'   => $request->jabatan,
             ]);
         }
