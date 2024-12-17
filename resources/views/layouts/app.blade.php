@@ -116,9 +116,9 @@
                 </div>
 
             </ul>
-            <!-- <div>
+             {{-- <div>
                 <a href="{{ url('/login') }}" class="bg-blue-900 text-white px-4 py-2 rounded-md">Login</a>
-            </div> -->
+            </div> --}}
         </div>
     </nav>
     <div id="blur" class="blur-effect"></div>

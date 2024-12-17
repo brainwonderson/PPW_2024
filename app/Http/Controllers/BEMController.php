@@ -7,6 +7,7 @@ use App\Models\departemen;
 use App\Models\ukm; 
 use App\Models\votes; 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class BEMController extends Controller
 {
