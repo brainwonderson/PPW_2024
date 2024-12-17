@@ -46,12 +46,12 @@ class BEMController extends Controller
 
     public function tambahdatakeanggotaan()
     {
-        return view('admin.tambahdata.keanggotaan'); 
+        return view('admin.tambahdata.+keanggotaan'); 
     }
     
     public function tambahdataukm()
     {
-        return view('admin.tambahdata.ukm'); 
+        return view('admin.tambahdata.+ukm'); 
     }
     
     public function tambahdatavote()
@@ -61,7 +61,7 @@ class BEMController extends Controller
 
     public function tambahdatadepartemen()
     {
-        return view('admin.tambahdata.departemen'); 
+        return view('admin.tambahdata.+departemen'); 
     }
     
     public function store(Request $request)
