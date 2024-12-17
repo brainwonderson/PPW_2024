@@ -9,6 +9,7 @@ class PostResource extends JsonResource
 {
     public $status;
     public $message;
+    public $resource;
 
     public function __construct($status, $message, $resource)
     {

@@ -1,11 +1,22 @@
 <?php
 
 namespace App\Http\Controllers\Api;
+
+//import model Post
 use App\Models\Post;
+
 use Illuminate\Http\Request;
+
+//import resource PostResource
 use App\Http\Controllers\Controller;
+
+//import Http request
 use App\Http\Resources\PostResource;
+
+//import facade Validator
 use Illuminate\Support\Facades\Validator;
+
+//import facade Storage
 use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
@@ -134,6 +145,7 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
+
         //find post by ID
         $post = Post::find($id);
 
