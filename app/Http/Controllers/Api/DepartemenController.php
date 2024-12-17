@@ -130,7 +130,6 @@ class DepartemenController extends Controller
                 'deskripsi'   => $request->deskripsi,
                 'ketua'   => $request->ketua,
                 'wakilketua'     => $request->wakilketua,
-                'logo'     => $image->hashName(),
             ]);
         }
 
