@@ -72,6 +72,13 @@ class AnggotaBEM extends Controller
         //find post by ID
         $post = keanggotaan::find($id);
 
+        if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data anggota tidak ditemukan!',
+            ], 404);
+        }
+
         //return single post as a resource
         return new PostResource(true, 'Detail Data Post!', $post);
     }
@@ -99,6 +106,13 @@ class AnggotaBEM extends Controller
 
         //find post by ID
         $post = keanggotaan::find($id);
+
+        if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data anggota tidak ditemukan!',
+            ], 404);
+        }
 
         //check if image is not empty
         if ($request->hasFile('foto')) {
@@ -142,6 +156,13 @@ class AnggotaBEM extends Controller
 
         //find post by ID
         $post = keanggotaan::find($id);
+
+        if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data anggota tidak ditemukan!',
+            ], 404);
+        }
 
         //delete image
         Storage::delete('public/posts/AnggotaBEM'.basename($post->foto));

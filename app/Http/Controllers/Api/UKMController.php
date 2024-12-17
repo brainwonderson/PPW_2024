@@ -69,6 +69,13 @@ class UKMController extends Controller
         //find post by ID
         $post = ukm::find($id);
 
+        if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data ukm tidak ditemukan!',
+            ], 404);
+        }
+
         //return single post as a resource
         return new PostResource(true, 'Detail Data Post!', $post);
     }
@@ -98,6 +105,13 @@ class UKMController extends Controller
         //find post by ID
         $post = ukm::find($id);
 
+        if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data ukm tidak ditemukan!',
+            ], 404);
+        }
+
         //update post without image
         $post->update([
             'nama'     => $request->nama,
@@ -121,6 +135,13 @@ class UKMController extends Controller
 
         //find post by ID
         $post = ukm::find($id);
+
+        if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data ukm tidak ditemukan!',
+            ], 404);
+        }
 
         //delete post
         $post->delete();
