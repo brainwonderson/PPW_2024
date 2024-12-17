@@ -1,14 +1,15 @@
 <?php
 
 namespace App\Http\Controllers\Api;
-use App\Models\keanggotaan;
+
+use App\Models\ukm;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\PostResource;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
 
-class AnggotaBEM extends Controller
+class UKMController extends Controller
 {
     /**
      * index
@@ -18,7 +19,7 @@ class AnggotaBEM extends Controller
     public function index()
     {
         //get all posts
-        $posts = keanggotaan::latest()->paginate(5);
+        $posts = ukm::latest()->paginate(5);
 
         //return collection of posts as a resource
         return new PostResource(true, 'List Data Posts', $posts);
@@ -35,9 +36,9 @@ class AnggotaBEM extends Controller
         //define validation rules
         $validator = Validator::make($request->all(), [
             'nama'     => 'required',
-            'departemen'   => 'required',
-            'jabatan'  => 'required',
-            'foto'     => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'deskripsi'   => 'required',
+            'programkerja'  => 'required',
+            'ketua'     => 'required',
         ]);
 
         //check if validation fails
@@ -45,16 +46,12 @@ class AnggotaBEM extends Controller
             return response()->json($validator->errors(), 422);
         }
 
-        //upload image
-        $image = $request->file('foto');
-        $image->storeAs('public/posts/AnggotaBEM', $image->hashName());
-
         //create post
-        $post = keanggotaan::create([
+        $post = ukm::create([
             'nama'     => $request->nama,
-            'departemen'   => $request->departemen,
-            'jabatan'   => $request->jabatan,
-            'foto'     => $image->hashName(),
+            'deskripsi'   => $request->deskripsi,
+            'programkerja'   => $request->programkerja,
+            'ketua'     => $request->ketua,
         ]);
 
         //return response
@@ -70,7 +67,7 @@ class AnggotaBEM extends Controller
     public function show($id)
     {
         //find post by ID
-        $post = keanggotaan::find($id);
+        $post = ukm::find($id);
 
         //return single post as a resource
         return new PostResource(true, 'Detail Data Post!', $post);
@@ -88,8 +85,9 @@ class AnggotaBEM extends Controller
         //define validation rules
         $validator = Validator::make($request->all(), [
             'nama'     => 'required',
-            'departemen'   => 'required',
-            'jabatan'  => 'required',
+            'deskripsi'   => 'required',
+            'programkerja'  => 'required',
+            'ketua'     => 'required',
         ]);
 
         //check if validation fails
@@ -98,39 +96,20 @@ class AnggotaBEM extends Controller
         }
 
         //find post by ID
-        $post = keanggotaan::find($id);
+        $post = ukm::find($id);
 
-        //check if image is not empty
-        if ($request->hasFile('foto')) {
-
-            //upload image
-            $image = $request->file('foto');
-            $image->storeAs('public/posts/AnggotaBEM', $image->hashName());
-
-            //delete old image
-            Storage::delete('public/posts/AnggotaBEM/' . basename($post->image));
-
-            //update post with new image
-            $post->update([
-                'nama'     => $request->nama,
-                'departemen'   => $request->departemen,
-                'jabatan'   => $request->jabatan,
-                'foto'     => $image->hashName(),
-            ]);
-        } else {
-
-            //update post without image
-            $post->update([
-                'nama'     => $request->nama,
-                'departemen'   => $request->departemen,
-                'jabatan'   => $request->jabatan,
-            ]);
-        }
+        //update post without image
+        $post->update([
+            'nama'     => $request->nama,
+            'deskripsi'   => $request->deskripsi,
+            'programkerja'   => $request->programkerja,
+            'ketua'     => $request->ketua,
+        ]);
 
         //return response
         return new PostResource(true, 'Data Post Berhasil Diubah!', $post);
     }
-    
+
     /**
      * destroy
      *
@@ -141,10 +120,7 @@ class AnggotaBEM extends Controller
     {
 
         //find post by ID
-        $post = keanggotaan::find($id);
-
-        //delete image
-        Storage::delete('public/posts/AnggotaBEM'.basename($post->foto));
+        $post = ukm::find($id);
 
         //delete post
         $post->delete();

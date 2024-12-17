@@ -7,6 +7,7 @@ use App\Models\departemen;
 use App\Models\ukm; 
 use App\Models\votes; 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class BEMController extends Controller
 {
@@ -61,7 +62,7 @@ class BEMController extends Controller
 
     public function tambahdatadepartemen()
     {
-        return view('admin.tambahdata.departemen'); 
+        return view('admin.tambahdata.+departemen'); 
     }
     
     public function store(Request $request)
