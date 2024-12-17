@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\PostResource;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\Storage;
 
 class UKMController extends Controller
 {
@@ -122,10 +121,21 @@ class UKMController extends Controller
         //find post by ID
         $post = ukm::find($id);
 
+         //check if post exists
+         if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data Post Tidak Ditemukan!',
+            ], 404);
+        }
+
         //delete post
         $post->delete();
 
         //return response
-        return new PostResource(true, 'Data Post Berhasil Dihapus!', null);
+        return response()->json([
+            'success' => true,
+            'message' => 'Data Post Berhasil Dihapus!',
+        ], 200);
     }
 }
