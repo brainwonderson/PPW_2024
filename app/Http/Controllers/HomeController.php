@@ -26,4 +26,11 @@ class HomeController extends Controller
         $data = votes::all(); 
         return view('menu.vote', compact('data'));
     }
+    
+    public function dep_depagsos()
+    {
+        $data = departemen::all(); 
+        return view('menu.vote', compact('data'));
+    }
+
 }

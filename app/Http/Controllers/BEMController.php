@@ -29,8 +29,8 @@ class BEMController extends Controller
     
     public function vote()
     {
-        $data_vote = votes::all(); 
-        return view('admin.vote', compact('data_vote'));
+        $data = votes::all(); 
+        return view('admin.vote', compact('data'));
     }
     
     public function departemen()
@@ -122,6 +122,14 @@ class BEMController extends Controller
             'nama_kandidat' => $request->input('nama_kandidat'),
             'foto_kandidat' => $path, 
         ]);
+        return redirect()->route('vote_admin')->with('success', 'Data has been added successfully!');
+    }
+    
+    public function increasevote($id)
+    {
+        $data = votes::find($id);
+        $data->jumlah_vote = $data->jumlah_vote + 1;
+        $data->save();
         return redirect()->route('vote')->with('success', 'Data has been added successfully!');
     }
     
@@ -170,10 +178,28 @@ class BEMController extends Controller
         return redirect()->route('ukm')->with('success', 'Data has been added successfully!');
     }
 
-    public function tampilkandata($id)
+    public function editkeanggotaan($id)
     {
         $data = keanggotaan::find($id);
-        return view('admin.tampilkandata', compact('data'));
+        return view('admin.editdata.keanggotaan', compact('data'));
+    }
+    
+    public function editukm($id)
+    {
+        $data = ukm::find($id);
+        return view('admin.editdata.ukm', compact('data'));
+    }
+    
+    public function editvote($id)
+    {
+        $data = vote::find($id);
+        return view('admin.editdata.vote', compact('data'));
+    }
+    
+    public function editdepartemen($id)
+    {
+        $data = departemen::find($id);
+        return view('admin.editdata.departemen', compact('data'));
     }
     
     public function updatedata(Request $request, $id)
@@ -209,6 +235,38 @@ class BEMController extends Controller
 
         return redirect()->route('keanggotaan')->with('success', 'Data berhasil diubah');
     }
+    
+    public function updatevote($id)
+    {
+        // Ambil user yang sedang login
+        $user = auth()->user();
+
+        // Periksa apakah user sudah melakukan voting
+        if (!is_null($user->vote_to)) {
+            return redirect()->route('vote')->with('error', 'Anda sudah melakukan voting!');
+        }
+
+        // Ambil data kandidat berdasarkan ID
+        $data = votes::find($id);
+
+        // Jika data kandidat tidak ditemukan
+        if (!$data) {
+            return redirect()->route('vote')->with('error', 'Kandidat tidak ditemukan!');
+        }
+
+        // Tambahkan 1 ke jumlah_vote yang ada
+        $data->jumlah_vote += 1;
+        $data->save();
+
+        // Update kolom vote_to pada tabel users
+        $user->vote_to = $id;
+        $user->save();
+
+        // Redirect ke halaman dengan pesan sukses
+        return redirect()->route('vote')->with('success', 'Voting berhasil!');
+    }
+
+
 
     public function delete_keanggotaan($id)
     {
@@ -221,7 +279,7 @@ class BEMController extends Controller
     {
         $data = votes::find($id);
         $data->delete();
-        return redirect()->route('vote')->with('success', 'Data berhasil dihapus');
+        return redirect()->route('vote_admin')->with('success', 'Data berhasil dihapus');
     }
     
     public function delete_departemen($id)

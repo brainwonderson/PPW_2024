@@ -15,10 +15,32 @@
     <div class="flex">
         <!-- Main Content -->
         <main class="flex-1 p-6">
-            <div class="flex items-center justify-center h-screen">
-                <div class="text-center">
-                    <h1 class="text-4xl font-bold mb-4">Welcome to the Admin Dashboard</h1>
-                    <p class="text-lg text-gray-600">This is your admin area. Use the sidebar to navigate.</p>
+            <h1 class="text-4xl font-bold mb-6">Welcome to the Admin Dashboard</h1>
+            
+            <!-- Informasi Dinamis -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Jumlah Anggota -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold mb-2">Total Anggota</h2>
+                    <p class="text-3xl font-bold text-blue-600">{{ $jumlahAnggota }}</p>
+                </div>
+
+                <!-- Jumlah Departemen -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold mb-2">Total Departemen</h2>
+                    <p class="text-3xl font-bold text-green-600">{{ $jumlahDepartemen }}</p>
+                </div>
+
+                <!-- Jumlah UKM -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold mb-2">Total UKM</h2>
+                    <p class="text-3xl font-bold text-yellow-600">{{ $jumlahUKM }}</p>
+                </div>
+
+                <!-- Total Votes -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl font-semibold mb-2">Total Votes</h2>
+                    <p class="text-3xl font-bold text-red-600">{{ $jumlahVotes }}</p>
                 </div>
             </div>
         </main>

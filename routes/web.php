@@ -21,8 +21,6 @@ Route::middleware('auth')->post('/vote/{candidateId}', [VoteController::class, '
 
 Route::get('/', [HomeController::class, 'tes'])->name('home');
 Route::get('/vote', [HomeController::class, 'vote'])->name('vote')->middleware('auth');
-Route::get('/register', [AuthManager::class, 'register'])->name('register'); 
-Route::post('/register', [AuthManager::class, 'registerPost'])->name('register.post'); 
 Route::get('/login', [AuthManager::class, 'login'])->name('login');
 Route::post('/login', [AuthManager::class, 'loginPost'])->name('login.post'); 
 Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
@@ -30,10 +28,6 @@ Route::get('/logout', [AuthManager::class, 'logout'])->name('logout');
 Route::get('/about', function () {
     return view('menu/aboutus');
 })->name('about');
-
-// Route::get('/admin', function () {
-//     return view('admin/admin');
-// })->name('admin');
 
 Route::get('/content', function () {
     return view('Departcontent');
@@ -85,9 +79,9 @@ route::get('/depsenbud', [DepsenbudController::class, 'index'])->name('depsenbud
 route::get('/depagsos', [DepagsosController::class, 'index'])->name('depagsos');
 route::get('/dhpm', [DhpmController::class, 'index'])->name('dhpm');
 
-route::get('/admin', [BEMController::class, 'admin'])->name('admin');
+route::get('/admin', [AdminController::class, 'dashboard'])->name('admin');
 
-route::get('/vote_admin', [BEMController::class, 'vote'])->name('vote');
+route::get('/vote_admin', [BEMController::class, 'vote'])->name('vote_admin');
 
 route::get('/tambahdata-keanggotaan', [BEMController::class, 'tambahdatakeanggotaan'])->name('tambahdata-keanggotaan');
 
@@ -111,10 +105,15 @@ route::get('/departemen', [BEMController::class, 'departemen'])->name('departeme
 
 route::get('/ukm', [BEMController::class, 'ukm'])->name('ukm');
 
-route::get('/tampilkandata/{id}', [BEMController::class, 'tampilkandata'])->name('tampilkandata');
+route::get('/editkeanggotaan/{id}', [BEMController::class, 'editkeanggotaan'])->name('editkeanggotaan');
+route::get('/editukm/{id}', [BEMController::class, 'editukm'])->name('editukm');
+route::get('/editvote/{id}', [BEMController::class, 'editvote'])->name('editvote');
+route::get('/editdepartemen/{id}', [BEMController::class, 'editdepartemen'])->name('editdepartemen');
 route::get('/delete/keanggotaan/{id}', [BEMController::class, 'delete_keanggotaan'])->name('delete');
 route::get('/delete/vote/{id}', [BEMController::class, 'delete_vote'])->name('delete');
 route::get('/delete/departemen/{id}', [BEMController::class, 'delete_departemen'])->name('delete');
 route::get('/delete/ukm/{id}', [BEMController::class, 'delete_ukm'])->name('delete');
 route::get('/updatedata/{id}', [BEMController::class, 'updatedata'])->name('updatedata');
 route::post('/updatedata/{id}', [BEMController::class, 'updatedata'])->name('updatedata');
+route::post('/updatevote/{id}', [BEMController::class, 'updatevote'])->name('updatevote');
+// route::get('/updatevote/{id}', [BEMController::class, 'updatevote'])->name('updatevote');

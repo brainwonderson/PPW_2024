@@ -106,7 +106,7 @@
             @csrf
             <h1>Login</h1>
 			<div class="name-box">
-				<p>Username</p>
+				<p>Email</p>
 			</div>
             <div class="input-box">
                 <input id="email" name="email" type="text" placeholder="Value" required>
