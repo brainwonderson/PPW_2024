@@ -25,7 +25,7 @@ class DepartemenSeeder extends Seeder
         departemen::create([
             //diptek
             'nama' => 'DIPTEK',
-            'deskripsi' => '',
+            'deskripsi' => 'Departemen Ilmu Pengetahuan dan Teknologi (DIPTEK) merupakan departemen yang bergerak dalam ilmu pengetahuan dan teknologi. Departemen ini juga mengelola dan memberikan informasi mengenai ilmu pengetahuan dan teknologi kepada mahasiswa, serta membantu meningkatkan minat dan bakat mahasiswa di bidang akademik.',
             'ketua' => 'Josep Napitupulu',
             'wakilketua' => 'Youni Lumban Tobing',
             'logo' => '1733384936.png',
