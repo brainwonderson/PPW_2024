@@ -21,7 +21,7 @@
     <div class="text-center mb-12 animate__animated animate__fadeIn">
         <h1 class="text-4xl font-bold mb-4">DEPARTEMEN SARANA DAN PRASARANA</h1>
         <p class="text-gray-600 max-w-3xl mx-auto">
-            Bertanggung jawab dalam penyedia alat dan keperluan yang mungkin dibutuhkan dalam kegiatan departemen-departemen lain
+            Departemen Sarana dan Prasarana (SARPRAS) bertanggung jawab dalam penyedia alat dan keperluan yang mungkin dibutuhkan dalam kegiatan departemen-departemen lain.
         </p>
     </div>
 

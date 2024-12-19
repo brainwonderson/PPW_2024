@@ -20,7 +20,7 @@
         <div class="text-center mb-12 animate__animated animate__fadeIn">
             <h1 class="text-4xl font-bold mb-4">DEPARTEMEN KOMUNIKASI DAN INFORMASI</h1>
             <p class="text-gray-600 max-w-5zxl mx-auto">
-            Berperan dalam menanggungjawabi kepentingan komunikasi dan informasi, jembatan antar departemen, dan memanfaatkan media komunikatif sebagai pusat informasi keorganisasian.            </p>
+            Departemen Komunikasi dan Informasi (DEPKOMINFO) berperan dalam menanggungjawabi kepentingan komunikasi dan informasi, jembatan antar departemen, dan memanfaatkan media komunikatif sebagai pusat informasi keorganisasian.            </p>
         </div>
 
         <!-- Images and Description -->

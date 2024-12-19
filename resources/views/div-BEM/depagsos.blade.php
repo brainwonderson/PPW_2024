@@ -18,12 +18,21 @@
 
 <div class="container mx-auto py-10 bg-gradient-to-b from-light-blue to-white min-h-screen">
     <!-- Header Section -->
+    @if($data->isEmpty())
     <div class="text-center mb-12 animate__animated animate__fadeIn">
         <h1 class="text-4xl font-bold mb-4">Departemen Agama dan Sosial</h1>
         <p class="text-gray-600 max-w-3xl mx-auto">
         Departemen Agama dan Sosial merupakan departemen yang berperan dalam kegiatan keagamaan dan sosial, berkolaborasi dalam keanekaragaman di kampus.
         </p>
     </div>
+    @else
+    <div class="text-center mb-12 animate__animated animate__fadeIn">
+        <h1 class="text-4xl font-bold mb-4">{{ $data->nama }}</h1>
+        <p class="text-gray-600 max-w-3xl mx-auto">
+            {{ $data->deskripsi }}
+        </p>
+    </div>
+    @endif
 
     <!-- Images and Description -->
     <div class="flex justify-center mb-12 space-x-4 animate_animated animatefadeInUp animate_delay-1s">

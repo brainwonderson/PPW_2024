@@ -56,9 +56,8 @@
                         <td class="py-2 px-4 border-b">{{$row->wakilketua}} </td>
                         <td class="py-2 px-4 border-b text-center">
                             <div class="inline-flex space-x-2">
-                                <a href="/tampilkandata/{{$row->id}}" type=button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">Edit</a>
-                                <!-- <a href="/delete/{{$row->id}}" type=button class="bg-red-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">Delete</a> -->
-                                <a 
+                                <a href="/editdepartemen/{{$row->id}}" type=button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-3 rounded-full">Edit</a>
+                                <a *
                                     href="javascript:void(0);" 
                                     onclick="confirmDelete({{ $row->id }})" 
                                     class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded-full">

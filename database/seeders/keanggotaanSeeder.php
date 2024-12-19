@@ -135,9 +135,17 @@ class keanggotaanSeeder extends Seeder
             'foto' => '1733384936.png', 
         ]);
 
+        //DEPKOMINFO
         keanggotaan::create([
-            'nama' => 'Quinn Young',
-            'departemen' => 'SARPRAS',
+            'nama' => 'Archico Sembiring',
+            'departemen' => 'DEPKOMINFO',
+            'jabatan' => 'Ketua',
+            'foto' => '1733384936.png', 
+        ]);
+
+        keanggotaan::create([
+            'nama' => 'Albertus',
+            'departemen' => 'DEPKOMINFO',
             'jabatan' => 'Wakil Ketua',
             'foto' => '1733384936.png',
         ]);

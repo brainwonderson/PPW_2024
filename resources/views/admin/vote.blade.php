@@ -45,7 +45,7 @@
                     @php 
                         $no = 1;
                     @endphp
-                    @foreach ($data_vote as $row)
+                    @foreach ($data as $row)
                     <tr>
                         <td class="py-2 px-4 border-b">{{$no++}}</td>
                         <td class="py-2 px-4 border-b">{{$row->nomor_kandidat}}</td>
@@ -70,7 +70,7 @@
         </div>
 
     </div>
-
+    
     <script>
         function confirmDelete(id) {
             Swal.fire({
