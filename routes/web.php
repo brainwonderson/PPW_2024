@@ -51,9 +51,11 @@ Route::get('/test', function () {
     return view('test');
 })->name('test');
 
-Route::get('/basket', function () {
-    return view('ukm/basket');
-})->name('basket');
+// Route::get('/basket', function () {
+//     return view('ukm/basket');
+// })->name('basket');
+
+Route::get('/basket', [App\Http\Controllers\Api\UKMController::class, 'index'])->name('basket');
 
 Route::get('/GDSC', function () {
     return view('ukm/GDSC');

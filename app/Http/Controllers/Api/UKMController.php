@@ -20,8 +20,10 @@ class UKMController extends Controller
         //get all posts
         $posts = ukm::latest()->paginate(5);
 
+        
         //return collection of posts as a resource
-        return new PostResource(true, 'List Data Posts', $posts);
+        return view('/ukm/basket', compact('posts'));
+
     }
 
     /**
@@ -68,6 +70,13 @@ class UKMController extends Controller
         //find post by ID
         $post = ukm::find($id);
 
+        if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data ukm tidak ditemukan!',
+            ], 404);
+        }
+
         //return single post as a resource
         return new PostResource(true, 'Detail Data Post!', $post);
     }
@@ -97,6 +106,13 @@ class UKMController extends Controller
         //find post by ID
         $post = ukm::find($id);
 
+        if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data ukm tidak ditemukan!',
+            ], 404);
+        }
+
         //update post without image
         $post->update([
             'nama'     => $request->nama,
@@ -121,11 +137,10 @@ class UKMController extends Controller
         //find post by ID
         $post = ukm::find($id);
 
-         //check if post exists
-         if (!$post) {
+        if (!$post) {
             return response()->json([
                 'success' => false,
-                'message' => 'Data Post Tidak Ditemukan!',
+                'message' => 'Data ukm tidak ditemukan!',
             ], 404);
         }
 

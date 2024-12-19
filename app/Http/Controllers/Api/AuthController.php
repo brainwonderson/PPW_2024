@@ -66,6 +66,14 @@ class AuthController extends Controller
         //find post by ID
         $post = User::find($id);
 
+        //check if user exists
+        if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data user tidak ditemukan!',
+            ], 404);
+        }
+
         //return single post as a resource
         return new PostResource(true, 'Detail Data Post!', $post);
     }
@@ -94,6 +102,14 @@ class AuthController extends Controller
         //find post by ID
         $post = User::find($id);
 
+        //check if user exists
+        if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data user tidak ditemukan!',
+            ], 404);
+        }
+
         //update post without image
         $post->update([
             'name'     => $request->name,
@@ -120,7 +136,7 @@ class AuthController extends Controller
         if (!$post) {
             return response()->json([
                 'success' => false,
-                'message' => 'Data Post Tidak Ditemukan!',
+                'message' => 'Data user tidak ditemukan!',
             ], 404);
         }
 
@@ -130,7 +146,7 @@ class AuthController extends Controller
         //return response
         return response()->json([
             'success' => true,
-            'message' => 'Data Post Berhasil Dihapus!',
+            'message' => 'Data User Berhasil Dihapus!',
         ], 200);
     }
 }

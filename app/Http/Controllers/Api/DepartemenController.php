@@ -74,6 +74,13 @@ class DepartemenController extends Controller
         //find post by ID
         $post = departemen::find($id);
 
+        if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data departemen tidak ditemukan!',
+            ], 404);
+        }
+
         //return single post as a resource
         return new PostResource(true, 'Detail Data Post!', $post);
     }
@@ -103,6 +110,13 @@ class DepartemenController extends Controller
 
         //find post by ID
         $post = departemen::find($id);
+
+        if (!$post) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Data departemen tidak ditemukan!',
+            ], 404);
+        }
 
         //check if image is not empty
         if ($request->hasFile('foto')) {
@@ -148,14 +162,6 @@ class DepartemenController extends Controller
 
         //find post by ID
         $post = departemen::find($id);
-
-        //check if post exists
-        if (!$post) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Data Post Tidak Ditemukan!',
-            ], 404);
-        }
 
         //delete image
         Storage::delete('public/posts/Departemen'.basename($post->foto));
